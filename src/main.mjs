@@ -16,9 +16,6 @@ function initTimeZoneSwitches() {
     switches.onToggle(() => times.localize());
 }
 
-
-
-
 function initCountdown() {
     const target = $("#countdown");
     const conferenceOpening = target.data("date-iso");

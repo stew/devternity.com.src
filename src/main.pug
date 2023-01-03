@@ -105,16 +105,16 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
     link(rel="stylesheet" href=require('./main.scss'))
     script(src=require('./main.mjs') defer)  
     script(defer data-domain="devternity.com" data-api="/pla/event" src="/pla/script.js")
-  body.text-white.antialiased.opacity-0.transition-opacity.duration-700
+  body.text-white.antialiased.opacity-0.transition-opacity.duration-700(class=(event.status !== 'on_sale' ? 'overflow-hidden' : '' ))
     .sky.relative.overflow-hidden
       if event.status === 'on_sale'
         nav.container.flex.items-center.justify-end.gap-8.h-20
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
             a.text-slate-500.duration-300(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
       main
-        section.container.text-center.flex.flex-col.gap-14.items-center.justify-center.min-h-screen
+        section.container.text-center.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
           h1.text-7xl(class="lg:text-9xl") DevTernity
-          h2.text-2xl(class="lg:text-5xl")
+          h2.text-2xl(class="lg:text-5xl leading-tight [&>*]:leading-tight")
             | Turning developers into 
             span.text-lime-950 architects
             |  and 

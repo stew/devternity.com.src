@@ -9,10 +9,13 @@
   }
 }
 
-main {
-  margin-top: 8vh;
-}
+@screen xl {
+  main {
+    position: relative;
+    top: 8vh;
+  }
 
-nav + main {
-  margin-top: 0;
+  nav + main {
+    position: static;
+  }
 }
