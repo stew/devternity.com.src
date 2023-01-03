@@ -8,14 +8,3 @@
     @apply focus:outline-none focus:rounded focus:ring-2 focus:ring-lime-950;
   }
 }
-
-@screen xl {
-  main {
-    position: relative;
-    top: 8vh;
-  }
-
-  nav + main {
-    position: static;
-  }
-}

@@ -3,7 +3,7 @@ import $ from "cash-dom";
 
 export class Sky {
     constructor() {
-        this.sky = $(".sky");
+        this.sky = $(".sky").addClass('relative overflow-hidden');
         this.stars = [];
     }
 
