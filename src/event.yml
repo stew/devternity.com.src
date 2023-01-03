@@ -1,0 +1,745 @@
+---
+year: 2023
+codename: DT_RIX_23
+date: "2023-12-07"
+masterclasses_date: "2023-12-08"
+registration_opens: "2023-02-28"
+status: '' # on_sale or empty
+register: https://registration.devternity.com
+pricing:
+  packages:
+    Main Day Only:
+      sold_out: false
+      price: 399
+      extra: 200
+      includesMainDay: true
+      capacity: 70
+    Masterclass Only:
+      price: 399
+      extra: 200
+      includesWorkshop: true
+      sold_out: true
+      capacity: 90
+    Main Day + Masterclass:
+      price: 798
+      extra: 400
+      sold_out: true
+      includesWorkshop: true
+      includesMainDay: true
+      capacity: 90
+masterclasses:
+  - instructor:
+      name: Scott Wlaschin
+      img: Placeholder.png
+    title: Domain Modeling Made Functional
+    from: '09:00'
+    to: '16:00'
+    brief_description: |
+      # Domain Modeling Made Functional
+
+      Functional programming can be an excellent approach to designing
+      decoupled, reusable systems with a rich domain model. This masterclass will
+      show you why and how. 
+
+      You''ll learn the core concepts of FP, and how to
+      apply them to crafting domain logic, capturing business rules, designing business
+      workflows, error handling, and much more, including: 
+      * Introduction to functional programming
+      * Functions and types
+      * Composition as the fundamental principle
+      * Overview of DDD principles
+      * The importance of bounded contexts
+      * Onion/Hexagonal architecture and how this works with functional programming
+      * Modeling requirements with algebraic types
+      * Modeling constraints, states, and workflows
+      * Keeping IO at the edges
+      * Handling domain errors
+      * Composing complex functions
+      * Evolving the domain
+      * Dealing with changes in requirements
+
+      We will be using F# as our development language. The principles will be applicable
+      to other languages. No experience with F# needed.
+    sold_out: true
+  - instructor:
+      name: Jimmy Bogard
+      img: Placeholder.png
+    title: "Domain-Driven Design: Theory and Practice"
+    from: '14:00'
+    to: '22:00'
+    brief_description: |
+      # Domain-Driven Design: Theory and Practice
+
+      Understand the concepts of DDD but feeling overwhelmed to
+      implement? Feeling overwhelmed by complex examples and can''t connect how
+      to implement DDD in your project? Looking for more concrete guidance on the
+      concepts and principles of DDD and want to learn how to connect it to real-world
+      code? If this sounds familiar, then this masterclass is for you. 
+
+      We cover both the theory and patterns of Domain-Driven Design, and connect it to code
+      with hands-on examples in .NET 6. The described concepts will be applicable
+      to other languages and platforms. 
+
+      In this masterclass, you'll learn:
+      * Where DDD fits in to software delivery and what business problems it addresses
+      * When to use DDD and when not to use it
+      * How to craft and enforce a ubiquitous language
+      * The fundamental modeling building blocks
+      * The role of refactoring in shaping and reshaping our model
+      * How to define bounded contexts and microservices
+      * Realizing a pragmatic implementation with .NET
+      * and much more!
+
+      We will be using .NET as our development platform. The principles will be
+      applicable to other languages and platforms.
+  - instructor:
+      name: Jakub Pilimon
+      img: Placeholder.png
+    title: Pragmatic Refactoring Towards Better Architecture
+    from: '14:00'
+    to: '22:00'
+    brief_description: |
+      # Pragmatic Refactoring Towards Better Architecture
+
+      Are you struggling with your codebase which causes problems
+      like poor maintenance, unreadability, performance, and poor testability? After this masterclass, you will be ready to identify and repair architectural
+      and code root causes of those issues using proven patterns and techniques from Domain-Driven Design, Test-Driven Development, Object-Oriented Programming, and modularization. 
+
+      During code exercises, we will walk through solutions
+      to issues like: 
+      * What to do with a “God Classes”?
+      * Modules/classes with huge coupling and with overload of business logic 
+      * Mismatch between the code model and the business model of the reality
+      * How to repair data inconsistency?
+      * Inefficient reads from my database?
+      * No clear boundaries in my codebase, how to introduce some?
+      * and much more!
+
+      The masterclass will start with code that represents a huge legacy system that some of us have to work with on a daily basis. We will gradually refactor it and not only introduce patterns like CQRS, aggregates,
+      policies, and parallel change, but also walk through how to talk about refactoring, technical debt, and how to sell our ideas to management.
+
+      The course is for developers able to code and complete exercises in Java, C#, or PHP.
+  - instructor:
+      name: J.B. Rainsberger
+      img: Placeholder.png
+    from: "11:00"
+    to: "19:00"
+    title: Surviving Legacy Code
+    brief_description: |
+      # Surviving Legacy Code
+
+      We all have legacy code – profitable code that we’re afraid
+      to change. Rewrite or refactor? How to crack the chicken-and-egg problem (I
+      need to write tests in order to refactor, and I need to refactor in order
+      to write tests)? What to do when we're already behind the schedule? We need
+      a way to learn how to work with legacy safely, correctly, and quickly. That’s
+      what Surviving Legacy Code is about. 
+
+      In this masterclass, you'll be working
+      on a diabolical-but-fun code base and practicing different refactoring and
+      testing techniques – from basic to advanced ones. 
+
+      Learned techniques will
+      eventually help you improve your production codebase – safely and quickly
+      enough
+  - instructor:
+      name: Venkat Subramaniam
+      img: Placeholder.png
+    from: "09:00"
+    to: "17:00"
+    almost_sold_out: true
+    title: Software Design By Practice
+    brief_description: |
+      # Software Design by Practice
+
+      The goal of this intensive, hands-on masterclass, is to deepen your understanding of SOLID and other core software design
+      principles and patterns. You'll be practicing those concepts under
+      different constraints and requirements, devising elegant lightweight design,
+      writing code, and discussing the tradeoffs. 
+
+      Come experience the evolution of ideas into clean code by way of incremental development!
+  - instructor:
+      name: David Neal
+      img: Placeholder.png
+    from: "09:00"
+    to: "17:00"
+    title: Practical Leadership for Software Developers
+    brief_description: |
+      # Practical Leadership for Software Developers
+
+      We all have an opportunity every day to make a postive impact
+      on folks around us. These are often called "soft skills," but they can be
+      some of the hardest to learn! We could call them "people skills," "essential
+      skills," or "core skills." But, how about SKILLS OF AWESOMENESS? Yes, what we all need is more ways we can be awesome to each other, and awesome
+      together. 
+
+      You''ll learn: 
+      * Why leadership and awesomeness skills matter to
+      everyone
+      * How to become a better leader
+      * How to run effective meetings
+      * How to deal with conflict and find consensus
+      * How to get better at listening and communication
+      * How to encourage and motivate others
+
+      Through a series of practical exercises, we will discover and discuss the most important and relevant topics you want
+      to cover, so that you can get the most value out of this masterclass! 
+
+      The masterclass is led by David Neal – #1 speaker of 2020.
+    sold_out: true
+  - instructor:
+      name: Victor Rentea
+      img: Placeholder.png
+    title: Clean and Pragmatic Architecture
+    from: "08:00"
+    to: "16:00"
+    brief_description: |
+      # Clean and Pragmatic Architecture
+
+      In this masterclass, through code examples, hands-on exercises,
+      and discussions you''ll learn how to design a clean and pragmatic architecture.
+
+      The topics include: 
+      * Layered Architecture: strict and relaxed variants
+      * Onion Architecture (aka Clean, Hexagonal, Ports-and-Adapters, Universal)
+      * Controllers: typical design options with tradeoffs
+      * Entities: techniques and best practices for modeling expressive entities
+      * Domain Services: how to keep them small, what is the domain logic?
+      * Facade vs. Application Service (DDD): a pragmatic evolutionary design strategy
+      * DTOs: enemy structures and when to keep them out of our domain
+      * Entity/DTO mapping: Best practices, pitfalls of automatic mappers
+      * Dependency Inversion Principle: stopping external APIs from polluting our domain
+      * Repositories: designing a domain-friendly search DSL
+      * Domain Events: mainstream best practices
+      * CQRS: separating read/write models
+      * and much more!
+
+      This masterclass uses Java as a reference language.
+    sold_out: true
+  - instructor:
+      name: Kevlin Henney
+      img: Placeholder.png
+    title: Agile Architecture
+    from: "09:00"
+    to: "17:00"
+    brief_description: |
+      # Agile Architecture
+
+      Every system has an architecture, whether accidental or
+      intentional, and regardless of whether it was put in place by a nominated
+      architect or whether it emerged from the decisions and discussions of a team.
+      
+      All too often the focus of what is often described as architecture is centred
+      around a specific set of platform technologies, which forms only one part
+      of the set of concerns an architecture should. And all too often architecture
+      is seen as a separate concern from development process, whereas the two are
+      intertwined — **what you build is influenced by how you build it, and vice versa.**
+
+      The course covers a wide range of topics through a number of practical exercises,
+      with plenty of time dedicated to group discussion:
+      * The relationship between development process and architecture
+      * The roles and failure modes of testing, modelling and technology platforms
+      * Different architectural styles and design patterns
+      * How to transform product vision into architecture
+      * Future-proofing your architecture, and accounting for uncertainty
+      * How to ground your architecture and avoid overdesign
+      
+      And much more!
+    sold_out: true
+  - instructor:
+      name: Jakub Nabrdalik
+      img: Placeholder.png
+    from: "09:00"
+    to: "17:00"
+    title: Microservices, Modular Monoliths, and Event-Driven Systems
+    brief_description: |
+      # Microservices, Modular Monoliths, and Event-Driven Systems
+
+      In this masterclass, I’ll take you through three different
+      styles of enterprise service architecture: modular monoliths, distributed
+      synchronous systems, and event-driven systems. Together, we will design a
+      non-trivial backend system and find out the strengths and weaknesses of each
+      architectural approach. 
+
+      We will discuss the typical mistakes and problems
+      developers face during service architecture design and how to solve them.
+
+      You will learn how to choose the best architecture style for your project,
+      and how to design hybrid solutions, leveraging the best parts of each architecture
+      style. Topics include
+      * Understanding the main styles of service and backend architecture
+      * Microservies or monoliths? Is there a middle ground?
+      * How to improve monoliths with modularity; Intro to Modular Monoliths
+      * How and when to split the system into services with REST/RPC
+      * How and when to become event-driven and fully async
+      * How to design non-trivial backend and service architecture
+      * How to avoid common errors in designing backend and service architectures
+      * How to use C4 model to communicate your architecture
+      * and much more!
+
+      This masterclass covers fundamental concepts, relevant to all programming platforms
+      and languages; developers and architects with different backgrounds can attend
+    sold_out: true
+  - instructor:
+      name: Allen Holub
+      img: Placeholder.png
+    from: "16:00"
+    to: "24:00"
+    title: Incremental Architecture
+    brief_description: |
+      # Incremental Architecture
+      
+      You can’t simultaneously fight your code and be Agile—it
+      slows you down too much. Your code’s design must evolve incrementally along
+      with your understanding of the product. In this masterclass, you’ll learn
+      everything you need to create highly adaptable designs literally as
+      you implement them. Along the way, you’ll also experience Event Storming and
+      other Domain-Driven Design techniques.
+
+      You’ll learn:
+      * How to design a system that can evolve incrementally
+      * SOLDIER principles (Simple, Obvious, Lightweight, Domain focused, Independent, Essential,
+      Refactorable)
+      * Architectural patterns appropriate for incremental development
+      * How to create strictly-isolated highly decoupled subsystems
+      * Domain-focused architectures (including DDD)
+      * How to use the domain to maintain system coherence as the architecture grows
+      * How to identify key abstractions, bounded contexts, entities, aggregates
+
+      In all, you’ll learn how to build a coherent and highly maintainable system and architecture that can easily accommodate changing requirements and grow incrementally as
+      the system evolves.
+schedule:
+  - from: "09:00"
+    to: "09:50"
+    talks:
+      - Kevlin Henney
+      - Dave Farley
+      - Randy Shoup
+  - from: "10:10"
+    to: "11:00"      
+    talks:
+      - Victor Rentea
+      - Jakub Pilimon
+      - Gojko Adžić
+  - from: "11:20"
+    to: "12:10"
+    talks:
+      - Cory House
+      - Jimmy Bogard
+      - David Neal
+  - from: "13:10"
+    to: "14:00"  
+    talks:
+      - Venkat Subramaniam
+      - Stefan Judis
+      - Sandro Mancuso
+  - from: "14:20"
+    to: "15:10"  
+    talks:
+      - Robert Martin
+      - Scott Wlaschin
+      - Mary Poppendieck
+  - from: "15:30"
+    to: "16:20"  
+    talks:
+      - J.B. Rainsberger
+      - Gwen Shapira
+      - Dave Rensin
+  - from: "16:40"
+    to: "17:30"  
+    talks:
+      - Kent Beck
+      - Scott Hanselman
+      - Allen Holub
+keynotes:
+  - name: Kevlin Henney
+    twitter: kevlinhenney
+    bio: Author of Architecture and Programming Books, Consultant, Trainer
+    title: Code?
+    description: |
+      # Code?
+
+      In this session, Kevlin will explore what we do and do not mean
+      by code, and the consequences for development and our systems. Some developers
+      do not consider their unit tests to be proper code, because unit tests are
+      not shipped with the software. On the other hand, many developers do not consider
+      configuration to be code, even though it is shipped with the software, defines
+      how the software executes and is written in a formal notation. And imagine
+      deploying a system with millions and millions of configuration parameters
+      that none of the developers understood or knew how to test properly? Imagine
+      machine learning. This talk is a journey into code, a journey into testing,
+      a journey into quality and a journey into keeping software soft. There's no
+      need to make it harder than it already is.
+    img: Kevlin Henney.png
+  - name: Dave Farley
+    twitter: davefarley77
+    bio: Author of Modern Software Engineering and Continuous Delivery
+    title: 'Modern Software Engineering: Doing What Works to Build Better Software Faster'
+    description: |
+      # Modern Software Engineering: Doing What Works to Build Better Software Faster
+
+      In this session, continuous delivery pioneer David Farley illuminates durable principles at the heart of effective, modern software development. 
+
+      He distills the discipline into two core exercises: learning and exploration and managing complexity. 
+
+      For each, he defines principles that can help you improve everything from your mindset to the quality of your code and describes approaches proven to promote success.
+    img: Dave Farley.jpg
+  - name: Randy Shoup
+    twitter: randyshoup
+    title: Improving eBay's Development Velocity
+    bio: VP Engineering and Chief Architect @ eBay
+    description: |
+      # Improving eBay's Development Velocity
+
+      This session outlines eBay’s efforts towards better, faster, safer,
+      and continious software delivery. You'll learn about measuring software delivery,
+      reducing waiting times and improving flow, breaking down silos, removing impediments,
+      embedding experts directly in product teams, modernizing architecture, and
+      much more! This session will provide actionable insights for other organizations
+      going through similar journeys.
+    img: Placeholder.png
+  - name: Jakub Nabrdalik
+    twitter: jnabrdalik
+    bio: Architect, Developer and Mentor @ Bottega IT Minds
+    img: Placeholder.png
+    title: Simple and Powerful Things That Work for Me
+    description: |
+      # Simple and Powerful Things That Work for Me
+
+      There's a surprising lot of best practices that are irrelevant
+      in practice. There are also those that do not sound like much, but I use them
+      every single day and cannot imagine how I would deal without them. This talk
+      is about those silent game-changers. I'll talk about fixing bugs with a scientific
+      method, how 7 years of implementing and operating microservices changed my
+      observability practices, and how higher-order functions allowed me to not
+      only express what's important, but also put emphasis on it. And then we'll
+      talk a bit about neuroscience and how to deal with your own head. Perhaps
+      it will work for you as well.
+  - name: Victor Rentea
+    twitter: VictorRentea
+    bio: Software Craftsman, Java Champion, Independent Trainer
+    title: The Secrets of the Fastest Java Developers on Earth
+    description: |
+      # The Secrets of the Fastest Java Developers on Earth
+
+      In this session, you’ll learn a lot of hands-on tricks that will
+      skyrocket your Java coding speed, after just several days of practice. Writing,
+      editing, navigating and refactoring code faster will let you focus on your
+      goals and allow you to experiment various design alternatives without wasting
+      precious time. In this talk I’ll demonstrate some the best tricks of IntelliJ
+      (community included): Advanced Auto-Completion: over-dot, TAB, type-aware,
+      statics, generating boilerplate, Live Templates and Postfix Expansion, Essential
+      quickfixes and inspections, Multi-cursor, Statement Completion, Navigating
+      Code like a Pro, Java Streams support, and many more, all curated with the
+      help of many nice JetBrains people.
+    img: Placeholder.png
+  - name: Lauren Brummel
+    bio: Software Craftswoman @ Coinbase, Author @ The Practical Dev
+    img: Placeholder.png
+  - name: Jakub Pilimon
+    twitter: jakubpilimon
+    bio: Principal Technologist @ VMWare, Trainer @ Bottega IT Minds
+    img: Placeholder.png
+    title: "Clean Code: Eternal Principles"
+    description: |
+      # Clean Code: Eternal Principles
+      
+      In this talk we will cover: thinking in terms of abstractions,
+      placing the right language in right places, fighting with cognitive load and
+      biases, what kinds of coupling can we see and which one is the worst, how
+      to overcome the fear of having many small classes, hot to explain cohesion
+      to a junior developer and more. Those evergreen rules can help you become
+      more efficient and persuasive at work.
+  - name: Gojko Adžić
+    twitter: gojkoadzic
+    bio: Consultant, Trainer, Author of Best-selling Software Books
+    title: Maximum Impact, Minimum Effort
+    description: |
+      # Maximum Impact, Minimum Effort
+
+      A big government IT project delivered two years ahead of schedule.
+      A fraud detection initiative saving tens of millions more than predicted.
+      An app that helped a city rebuild faster after a major disaster and save ten
+      times more money than expected. Stories like these are very uncommon, even
+      with all the advancements the software industry made in the last few decades.
+      In this talk, Gojko will present how very successful teams create big impacts
+      with minimum effort. You'll get practical, actionable ideas that you can use
+      immediately in your work.
+    img: Placeholder.png
+  - name: Venkat Subramaniam
+    twitter: venkat_s
+    bio: Founder @ Agile Developer, Author of 10+ Programming Books
+    title: Reasons and Ways to Improve Code Quality
+    description: |
+      # Reasons and Ways to Improve Code Quality
+
+      As programmers we crank out code day in and day out. In the pressure
+      to deliver faster and to keep up with change, it's easy to forget about code
+      quality. Over time, we may not even realize how much the code has deteriorated
+      except that we feel the pain moving forward, as with each line of code we
+      touch gets harder and slower to change. We will discuss the reasons to maintain
+      good quality code and ways in which we, each one of us, can be part of creating
+      quality code.
+    img: Venkat Subramaniam.jpg
+  - name: Stefan Judis
+    twitter: stefanjudis
+    bio: Head of Developer Relations @ Checkly, OSS Contributor
+    title: Everything You Should Know About Web Development in 2022
+    description: |
+      # Everything You Should Know About Web Development in 2022
+
+      Frontend and JavaScript technologies are moving fast. So fast that
+      it's always hard to keep track of all the new things that are coming up. This
+      talk will show new tools, workflows, ways to develop and give advice on how
+      to stay up to date.
+    img: Placeholder.png
+  - name: Sandro Mancuso
+    twitter: sandromancuso
+    bio: Software Craftsman and Founder @ Codurance, Author of Software Craftsmanship Book
+    title: Minimum Viable Professional
+    description: |
+      # Minimum Viable Professional
+
+      In this session, together with Sandro we'll discuss hard and soft
+      skills that every software craftsperson needs and how can we nurture those
+      skills independently, at work, and as a community.
+    img: Placeholder.png
+  - name: Julia Kirsina
+    bio: Technical Lead, Tech Influencer @ Instagram
+    img: Julia Kirsina.png
+  - name: Cory House
+    twitter: housecor
+    bio: Software Developer, Author, Speaker, Consultant, Teacher
+    title: "The 7 Pillar Developer: A Holistic Approach to Building an Exceptional Career"
+    description: |
+      # The 7 Pillar Developer: A Holistic Approach to Building an Exceptional Career
+
+      As developers, we focus on code. Yet mastering syntax alone isn't
+      sufficient. Our behaviors away from the keyboard profoundly effect our impact
+      and career satisfaction. So, to dramatically expand our potential as developers,
+      we must reconsider our behaviors as a humans. In this story-oriented session,
+      we'll explore seven surprisingly relevant facets of life that profoundly
+      impact our software quality.
+    img: Placeholder.png
+  - name: Jimmy Bogard
+    twitter: jbogard
+    bio: Chief Architect @ Headspring, Microsoft MVP, Creator of AutoMapper
+    title: Effective Microservice Communication and Conversation Patterns
+    description: |
+      # Effective Microservice Communication and Conversation Patterns
+      
+      Orchestration or Choreography? Sagas or process manager? REST,
+      RPC or Events? Are we just making this all up as we go along? Once we move
+      away from a single process to many services and processes, we immediately
+      hit the problem that our services need to communicate with each other. The
+      architect mandated REST! But then nothing worked in production. Then came
+      events! And nothing ever completed. In this talk we'll look at the problem
+      from a holistic perspective - take the fundamental property of autonomy for
+      any microservice-based architecture, and design how services should communicate
+      so that they can still achieve their purpose in the world. We'll cover basic
+      communication patterns, where we run into problems with them, and how advanced
+      conversational patterns can help. Finally, we'll look at some real-world scenarios
+      for designing complex coordination and where conversation patterns can retain
+      our autonomy and loose coupling.
+    img: Placeholder.png
+  - name: David Neal
+    twitter: reverentgeek
+    bio: Principal Developer Evangelist @ Pluralsight, Microsoft MVP
+    title: Practical Leadership for Software Developers
+    description: |
+      # Practical Leadership for Software Developers
+      Regardless of the technology you know, regardless of the job title
+      you have, you have amazing potential to impact your workplace, community,
+      and beyond. In this talk, I’ll share a few candid stories of my career failures…
+      I mean… learning opportunities. We’ll start by debunking the myth that leadership
+      == management. Next, we’ll talk about some the attributes, behaviors and skills
+      of good leaders. Last, we’ll cover some practical steps and resources to accelerate
+      your journey. You’ll walk away with some essential leadership skills I believe
+      anyone can develop, and a good dose of encouragement to be more awesome!
+    img: Placeholder.png
+  - name: Robert Martin
+    twitter: unclebobmartin
+    bio: Author of Clean Code and Clean Architecture
+    title: Clean Architecture – A Craftsman's Guide to Software Structure
+    description: |
+      # Clean Architecture – A Craftsman's Guide to Software Structure
+
+      By applying universal rules of software architecture, you can dramatically
+      improve developer productivity throughout the life of any software system.
+      Now, building upon the success of his best-selling books Clean Code and The
+      Clean Coder, legendary software craftsman Robert C. Martin reveals those rules
+      and helps you apply them.
+    img: Placeholder.png
+  - name: Scott Wlaschin
+    twitter: scottwlaschin
+    bio: Software Architect, F# Trainer, Author of Domain Modeling Made Functional
+    title: Domain Modeling Made Functional
+    description: |
+      # Domain Modeling Made Functional
+
+      Statically typed functional programming languages encourage a very
+      different way of thinking about types. The type system is your friend, not
+      an annoyance, and can be used in many ways that might not be familiar to OO
+      programmers. Types can be used to represent the domain in a fine-grained,
+      self documenting way. And in many cases, types can even be used to encode
+      business rules so that you literally cannot create incorrect code. You can
+      then use the static type checking almost as an instant unit test — making
+      sure that your code is correct at compile time. In this talk, we'll look at
+      some of the ways you can use types as part of a domain driven design process,
+      with some simple real world examples in F#. No jargon, no maths, and no prior
+      F# experience necessary.
+    img: Placeholder.png
+  - name: Mary Poppendieck
+    twitter: mpoppendieck
+    bio: Queen of Lean Software Development, Author of Best-selling Books
+    title: The Future of Software Engineering
+    description: |
+      # The Future of Software Engineering
+
+      Twenty years ago Google was struggling to search the vast amount
+      of data in the web, while Amazon was struggling to move an increasing volume
+      of transactions through its monolithic architecture. Their solutions broke
+      new ground in software engineering even as they enabled the companies to thrive.
+      Creative approaches to digital technology have been fundamental in enabling
+      the massive scale and incredible speed of today’s digital giants. More than
+      that, they are at the core of every successful digital transformation. This
+      talk will discuss how software engineering has been changed by the scale and
+      speed required of digital companies in the past, now, and in the future.
+    img: Placeholder.png
+  - name: J.B. Rainsberger
+    twitter: jbrains
+    bio: Software Coach, Mentor, Consultant, TDD Trainer
+    img: Placeholder.png
+    title: Unlocking the Awesome Power of Refactoring
+    description: |
+      # Unlocking the Awesome Power of Refactoring
+      
+      Many programmers get stuck when they try to learn evolutionary
+      design, particularly the refactoring part of it. It never seems to get easier,
+      it never seems to go faster, and so it always seems safer to rip things apart
+      and write them again. If you or someone you know feels stuck like this, then
+      let's talk about why that happens and what to do about it. I'm pretty sure
+      that will also provide a nice starting point for larger discussions about
+      our work as programmers, how evolutionary design (TDD, refactoring) fits in,
+      and anything else that we feel vaguely interested in talking about. My brain
+      will be open.
+  - name: Gwen Shapira
+    twitter: gwenshap
+    bio: "Author of Kafka: The Definitive Guide, ex-Engineering Leader @ Confluent"
+    title: "Beyond Microservices: Streams, State and Scalability"
+    description: |
+      # Beyond Microservices: Streams, State and Scalability
+
+      Microservices have been a popular architecture choice for at least
+      5 years by now. Over these years we've adopted microservices architectures
+      to ever growing set of use-cases and different development and deployment
+      strategies. Lessons were learned and our ability to design, develop, deploy
+      and operate microservices has improved. This presentation will give an opinionated
+      view of how microservices evolved in the last few years, based on experience
+      gained while working with companies using Apache Kafka to update their application
+      architecture. We'll discuss the rise of API gateways, service mesh, state
+      management and serverless architectures - what works well, and in which cases.
+      We'll show real-world examples of how applications become more resilient and
+      scalable when new patterns are introduced, and make sure to include caveats - because patterns are all about using them in the right context.
+    img: Placeholder.png
+  - name: Dave Rensin
+    type: speech
+    twitter: drensin
+    bio: Senior Director of Engineering @ Google
+    title: "Engineering Management: The Missing Manual"
+    description: |
+      # Engineering Management: The Missing Manual
+
+      Managing engineers isn't hard once you have the missing instruction
+      manual. In this talk, Dave will explain why people act the way they do and
+      how you can navigate common (and uncommon) management situations with a few
+      basic principles.
+    img: Placeholder.png
+  - name: Kent Beck
+    twitter: kentbeck
+    bio: Creator of Extreme Programming and TDD
+    title: Extreme Programming — 25 Years Later
+    description: |
+      # Extreme Programming — 25 Years Later
+      
+      Kent Beck invented Extreme Programming. In this session, he'll
+      share what he got right, what he got wrong, and what he's still working on.
+    img: Kent Beck.png
+  - name: Scott Hanselman
+    twitter: shanselman
+    bio: Principal Architect @ Microsoft, Blogger, Podcaster
+    img: Placeholder.png
+    title: Building Careers with Empathy
+    description: |
+      # Building Careers with Empathy
+      
+      In this session, Scott Hanselman will share his career journey
+      from a programmer to a Lead .NET Program Manager at Microsoft. Expect some
+      (unusual) advice on skills and practices you need to succeed.
+  - name: Allen Holub
+    twitter: allenholub
+    bio: Principal @ Hollub Associates Ltd, Pluralsight Author
+    title: 26 Heuristics for Effective Software Development
+    description: |
+      # 26 Heuristics for Effective Software Development
+
+      In this talk, you’ll learn how to leverage Allen Holub’s 26 rules
+      of thumb to create a highly effective software organization. You’ll learn
+      how to infuse real agility (as compared to “Agile”) into your organization.
+    img: Placeholder.png
+faq:
+  - q: Why online?
+    a: |
+      We believe that the future of education is online. Thanks to technological progress, the transition will only accelerate over time. Even today, choosing online is a smart choice:
+      1. **Online events, if organized well, open up more opportunities for learning and interaction**<br>During the last event, the quality of discussions and knowledge sharing beat what we used to see offline, where developers socialize in small groups and mostly with their colleagues. Thanks to the diversity of people and opinions, Slack was on fire.
+      1. **Online events eliminate physical constraints like distance and borders**<br>That makes the event inclusive and accessible for everyone, regardless of where you live and your ability and desire to travel. Inclusiveness leads to diversity. Diversity enriches interaction, broadens horizons, and improves the quality of learning. At DevTernity you'll learn together with people from 75+ countries.
+      1. **Online events improve productivity**<br>Good engineers understand that productivity drives progress. By avoiding dusty airports, queues, and commuting we save time. By ditching flights and hotels we drive costs down, so we can donate more of our income to good causes, instead of wasting it on fossil fuels and hotel rentals. Multiply it by the number of attendees, speakers, and crew members, and the aggregate productivity gain is huge. Finally, by choosing online, you reduce emissions and give nature the love it deserves.
+
+      Want to hangout IRL? We'll connect you with attendees living nearby for discussion, socialization, and drinks.
+  - q: What time zone will the conference take place?
+    a: |
+      The conference will take place in **Greenwich Mean Time (GMT) timezone.** You can switch between GMT and your local timezone when viewing the schedule.
+    
+      Because no timezone works equally well for everyone, you are in good company with attendees from 75+ countries, including caffeinated attendees joining at night. If you can't survive the whole day for various reasons (family, timezone, etc.), you can watch the missing parts later.
+  - q: Will the sessions be recorded for watching later?
+    a: Yes, all main day sessions will be recorded and shared with attendees within 48h. Workshops won't be recorded. 
+  - q: Will I be able to switch between tracks?
+    a: Yes, you will be able to switch between tracks on the fly.
+  - q: Are tickets refundable?
+    a: No, tickets are not refundable. But you can change the ticket holder (attendee) free of charge.
+  - q: Can I change the ticket holder (attendee)?
+    a: Yes, you can change the attendee info yourself by typing a new name or email on the e-ticket. You don't have to inform conference organizers on this occasion.    
+  - q: Is it OK if I buy one ticket and watch the conference with colleagues who don't hold tickets?
+    a: No. You have to purchase a ticket for every viewer (attendee).
+  - q: Will I receive a certificate of attendance?
+    a: Yes, you will receive a verifiable certificate for both the main day and the workshop.
+  - q: Is there a Code of Conduct I should follow?
+    a: 'Yes. In short, be nice and respect people. [Read the full version](coc.html).'
+  - q: Who is behind the conference?
+    a: |
+      DevTernity is fully owned, led, and financed, by its founder [Eduards Sizovs](https://sizovs.net). Being entirely vendor-independent and accepting no sponsorship is a prerequisite for maintaining unbiased views and exceptional quality of all sessions.
+      
+      Bills/invoices are issued by:
+      ```
+      DevTernity OÜ
+      Registration number: 14226860
+      VAT number: EE101974721
+      Moisavahe 38-129 Tartu, Estonia, 50708
+      Bank: AS LHV Pank
+      IBAN: EE757700771002512472
+      SWIFT: LHVBEE22
+      ```
+  - q: How can I follow the news and updates?
+    a: |
+      <div class="flex gap-4 items-center">
+        <a href="https://twitter.com/devternity" target="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Go to conference's Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        <a href="https://instagram.com/devternity" target="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Go to conference's Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="https://youtube.com/c/DevTernity" target="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><title>Go to conference's YouTube channel</title><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+        <a href="https://facebook.com/devternity" target="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><title>Go to conference's Facebook page</title><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        <a href="https://linkedin.com/groups/8371335" target="noopener noreferrer nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>Go to conference's LinkedIn group</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      </div>
+  - q: How can I contact organizers?
+    a: |
+      <code><a class="flex gap-4 items-center" href="mailto:hello@devternity.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg> hello@devternity.com</a></code>
+
+  
