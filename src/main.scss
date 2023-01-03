@@ -8,3 +8,11 @@
     @apply focus:outline-none focus:rounded focus:ring-2 focus:ring-lime-950;
   }
 }
+
+main {
+  margin-top: 8vh;
+}
+
+nav + main {
+  margin-top: 0;
+}
