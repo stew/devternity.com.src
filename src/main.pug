@@ -112,20 +112,20 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
             a.text-slate-500.duration-300(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
       main
-        section.container.text-center.flex.flex-col.gap-14.items-center.justify-center.h-screen(class="min-h-[580px]")
-          h1.text-7xl(class="md:text-9xl") DevTernity
-          h2.text-2xl(class="md:text-5xl")
+        section.container.text-center.flex.flex-col.gap-14.items-center.justify-center.min-h-screen
+          h1.text-7xl(class="lg:text-9xl") DevTernity
+          h2.text-2xl(class="lg:text-5xl")
             | Turning developers into 
             span.text-lime-950 architects
             |  and 
             span.text-lime-950 tech leads
             |  since 2015.
-          h3.text-xl.text-slate-300(class="md:text-3xl")
+          h3.text-xl.text-slate-300(class="lg:text-3xl")
             span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses_date).format("D MMMM YYYY")}. Online.
           if event.status === 'on_sale'
-            h4#countdown.text-slate-300(class="md:text-2xl" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
+            h4#countdown.text-slate-300(class="lg:text-2xl" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
           else
-            h4#countdown.text-slate-300(class="md:text-2xl" data-prefix='Registration opens in ' data-date-iso=`${event.registration_opens}T09:00Z`)
+            h4#countdown.text-slate-300(class="lg:text-2xl" data-prefix='Registration opens in ' data-date-iso=`${event.registration_opens}T09:00Z`)
             .flex.gap-4.text-slate-300
               +socials
         if event.status === 'on_sale'

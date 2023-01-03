@@ -38,7 +38,6 @@ export class Countdown {
         } else if (this.onNothing) {
             this.onNothing();
         }
-        // toggle: show time in GMT / Local Timezone??? 'click on any date??' add to FAQ?
     }
 
     stopTicking() {
