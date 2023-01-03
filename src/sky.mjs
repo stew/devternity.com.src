@@ -26,7 +26,6 @@ export class Sky {
         this.stars = [
             new Stars({ size: '1px', count: density * area * 4, journeySeconds: this.height() / 40 }),
             new Stars({ size: '2px', count: density * area * 2, journeySeconds: this.height() / 20 }),
-            new Stars({ size: '3px', count: density * area, journeySeconds: this.height() / 10 })
         ]
 
         this.stars.forEach(stars => {
@@ -58,8 +57,8 @@ class Stars {
             boxShadow = `${boxShadow}, ${newBoxShadow()}`
         }
 
-        sky.append(`<div id="fading-stars-${this.id}" class="stars absolute -z-10 top-0" style="width: ${this.size}; height: ${this.size}; box-shadow: ${boxShadow}"></div>`)
-        sky.append(`<div id="coming-stars-${this.id}" class="stars absolute -z-10 bottom-0" style="width: ${this.size}; height: ${this.size}; box-shadow: ${boxShadow}"></div>`)
+        sky.append(`<div id="fading-stars-${this.id}" class="stars absolute rounded-full -z-10 top-0" style="width: ${this.size}; height: ${this.size}; box-shadow: ${boxShadow}"></div>`)
+        sky.append(`<div id="coming-stars-${this.id}" class="stars absolute rounded-full -z-10 bottom-0" style="width: ${this.size}; height: ${this.size}; box-shadow: ${boxShadow}"></div>`)
 
         const moveUp = (starsSelector) => {
             const stars = document.getElementById(starsSelector);
