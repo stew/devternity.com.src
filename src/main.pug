@@ -139,7 +139,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
                 span(class="before:content-['>'] before:mr-2 before:text-lime-950") Eduards Sizovs, DevTernity founder
           #Speakers
             section.container.space-y-4.pb-40
-              h1.text-7xl(class="md:text-8xl") Speakers
+              h1.text-6xl(class="md:text-8xl") Speakers
               h2.text-2xl(class="md:text-5xl") #{dayjs(event.date).format("dddd, Do MMMM")}
               h3.text-lg.text-slate-500(class="md:text-2xl") No Agile bullshit bingo and marketing talks permitted. See for yourself:        
             section.container.flex.flex-wrap.justify-center.text-center.gap-x-10.gap-y-24(class="mb-[20vh]")
@@ -171,7 +171,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
     if event.status === 'on_sale'
       #Masterclasses
         section.container.space-y-4.pb-40(class="mt-[25vh]")
-          h1.text-7xl(class="md:text-8xl") Masterclasses
+          h1.text-6xl(class="md:text-8xl") Masterclasses
           h2.text-2xl(class="md:text-5xl") #{dayjs(event.masterclasses_date).format("dddd, Do MMMM")}
           h3.text-lg.text-slate-500(class="md:text-2xl") Our instructors will deliver full-day masterclasses. Choose one that you like the most:
           +timezoneToggle
@@ -192,7 +192,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
                 span.font-mono.text-slate-500.text-lg(class="sm:text-2xl") #{masterclass.instructor.name}        
                 time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg" data-date-from=event.masterclasses_date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses_date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
       section.container.space-y-4.mt-40.pb-40#Tickets
-        h1.text-7xl(class="md:text-8xl") Tickets
+        h1.text-6xl(class="md:text-8xl") Tickets
         h2.text-2xl(class="md:text-5xl") For 1500 developers from 75 countries.
         h3.text-lg.text-slate-500(class="md:text-2xl") The price will increase as the conference approaches. Seats are limited.
       section.container.grid.grid-cols-1.justify-center.gap-y-32(class="2xl:grid-cols-3 mb-[50vh]")
@@ -207,7 +207,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
   if event.status === 'on_sale'            
     footer#FAQ
       section.container.space-y-4
-        h1.text-7xl(class="md:text-8xl") FAQ
+        h1.text-6xl(class="md:text-8xl") FAQ
         h2.text-2xl(class="md:text-5xl") Frequently Asked Questions
       section.container.mt-40.flex.flex-col.gap-y-10
         each faq, index in event.faq

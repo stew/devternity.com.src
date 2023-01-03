@@ -28,8 +28,18 @@ function initCountdown() {
 
 function initSky() {
     const sky = new Sky();
-    $(window).on('resize load', () => {
+    $(window).on('load', () => {
         sky.redraw();
+    })
+
+    const width = $(window).width();
+    const height = $(window).height();
+    $(window).on('resize', () => {
+        // iPhone bug
+        const hasScreenSizeChanged = $(window).width() !== width || $(window).height() !== height
+        if (hasScreenSizeChanged) {
+            sky.redraw();
+        }
     })
 }
 
