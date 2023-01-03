@@ -163,7 +163,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
                   - index++
                   +modal(`keynote-${index}`, talk.description)
                   .talk.flex.flex-col.gap-2.items-center.text-center
-                    .time.font-mono.text-slate-500.text-xs(class="lg:text-base" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
+                    .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&_br]:block [&_br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
                     a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-2 before:text-lime-950") #{talk.title}
                     .speaker.inline-flex.gap-2
                       img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=talk.name src=require(`images/speakers/${talk.img}`))
@@ -190,7 +190,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
               .speaker.inline-flex.gap-2.items-center
                 img.rounded-full.h-6.w-6(class="sm:h-8 sm:w-8" alt=masterclass.instructor.name src=require(`images/speakers/${masterclass.instructor.img}`))
                 span.font-mono.text-slate-500.text-lg(class="sm:text-2xl") #{masterclass.instructor.name}        
-                time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg" data-date-from=event.masterclasses_date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses_date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
+                time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg [&_br]:hidden" data-date-from=event.masterclasses_date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses_date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
       section.container.space-y-4.mt-40.pb-40#Tickets
         h1.text-6xl(class="md:text-8xl") Tickets
         h2.text-2xl(class="md:text-5xl") For 1500 developers from 75 countries.
