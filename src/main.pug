@@ -162,10 +162,10 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
                   - var talk = event.keynotes.find(({name}) => name == speaker)
                   - index++
                   +modal(`keynote-${index}`, talk.description)
-                  .talk.flex.flex-col.gap-2.items-center.text-center
+                  .talk.flex.flex-col.gap-3.items-center.text-center
                     .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&_br]:block [&_br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
-                    a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-2 before:text-lime-950") #{talk.title}
-                    .speaker.inline-flex.gap-2
+                    a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") #{talk.title}
+                    .speaker.inline-flex.gap-2.items-center.text-left
                       img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=talk.name src=require(`images/speakers/${talk.img}`))
                       span.font-mono.text-slate-500.text-xs(class="lg:text-xl") #{speaker}
     if event.status === 'on_sale'
