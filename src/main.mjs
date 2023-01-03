@@ -34,13 +34,14 @@ function initSky() {
         sky.redraw();
     })
 
-    const width = $(window).width();
-    const height = $(window).height();
+    var oldWidth = sky.width();
+    var oldHeight = sky.height();
     $(window).on('resize', () => {
-        // iPhone bug
-        const hasScreenSizeChanged = $(window).width() !== width || $(window).height() !== height
-        if (hasScreenSizeChanged) {
+        const hasSkyGrownBigger = oldWidth < sky.width() || oldHeight < sky.height();
+        if (hasSkyGrownBigger) {
             sky.redraw();
+            oldWidth = sky.width();
+            oldHeight = sky.height();
         }
     })
 }
