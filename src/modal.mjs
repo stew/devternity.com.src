@@ -6,11 +6,14 @@ export class Modal {
     }
 
     open() {
-        this.modal.removeClass('out').addClass('visible');
+        this.modal.removeClass('hidden').addClass('block');
+        // remember scroll position
+        this.scrollY = window.scrollY;
         this.listenToEsc();
         this.listenToCloseClick();
         this.takeOverTabControl();
-        $('body').addClass('overflow-hidden')
+        $('html, body').addClass('overflow-hidden h-screen');
+
     }
 
     listenToEsc() {
@@ -33,11 +36,15 @@ export class Modal {
     }
 
     close() {
-        this.modal.removeClass('visible').addClass('out');
+        this.modal.addClass('hidden').removeClass('block');
         this.unlistenEsc();
         this.unlistenCloseClick();
         this.restoreTabControl();
-        $('body').removeClass('overflow-hidden');
+        $('html, body').removeClass('overflow-hidden h-screen');
+        // restore scroll position
+        window.scrollTo({
+            top: this.scrollY, behavior: 'instant'
+        });
     }
 
     unlistenEsc() {

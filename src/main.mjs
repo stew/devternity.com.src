@@ -17,6 +17,8 @@ function initTimeZoneSwitches() {
 }
 
 
+
+
 function initCountdown() {
     const target = $("#countdown");
     const conferenceOpening = target.data("date-iso");
