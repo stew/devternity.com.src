@@ -113,7 +113,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
             a.text-slate-500.duration-300(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
       main
-        section.container.text-center.flex.flex-col.gap-14.items-center.justify-center.h-screen
+        section.container.text-center.flex.flex-col.gap-14.items-center.justify-center.h-screen(class="min-h-[580px]")
           h1.text-7xl(class="md:text-9xl") DevTernity
           h2.text-2xl(class="md:text-5xl")
             | Turning developers into 
