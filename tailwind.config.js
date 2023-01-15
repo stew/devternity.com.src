@@ -17,5 +17,7 @@ module.exports = {
             mono: ['"Ubuntu Mono"']
         },
     },
-    plugins: []
+    plugins: [
+        require('@tailwindcss/forms'),
+    ]
 }

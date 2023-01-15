@@ -1,6 +1,11 @@
 - var site = `DevTernity ${event.year}`
 - var title = `DevTernity ${event.year} – The #1 Developer Conference`
 - var description = `DevTernity is the top international software development conference focusing on coding, architecture, and engineering practices.`
+- var speakersToBeAnnounced = 0;
+  each timeslot in event.schedule
+      each speaker in timeslot.talks
+        unless speaker 
+          - speakersToBeAnnounced++
 doctype html
 
 mixin modal(id, markdown)
@@ -123,7 +128,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             span.text-lime-950 tech leads
             | .
           h3.text-xl.text-slate-300(class="lg:text-3xl")
-            span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses_date).format("D MMMM YYYY")}. Online.
+            span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
           h4#countdown.text-slate-300(class="lg:text-2xl" data-prefix='Registration opens in ' data-date-iso=`${event.registration_opens}T09:00Z`)
           .flex.gap-4.text-slate-300
             +socials
@@ -142,7 +147,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             span.text-lime-950 tech leads
             | .
           h3.text-xl.text-slate-300(class="lg:text-3xl")
-            span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses_date).format("D MMMM YYYY")}. Online.
+            span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
           h4#countdown.text-slate-300(class="lg:text-2xl" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
         section.container.flex.items-center.text-slate-300(class="lg:w-3/5 mb-[50vh] mt-[20vh]")
           .flex.flex-col.gap-10.text-2xl
@@ -155,12 +160,15 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h1.text-6xl(class="md:text-8xl") Speakers
           h2.text-2xl(class="md:text-5xl") #{dayjs(event.date).format("dddd, Do MMMM")}
           h3.text-lg.text-slate-500(class="md:text-2xl") No Agile bullshit bingo and marketing talks permitted. See for yourself:        
-        section.container.flex.flex-wrap.justify-center.text-center.gap-x-10.gap-y-24(class="mb-[20vh]")
-          each speaker, index in event.keynotes
-            .basis-80.flex.flex-col.items-center.gap-1
-              img.rounded-full.h-28.w-28(alt=speaker.name src=require(`images/speakers/${speaker.img}`))
-              h3.text-2xl.font-mono(data-ite='5' class="before:content-['>'] before:mr-2 before:text-lime-950")=speaker.name
-              p.font-mono.text-xl.text-slate-500(data-ite='5')=speaker.bio             
+        section.container(class="mb-[20vh]")
+          .flex.flex-wrap.justify-left.text-center.gap-x-10.gap-y-24
+            each speaker, index in event.keynotes
+              .basis-80.flex.flex-col.items-center.gap-1
+                img.rounded-full.h-28.w-28(alt=speaker.name src=require(`images/speakers/${speaker.img}`))
+                h3.text-2xl.font-mono(data-ite='5' class="before:content-['>'] before:mr-2 before:text-lime-950")=speaker.name
+                p.font-mono.text-xl.text-slate-500(data-ite='5')=speaker.bio
+          if speakersToBeAnnounced
+            p.text-slate-500.mt-20.text-center More speakers TBA.
         section.container.grid.grid-cols-3.gap-x-4(class="lg:gap-x-24 mb-[10vh]")
           each track in [1,2,3]
             .text-2xl.text-slate-300.text-center(class="lg:text-5xl") 
@@ -174,23 +182,27 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             each speaker in timeslot.talks
               - var talk = event.keynotes.find(({name}) => name == speaker)
               - index++
-              +modal(`keynote-${index}`, talk.description)
-              .talk.flex.flex-col.gap-3.items-center.text-center
-                .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
-                a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") #{talk.title}
-                .speaker.inline-flex.gap-2.items-center.text-left
-                  img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=talk.name src=require(`images/speakers/${talk.img}`))
-                  span.font-mono.text-slate-500.text-xs(class="lg:text-xl") #{speaker}
-
+              if talk
+                +modal(`keynote-${index}`, talk.description)
+                .talk.flex.flex-col.gap-3.items-center.text-center
+                  .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
+                  a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") #{talk.title}
+                  .speaker.inline-flex.gap-2.items-center.text-left
+                    img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=talk.name src=require(`images/speakers/${talk.img}`))
+                    span.font-mono.text-slate-500.text-xs(class="lg:text-xl") #{speaker}
+              else
+                .talk.flex.flex-col.gap-3.items-center.text-center
+                  .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
+                  a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") TBA
       section#Masterclasses.container.space-y-4.pb-40(class="mt-[25vh]")
         h1.text-6xl(class="md:text-8xl") Masterclasses
-        h2.text-2xl(class="md:text-5xl") #{dayjs(event.masterclasses_date).format("dddd, Do MMMM")}
+        h2.text-2xl(class="md:text-5xl") #{dayjs(event.masterclasses.date).format("dddd, Do MMMM")}
         h3.text-lg.text-slate-500(class="md:text-2xl") Our instructors will deliver full-day masterclasses. Choose one that you like the most:
         +timezoneToggle
       section.container.grid.gap-y-32(class="mb-[50vh]")
-        each masterclass, index in event.masterclasses
+        each masterclass, index in event.masterclasses.items
           +modal(`masterclass-${index + 1}`, masterclass.brief_description)
-          .flex.flex-col.gap-4(class=(masterclass.sold_out ? 'opacity-50' : '' ))
+          .flex.flex-col.gap-4(class=(masterclass.sold_out ? 'opacity-50' : '' ) id=slugify(masterclass.title, {separator: '_'}))
             .font-bold.font-mono.text-2xl(class="sm:text-4xl")
               a.align-middle.cursor-pointer(href="javascript:void(0)" data-modal=`#masterclass-${index + 1}`)  
                 span.text-lime-950 \##{index + 1}
@@ -202,20 +214,33 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             .speaker.inline-flex.gap-2.items-center
               img.rounded-full.h-6.w-6(class="sm:h-8 sm:w-8" alt=masterclass.instructor.name src=require(`images/speakers/${masterclass.instructor.img}`))
               span.font-mono.text-slate-500.text-lg(class="sm:text-2xl") #{masterclass.instructor.name}        
-              time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg [&>br]:hidden" data-date-from=event.masterclasses_date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses_date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
+              time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg [&>br]:hidden" data-date-from=event.masterclasses.date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses.date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
       section.container.space-y-4.mt-40.pb-40#Tickets
         h1.text-6xl(class="md:text-8xl") Tickets
         h2.text-2xl(class="md:text-5xl") For 1500 developers from 75 countries.
         h3.text-lg.text-slate-500(class="md:text-2xl") The price will increase as the conference approaches. Seats are limited.
       section.container.grid.grid-cols-1.justify-center.gap-y-32(class="2xl:grid-cols-3 mb-[50vh]")
-        each item, title in event.pricing.packages
-          .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
-            h1.text-2xl.font-mono(class="lg:text-4xl")=title
-            h3.text-6xl €#{item.price} 
-              span.line-through.text-slate-300 #{item.price + item.extra}                                          
-            .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-              .bg-red-600.rounded-full.h-full(class=`w-[${item.capacity}%]`)
-            a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=event.register class="hover:text-white") Register
+        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+          h1.text-2xl.font-mono(class="lg:text-4xl") Main Day Only
+          h3.text-6xl €#{event.price} 
+            span.line-through.text-slate-300 #{event.price + 200}                                          
+          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+            .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register        
+        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+          h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
+          h3.text-6xl €#{event.masterclasses.price} 
+            span.line-through.text-slate-300 #{event.masterclasses.price + 200}                                          
+          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register        
+        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+          h1.text-2xl.font-mono(class="lg:text-4xl") Main Day + Masterclass
+          h3.text-6xl €#{event.price + event.masterclasses.price} 
+            span.line-through.text-slate-300 #{event.price + event.masterclasses.price + 400}                                          
+          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
     footer#FAQ
       section.container.space-y-4
         h1.text-6xl(class="md:text-8xl") FAQ

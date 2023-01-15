@@ -5,11 +5,14 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 
 const { marked } = require("marked");
+const slugify = require("@sindresorhus/slugify");
+
 
 const dayjs = require("dayjs");
 const advancedFormat = require('dayjs/plugin/advancedFormat')
 dayjs.extend(advancedFormat)
 
+const { DefinePlugin } = require('webpack');
 
 module.exports = {
   devServer: {
@@ -17,9 +20,11 @@ module.exports = {
   },
   entry: {
     index: './src/main.pug',
+    registration: './src/registration.pug',
     coc: './src/coc.pug'
   },
   plugins: [
+    new DefinePlugin({ __VUE_OPTIONS_API__: true, __VUE_PROD_DEVTOOLS__: false }),
     new PugPlugin({
       extractCss: {
         filename: 'assets/css/[name].[contenthash:8].css',
@@ -47,6 +52,7 @@ module.exports = {
           data: {
             dayjs,
             marked,
+            slugify,
             event: yaml.load(fs.readFileSync('./src/event.yml', 'utf8'))
           }
         }
