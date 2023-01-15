@@ -4,7 +4,7 @@ year: 2023
 date: "2023-12-07"
 price: 399
 registration_opens: "2023-02-28"
-status: '' # on_sale or empty
+status: on_sale # on_sale or empty
 masterclasses:
   price: 399
   date: "2023-12-08"
@@ -245,7 +245,7 @@ schedule:
     to: "14:00"  
     talks:
       - Gregor Hohpe
-      - ''
+      - Sam Newman
       - ''
   - from: "14:20"
     to: "15:10"  
@@ -306,11 +306,15 @@ keynotes:
   - name: Sam Newman
     twitter: samnewman
     bio: Author of Building Microservices and Monolith to Microservices
-    title: "Coupling, Cohesion and Microservices"
+    title: "Monolith Decomposition Patterns"
     description: |
-      # Coupling, Cohesion and Microservices
+      # Monolith Decomposition Patterns
 
-      Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
+      Big Bang rebuilds of systems are so 20th century. With our users expecting new functionality to be shipped more frequently than ever before, we no longer have the luxury of a complete system rebuild. In fact, a big bang migration of a monolithic architecture into a microservice architecture can be especially problematic, as we’ll explore in this talk.
+
+      We want to ship features, but we also want to improve our architecture, and for many of us this means breaking down existing systems into microservices. But how do you do this while still regularly releasing new features?
+
+      In this talk, I’ll share with you some key principles and a number of patterns which you can use to incrementally decompose an existing system into microservices. I’ll also cover off patterns that can work to migrate functionality out of systems you can’t change, which are useful when working with very old systems or vendor products. We'll look at the use of strangler patterns, change data capture, database decomposition and more.
     img: Sam Newman.png
 
 
