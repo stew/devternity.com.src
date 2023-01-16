@@ -20,7 +20,7 @@ mixin timezoneToggle
   .timeZoneToggle.top-0.left-0.z-10.transition-opacity.w-full.text-slate-500.pt-4
     label.inline-flex.items-center.cursor-pointer.relative
       input.sr-only.peer(type='checkbox' value='')
-      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-2  peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[6px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
+      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-4  peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[6px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
       span.ml-3.text-lg.text
 mixin socials(excludes = [])
   unless excludes.twitter
@@ -161,7 +161,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h2.text-2xl(class="md:text-5xl") #{dayjs(event.date).format("dddd, Do MMMM")}
           h3.text-lg.text-slate-500(class="md:text-2xl") No Agile bullshit bingo and marketing talks permitted. See for yourself:        
         section.container(class="mb-[20vh]")
-          .flex.flex-wrap.justify-left.text-center.gap-x-10.gap-y-24
+          .flex.flex-wrap.justify-left.place-content-center.text-center.gap-x-10.gap-y-24
             each speaker, index in event.keynotes
               .basis-80.flex.flex-col.items-center.gap-1
                 img.rounded-full.h-28.w-28(alt=speaker.name src=require(`images/speakers/${speaker.img}`))
