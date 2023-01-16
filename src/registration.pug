@@ -5,7 +5,7 @@
 - var masterclassesOnSale = masterclasses.filter(it => !it.sold_out)
 - var ticketOptions = [mainDay, ...masterclassesOnSale]
 doctype html
-html.scroll-smooth.antialiased(lang="en")
+html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-black to-slate-800")
     head
         title=title
         meta(charset='utf-8')
@@ -17,87 +17,89 @@ html.scroll-smooth.antialiased(lang="en")
         link(rel="icon" href=require('./images/logo.png'))
         link(rel="shortcut icon" sizes="64x64" href=require('./images/logo.png'))
         link(rel="stylesheet" href=require('./registration.scss'))
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')
         script(defer data-domain="devternity.com" data-api="/pla/event" src="/pla/script.js")
         script window.product = '#{event.product}'
         script window.ticketOptions = !{JSON.stringify(ticketOptions)}
         script(src=require('./registration.mjs') defer)
     body#app.opacity-0.transition-opacity.duration-700
-        .mx-auto.w-full(class="xl:w-2/4 min-h-screen")
-            .bg-slate-50.border-x.p-12.h-full(class="2xl:p-28")
-                h3.text-2xl.font-medium.leading-6.text-gray-900 Tickets
-                p.my-4.text-sm.text-gray-600 You can change attendees later, free of charge
-                .grid.grid-cols-10.gap-6.items-center.mt-4(v-bind:key="ticket.id" v-for="(ticket, index) in tickets")
+        .mx-auto.w-full.p-12(class="xl:w-3/4 min-h-screen")
+            .h-full.rounded-xl(class="2xl:p-28")
+                h3.text-8xl.text-white Tickets
+                p.text-lg(class="text-slate-500 md:text-2xl mb-16") You can change attendees later, free of charge.
+                .grid.grid-cols-10.gap-6.items-center(v-bind:key="ticket.id" v-for="(ticket, index) in tickets")
                     .col-span-3
-                        input(type="text" v-model="tickets[index].name" v-bind:class="{'!border-red-500': errors.includes(`tickets[${index}].name`)}" placeholder="Name" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        .flex.justify-center.align-center.items-center.gap-2
+                            span(class="mr-2 text-lime-950 font-bold text-2xl font-mono") \#{{index + 1}}
+                            input(type="text" v-model="tickets[index].name" placeholder="Name" class="w-full text-white bg-transparent font-mono border-0 border-b focus:border-lime-950 focus:ring-0" :class="errors.includes(`tickets[${index}].name`) ? 'border-red-500': 'border-gray-700'" )
                     .col-span-3
-                        input(type="text" v-model="tickets[index].email" v-bind:class="{'!border-red-500': errors.includes(`tickets[${index}].email`)}" placeholder="Email" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        input(type="text" v-model="tickets[index].email" placeholder="Email" class="w-full text-white bg-transparent font-mono border-0 border-b focus:border-lime-950 focus:ring-0" :class="errors.includes(`tickets[${index}].email`) ? 'border-red-500': 'border-gray-700'" )
                     .col-span-3
-                        select(required v-model="tickets[index].product" @change="changeTicket()" v-bind:class="{'!border-red-500': errors.includes(`tickets[${index}].product`)}" class="[&:invalid]:text-gray-500 w-full rounded-md border border-gray-300 bg-white shadow-sm  focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 text-sm")
+                        select(required v-model="tickets[index].product" @change="changeTicket()" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0" :class="errors.includes(`tickets[${index}].product`) ? 'border-red-500': 'border-gray-700'")
                             option(value="" disabled selected) Choose a ticket
                             option(:value="ticketOption" v-bind:key="index" v-for="(ticketOption, index) in ticketOptions") {{ticketOption.title}} ({{formatted(ticketOption.date)}})
                     .col-span-1
-                        button(@click="deleteTicket(index)" :disabled="tickets.length === 1" class="p-1 flex text-gray-400 items-center bg-transparent hover:text-red-500 rounded-full w-6 h-6")
+                        button(@click="deleteTicket(index)" :disabled="tickets.length === 1" class="cursor-pointer p-1 flex text-gray-400 items-center bg-transparent hover:text-red-500 rounded-full w-6 h-6 focus:text-red-500 focus:outline-none focus:ring-0")
                             svg(xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="24" height="24" viewBox="0 0 24 24")
                                 path(fill="currentColor" d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z")
 
                 .grid.grid-cols-10.gap-6.mt-2
                     .col-span-9.py-3.text-right
-                        button(@click="addMoreTickets()" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2") Add more tickets
+                        button(@click="addMoreTickets()" class="inline-flex justify-center rounded-md border border-gray-400 bg-transparent py-2 px-4 text-sm font-medium text-gray-400 shadow-sm hover:border-lime-950 focus:border-lime-950 focus:outline-none focus:ring-0") Add more tickets
 
-                .my-16.border-t.border-gray-200
+                h3.text-8xl.text-white.mt-24 Billing
+                p.text-lg(class="text-slate-500 md:text-2xl mb-16") After registration, you'll get an invoice. You can pay via bank transfer or with Visa/Mastercard/AMEX.
 
-                h3.text-2xl.font-medium.leading-6.text-gray-900 Billing
-                p.my-4.text-sm.text-gray-600 After registration, you'll get an invoice. You can pay via bank transfer or with Visa/Mastercard/AMEX.
-
-                .grid.grid-cols-9.gap-6.items-center(class="")
+                .grid.grid-cols-9.gap-6.items-center
                     .col-span-3
-                        input(type="text" v-model="billing.name" v-bind:class="{'!border-red-500': errors.includes('billing.name')}" placeholder="Your name" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        input(type="text" v-model="billing.name" placeholder="Your name" class="font-mono w-full text-white bg-transparent border-0 border-b   focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.name`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3
-                        input(type="text" v-model="billing.email" v-bind:class="{'!border-red-500': errors.includes('billing.email')}" placeholder="Billing email" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        input(type="text" v-model="billing.email" placeholder="Billing email" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.email`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3
-                        .flex.items-start
-                            .flex.h-5.items-center
-                                input#billToCompany(name="billToCompany" type="checkbox" @change="toggleBillToCompany($event)" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500")
-                            .ml-3.text-sm
-                                label(for="billToCompany" class="font-medium text-gray-700") Bill to a company
+                        .flex.items-center
+                            input#billToCompany(name="billToCompany" type="checkbox" @change="toggleBillToCompany($event)" class="h-4 w-4 bg-transparent rounded border-gray-500 text-black focus:border-0 focus:ring-0")
+                            label.ml-3(for="billToCompany" class="font-mono text-gray-500") Bill to a company
                     .col-span-3(v-if="billing.company")
-                        input(type="text" placeholder="Company name" v-model="billing.company.name" v-bind:class="{'!border-red-500': errors.includes('billing.company.name')}" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        input(type="text" placeholder="Company name" v-model="billing.company.name" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.name`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3(v-if="billing.company")
-                        input(type="text" placeholder="Company address" v-model="billing.company.address" v-bind:class="{'!border-red-500': errors.includes('billing.company.address')}" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")                                            
+                        input(type="text" placeholder="Address" v-model="billing.company.address" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.address`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-6(v-if="billing.company")
-                        input(type="text" placeholder="PO / Purchase Order (optional)" v-model="billing.company.po" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")
+                        input(type="text" placeholder="Purchase Order (optional)" v-model="billing.company.po" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.po`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-6(v-if="billing.company")
-                        input(type="text" placeholder="VAT number (e.g. DE123456789)" v-model="billing.company.vat" v-bind:class="{'!border-red-500': errors.includes('billing.company.vat')}" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")                                            
-                        p.mt-2.text-sm.text-gray-600 No VAT number? Provide a company identification number instead.                            
+                        input(type="text" placeholder="VAT number (e.g. DE123456789)" v-model="billing.company.vat" class="font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.vat`) ? 'border-red-500': 'border-gray-700'")
+                        p.font-mono.pl-3.mt-2.text-sm.text-gray-600 No VAT number? Provide a company identification number instead.                            
 
-                .my-16.border-t.border-gray-200
-
-                .flex.flex-col.gap-6
+                .flex.flex-col.gap-6.mt-24
                     .grid.grid-cols-6.gap-6.items-center
-                        .col-span-4.text-2xl.font-medium.leading-6.text-gray-900
-                            p(v-if="discount") 
+                        .col-span-6.text-2xl.font-medium.leading-6.text-gray-900
+                            h3.text-4xl.text-white(v-if="discount") 
                                 | Total: 
                                 span.line-through €{{total + discount}}
                                 |  €{{total}}
-                            p(v-else) Total: €{{total}}
-                        .col-span-2.relative.transition-all
-                            svg.absolute(v-if="discount" class="-left-8 top-1.5 heart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="red" class="w-6 h-6")
-                                path(stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z")                                                        
-                            input(type="text" v-model="promo" @input="changePromo()" placeholder="Promo code" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-sm")             
+                            h3.text-4xl.text-white(v-else) Total: €{{total}}
                     p.text-sm.text-gray-500 * Additional 20% VAT charge applies to VAT non-payers and companies in the Republic of Estonia.
 
-                    .text-center
-                        button(@click="register()" :disabled="status === 'progress'" class="disabled:opacity-25 w-full mt-20 inline-flex justify-center items-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2")
-                            svg.inline.w-4.h-4.mr-2.text-gray-200.animate-spin(v-if="status === 'progress'" aria-hidden='true' role='status' class='dark:text-gray-600' viewbox='0 0 100 101' fill='none' xmlns='http://www.w3.org/2000/svg')
-                                path(d='M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z' fill='grey')
-                                path(d='M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z' fill='currentColor')
-                            | Register
+                .grid.grid-cols-6.gap-6.items-center.mt-8
+                    .col-span-2.relative.transition-all
+                        svg.absolute(v-if="discount" class="-left-8 top-1.5 heart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="red" class="w-6 h-6")
+                            path(stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z")                                                        
+                        input(type="text" v-model="promo" @input="changePromo()" placeholder="Promo code" class="font-mono w-full text-white bg-transparent border-0 border-b border-gray-700 shadow-sm focus:border-lime-950 focus:ring-0")
 
-                    .globalMessage.text-sm
-                        .bg-red-100.border.border-red-400.text-red-700.px-4.py-3.rounded.relative(v-if="status === 'error'" role='alert')
-                            strong.font-bold Something went wrong! 
-                            span.block(class='sm:inline') To register, please send an email to hello@devternity.com.
+                .flex.justify-center
+                    button.box(@click="register()" :disabled="status === 'progress'" class="uppercase p-4 disabled:opacity-25 w-96 mt-20 inline-flex justify-center rounded-lg bg-transparent text-sm text-white border-gray-300 border hover:border-lime-950 focus:border-lime-950 focus:outline-none focus:ring-0")
+                        svg.inline.w-4.h-4.mr-2.text-gray-200.animate-spin(v-if="status === 'progress'" aria-hidden='true' role='status' class='dark:text-gray-600' viewbox='0 0 100 101' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z' fill='grey')
+                            path(d='M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z' fill='currentColor')
+                        | Register
 
-                        .bg-teal-50.border.border-teal-400.text-teal-700.px-4.py-3.rounded.relative(v-if="status === 'success'" role='alert')
-                            strong.font-bold Well done! 
-                            span.block(class='sm:inline') You'll receive payment details by email within 24 hours.
+                .globalMessage.text-sm.text-center.mt-6
+                    .text-red-400(v-if="status === 'error'" role='alert')
+                        strong.font-bold Something went wrong! 
+                        span.block(class='sm:inline') To register, please send an email to 
+                            span.font-mono hello@devternity.com.
+
+                    .text-green-400(v-if="status === 'success'" role='alert')
+                        strong.font-bold Well done! 
+                        span.block(class='sm:inline') You'll receive payment details by email within 24 hours.                

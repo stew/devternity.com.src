@@ -125,7 +125,7 @@ masterclasses:
       brief_description: |
         # Programming in Kotlin: The Essential Parts
 
-        Kotlin is an elegant, powerful, and overall a pleasant language to work with. In this workshop learn the essential parts of Kotlin. We'll focus on fundamental parts of Kotlin, it's imperative and functional programming capabilities, how Kotlin provides elegance without compromising performance by tactfully channeling the JDK. We will also dive into how to interact between Kotlin and Java code.
+        Kotlin is an elegant, powerful, and overall a pleasant language to work with. In this masterclass learn the essential parts of Kotlin. We'll focus on fundamental parts of Kotlin, it's imperative and functional programming capabilities, how Kotlin provides elegance without compromising performance by tactfully channeling the JDK. We will also dive into how to interact between Kotlin and Java code.
 
         Topics Covered:
         * Running Kotlin Programs and Scripts on the JVM
@@ -419,7 +419,7 @@ faq:
     
       Because no timezone works equally well for everyone, you are in good company with attendees from 75+ countries, including caffeinated attendees joining at night. If you can't survive the whole day for various reasons (family, timezone, etc.), you can watch the missing parts later.
   - q: Will the sessions be recorded for watching later?
-    a: Yes, all main day sessions will be recorded and shared with attendees within 48h. Workshops won't be recorded. 
+    a: Yes, all main day sessions will be recorded and shared with attendees within 48h. Masterclasses won't be recorded. 
   - q: Will I be able to switch between tracks?
     a: Yes, you will be able to switch between tracks on the fly.
   - q: Are tickets refundable?
@@ -429,7 +429,7 @@ faq:
   - q: Is it OK if I buy one ticket and watch the conference with colleagues who don't hold tickets?
     a: No. You have to purchase a ticket for every viewer (attendee).
   - q: Will I receive a certificate of attendance?
-    a: Yes, you will receive a verifiable certificate for both the main day and the workshop.
+    a: Yes, you will receive a verifiable certificate for both the main day and the masterclass.
   - q: Is there a Code of Conduct I should follow?
     a: 'Yes. In short, be nice and respect people. [Read the full version](coc.html).'
   - q: Who is behind the conference?
