@@ -63,7 +63,7 @@ module.exports = {
         include: /src[\\/]images/,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/img/[name]-[hash:8][ext]',
+          filename: 'assets/img/[name]-[ext]',
         },
       },
       {
@@ -76,7 +76,7 @@ module.exports = {
             options: {
               adapter: require('responsive-loader/jimp'),
               sizes: [224],
-              name: 'assets/img/[name]-[hash:8]-[width]w.[ext]',
+              name: 'assets/img/[name]-[width]w.[ext]',
             },
           },
         ],
