@@ -103,7 +103,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
       .sky
         nav.container.flex.items-center.justify-end.gap-8.h-20
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
-            a.text-slate-500.duration-300(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
+            a.text-slate-500.duration-300.transition-colors(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
         section.container.text-center.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
           h1.text-7xl(class="lg:text-9xl") DevTernity
           h2.text-2xl(class="lg:text-5xl leading-tight [&>*]:leading-tight")
@@ -192,7 +192,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             span.line-through.text-slate-300 #{event.price + 200}                                          
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
             .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register        
+          button.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
         .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
           h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
           h3.text-6xl €#{event.masterclasses.price} 
