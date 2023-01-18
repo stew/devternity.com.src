@@ -65,6 +65,7 @@ export const app = createApp({
         },
         recalculate() {
             const discounts = {
+                '_COFFEE': 1,
                 '_UPSKILL': 5,
                 '_SPONSORED': 100
             }
