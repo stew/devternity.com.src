@@ -127,7 +127,8 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h2.text-2xl(class="md:text-5xl") #{dayjs(event.date).format("dddd, Do MMMM")}
           h3.text-lg.text-slate-500(class="md:text-2xl") No Agile bullshit bingo and marketing talks permitted. See for yourself:        
         section.container(class="mb-[20vh]")
-          .flex.flex-wrap.justify-left.place-content-center.text-center.gap-x-10.gap-y-24
+          //- justify-[start/center] justify-items-[start/center]
+          .flex.flex-wrap.text-center.gap-x-10.gap-y-24
             each speaker, index in event.keynotes
               .basis-80.flex.flex-col.items-center.gap-1
                 img.rounded-full.h-28.w-28(alt=speaker.name src=require(`images/speakers/${speaker.img}`))
@@ -192,7 +193,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             span.line-through.text-slate-300 #{event.price + 200}                                          
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
             .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
-          button.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
         .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
           h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
           h3.text-6xl €#{event.masterclasses.price} 

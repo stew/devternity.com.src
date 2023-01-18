@@ -246,7 +246,7 @@ schedule:
     talks:
       - Gregor Hohpe
       - Sam Newman
-      - ''
+      - Thiago Ghisi
   - from: "14:20"
     to: "15:10"  
     talks:
@@ -391,6 +391,15 @@ keynotes:
     bio: Software Craftswoman, Tech Influencer @ Instagram
     img: Julia Kirsina.png
 
+  - name: Thiago Ghisi
+    twitter: thiagoghisi
+    bio: Director of Engineering @ Nubank, ex-Apple, ex-ThoughtWorks
+    img: Thiago.jpg
+    title: The Road From Dev to Engineering Director
+    description: | 
+      # The Road From Dev to Engineering Director
+
+      Coming soon.
 
   - name: J.B. Rainsberger
     twitter: jbrains
