@@ -11,7 +11,7 @@ masterclasses:
   items:
     - instructor:
         name: Adam Tornhill
-        img: Adam Tornhill.png
+        img: Adam Tornhill.jpg
       title: Prioritizing Technical Debt in Large-Scale Systems
       from: "09:00"
       to: "17:00"
@@ -339,7 +339,7 @@ keynotes:
       Code quality is an abstract concept that fails to get traction at the business level. Consequently, software companies keep trading code quality for new features. The resulting technical debt is estimated to waste up to 42% of developers’ time, causing stress and uncertainty, as well as making our job less enjoyable than it should be. Without clear and quantifiable benefits, it’s hard to build a business case for code quality.
 
       In this talk, Adam takes on the challenge by tuning the code analysis microscope towards a business outcome. We do that by combining novel code quality metrics with analyses of how the engineering organization works with the code. We then take those metrics a step further by connecting them to values like time-to-market, customer satisfaction, and road-map risks. This makes it possible to a) prioritize the parts of your system that benefit the most from improvements, b) communicate quality trade-offs in terms of actual costs, and c) identify high-risk parts of the application so that we can focus our efforts on the areas that need them the most. All recommendations are supported by data and brand-new research on real-world codebases. This is a perspective on software development that will change how you view code. Promise.
-    img: Adam Tornhill.png
+    img: Adam Tornhill.jpg
 
 
   - name: Scott Hanselman
@@ -389,7 +389,7 @@ keynotes:
   - name: Julia Kirsina
     twitter: unicorncoding
     bio: Software Craftswoman, Tech Influencer @ Instagram
-    img: Julia Kirsina.png
+    img: Julia.jpg
 
   - name: Thiago Ghisi
     twitter: thiagoghisi
