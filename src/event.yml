@@ -246,11 +246,11 @@ schedule:
     talks:
       - Gregor Hohpe
       - Sam Newman
-      - Thiago Ghisi
+      - Josh Long
   - from: "14:20"
     to: "15:10"  
     talks:
-      - ''
+      - Thiago Ghisi
       - ''
       - ''
   - from: "15:30"
@@ -396,9 +396,19 @@ keynotes:
     bio: Director of Engineering @ Nubank, ex-Apple, ex-ThoughtWorks
     img: Thiago.jpg
     title: The Road From Dev to Engineering Director
-    description: | 
+    description: |
       # The Road From Dev to Engineering Director
 
+      Coming soon.
+
+  - name: Josh Long
+    twitter: starbuxman
+    bio: Author of Java and Spring Books, Java Champion
+    img: Starbuxman.png
+    title: How We Build Spring Framework
+    description: |
+      # How We Build Spring Framework
+      
       Coming soon.
 
   - name: J.B. Rainsberger
