@@ -99,11 +99,11 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           .flex.gap-4.text-slate-300
             include socials.pug
   else
-    body.text-white.antialiased.opacity-0.duration-700
+    body.text-white.antialiased.opacity-0
       .sky
         nav.container.flex.items-center.justify-end.gap-8.h-20
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
-            a.text-slate-500.duration-300(href=`#${navItem}` class="md:text-2xl hover:text-white")=navItem
+            a.text-slate-500(href=`#${navItem}` class="md:text-2xl hover:text-white hover:duration-300")=navItem
         section.container.text-center.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
           h1.text-7xl(class="lg:text-9xl") DevTernity
           h2.text-2xl(class="lg:text-5xl leading-tight [&>*]:leading-tight")

@@ -52,7 +52,7 @@ function initModal() {
 
 function initPageEmerging() {
     $(window).on('pageshow', () => {
-        $('body').removeClass('opacity-0').addClass('opacity-100');
+        $('body').removeClass('opacity-0').addClass('opacity-100 duration-500');
     })
 }
 
