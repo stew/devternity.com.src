@@ -398,17 +398,20 @@ keynotes:
   - name: Thiago Ghisi
     twitter: thiagoghisi
     bio: Director of Engineering @ Nubank, ex-Apple, ex-ThoughtWorks
-    img: Thiago.jpg
+    img: Thiago.png
     title: The Road From Dev to Engineering Director
     description: |
       # The Road From Dev to Engineering Director
 
-      Coming soon.
+      Looking at my LinkedIn Profile and seeing my current title as "Director of Engineering," you might feel that my career was an easy straight line from Dev to Director. You are wrong!
 
+      I had many turns back and forth. In the 15 years of my career, I went from being The "Tech Support" guy to Programmer to Project Manager to QA, back to Engineering/DevOps and Agile Consulting, and finally to Engineering Management in the Mobile space, where I finally found myself in the last five years.
+
+      In this talk, I will tell you how all the left and right turns I took on the road prepared me to be where I'm with a much more solid foundation than the 'straight-line career path approach" would ever do.
   - name: Josh Long
     twitter: starbuxman
     bio: Author of Java and Spring Books, Java Champion
-    img: Starbuxman.png
+    img: Starbuxman.jpg
     title: How We Build Spring Framework
     description: |
       # How We Build Spring Framework
