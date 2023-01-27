@@ -251,7 +251,7 @@ schedule:
     to: "15:10"  
     talks:
       - Thiago Ghisi
-      - ''
+      - Daniel Terhorst-North
       - ''
   - from: "15:30"
     to: "16:20"  
@@ -428,7 +428,19 @@ keynotes:
       
       Every month, someone new asks me the question, "How do I convince my manager to let me refactor?" While it's true that a manager shouldn't constrain the programmer's plans to deliver high-quality code, the fact remains that some organisations allow their managers to assert this level of micro-control. In this talk I outline a set of models for justifying evolutionary design with basic economic concepts that relate directly to delivering, planning, and funding software projects. This talk will provide you with a solid argument to meet any skeptic's rational objections to writing tests first and letting both low-level design and architecture emerge.
 
+  - name: Daniel Terhorst-North
+    twitter: tastapod
+    bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
 
+    img: Dan North.png
+    title: Why Every Element of SOLID is Wrong
+    description: |
+      # Why Every Element of SOLID is Wrong
+      
+      Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
+      Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
+      Now he has codified his thoughts into his own pithy five-letter acronym, CUPID: Composable, Unix philosophy, Predictable, Idiomatic, Domain-based.
+      Why these characteristics, what do they mean, and why should you care? Can they improve your coding experience or is this just more programmer navel-gazing?
 
 faq:
   - q: Why online?
