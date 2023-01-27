@@ -433,9 +433,9 @@ keynotes:
     bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
 
     img: Dan North.png
-    title: Why Every Element of SOLID is Wrong
+    title: "CUPID: For Joyful Coding"
     description: |
-      # Why Every Element of SOLID is Wrong
+      # CUPID: For Joyful Coding
       
       Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
       Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
