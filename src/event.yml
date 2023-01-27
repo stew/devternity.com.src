@@ -440,7 +440,7 @@ keynotes:
       Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
       Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
       Now he has codified his thoughts into his own pithy five-letter acronym, CUPID: Composable, Unix philosophy, Predictable, Idiomatic, Domain-based.
-      Why these characteristics, what do they mean, and why should you care? Can they improve your coding experience or is this just more programmer navel-gazing?
+      Why these characteristics, what do they mean, why should you care, and how can they improve your coding experience?
 
 faq:
   - q: Why online?
