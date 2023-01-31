@@ -24,6 +24,9 @@ module.exports = {
     ticket: './src/ticket.pug',
     coc: './src/coc.pug'
   },
+  output: {
+    filename: '[name].[contenthash].js',
+  },
   plugins: [
     new DefinePlugin({ __VUE_OPTIONS_API__: true, __VUE_PROD_DEVTOOLS__: false }),
     new PugPlugin({
