@@ -326,7 +326,7 @@ keynotes:
     description: |
       # All The Little Things
 
-      In theory, object-oriented applications consist of small, interchangeable objects which know almost nothing about one another. In reality, many Ruby apps contain big classes full of long methods built of many conditionals. Our classes act more like procedures than objects; they know too much, they contain code we can't reuse, they're hard to change and they get worse every time we do so. This talk uses the principles of object-oriented design to break ugly procedures into pleasing objects which have just the right balance of knowledge and ignorance. It bridges the gap between theory and practice and reveals a few simple secrets of OOD that you can use to convert confusing, unmaintainable faux-OO code into understandable, reusable, easily testable objects.
+      In theory, object-oriented applications consist of small, interchangeable objects which know almost nothing about one another. In reality, many apps contain big classes full of long methods built of many conditionals. Our classes act more like procedures than objects; they know too much, they contain code we can't reuse, they're hard to change and they get worse every time we do so. This talk uses the principles of object-oriented design to break ugly procedures into pleasing objects which have just the right balance of knowledge and ignorance. It bridges the gap between theory and practice and reveals a few simple secrets of OOD that you can use to convert confusing, unmaintainable faux-OO code into understandable, reusable, easily testable objects.
     img: Sandi Metz.jpg
 
 
