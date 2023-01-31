@@ -3,6 +3,7 @@ import { Sky } from "./sky.mjs";
 import { Modal } from "./modal.mjs"
 import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
+import { PriceConverter, CurrencySwitcher } from "./prices.mjs";
 
 function initTimeZoneSwitches() {
     const switches = new Switches();
@@ -56,8 +57,14 @@ function initPageEmerging() {
     })
 }
 
+function initCurrencySwitcher() {
+    const switcher = new CurrencySwitcher();
+    switcher.init();
+}
+
 initModal();
 initSky();
 initPageEmerging();
 initCountdown();
 initTimeZoneSwitches();
+initCurrencySwitcher();

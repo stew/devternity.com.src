@@ -2,11 +2,13 @@
 product: DT_RIX_23
 year: 2023
 date: "2023-12-07"
-price: 399
+prices:
+  EUR: 399
+  GBP: 360
+  USD: 435
 registration_opens: "2023-02-28"
 status: on_sale # on_sale or empty
 masterclasses:
-  price: 399
   date: "2023-12-08"
   items:
     - instructor:

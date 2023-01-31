@@ -3,9 +3,9 @@
 - var description = `DevTernity is the top software developer conference focusing on coding, architecture, and engineering practices.`
 - var speakersToBeAnnounced = 0;
   each timeslot in event.schedule
-      each speaker in timeslot.talks
-        unless speaker 
-          - speakersToBeAnnounced++
+    each speaker in timeslot.talks
+      unless speaker
+        - speakersToBeAnnounced++
 doctype html
 
 mixin modal(id, markdown)
@@ -20,7 +20,7 @@ mixin timezoneToggle
   .timeZoneToggle.top-0.left-0.z-10.transition-opacity.w-full.text-slate-500.pt-4
     label.inline-flex.items-center.cursor-pointer.relative
       input.sr-only.peer(type='checkbox' value='')
-      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-4  peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[6px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
+      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-4 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[6px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
       span.ml-3.text-lg.text
 html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slate-800")
   head
@@ -127,7 +127,6 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h2.text-2xl(class="md:text-5xl") #{dayjs(event.date).format("dddd, Do MMMM")}
           h3.text-lg.text-slate-500(class="md:text-2xl") No Agile bullshit bingo and marketing talks permitted. See for yourself:        
         section.container(class="mb-[20vh]")
-          //- justify-[start/center] justify-items-[start/center]
           .flex.flex-wrap.text-center.gap-x-10.gap-y-24
             each speaker, index in event.keynotes
               .basis-80.flex.flex-col.items-center.gap-1
@@ -186,38 +185,56 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
         h1.text-6xl(class="md:text-8xl") Tickets
         h2.text-2xl(class="md:text-5xl") For 1500 developers from 75 countries.
         h3.text-lg.text-slate-500(class="md:text-2xl") The price will increase as the conference approaches. Tickets are limited.
-      section.container.grid.grid-cols-1.justify-center.gap-y-32(class="2xl:grid-cols-3 mb-[50vh]")
-        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
-          h1.text-2xl.font-mono(class="lg:text-4xl") Main Day Only
-          h3.text-6xl €#{event.price} 
-            span.line-through.text-slate-300 #{event.price + 200}                                          
-          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
-        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
-          h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
-          h3.text-6xl €#{event.masterclasses.price} 
-            span.line-through.text-slate-300 #{event.masterclasses.price + 200}                                          
-          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register        
-        .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
-          h1.text-2xl.font-mono(class="lg:text-4xl") Main Day + Masterclass
-          h3.text-6xl €#{event.price + event.masterclasses.price} 
-            span.line-through.text-slate-300 #{event.price + event.masterclasses.price + 400}                                          
-          .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href='/registration.html' class="hover:text-white") Register
-    footer#FAQ
-      section.container.space-y-4
-        h1.text-6xl(class="md:text-8xl") FAQ
-        h2.text-2xl(class="md:text-5xl") Frequently Asked Questions
-      section.container.mt-40.flex.flex-col.gap-y-10
-        each faq, index in event.faq
-          div.space-y-8
-            h4.text-lg.font-mono.font-bold(class="md:text-2xl")
-              span.text-lime-950 \##{index + 1} 
-              | #{faq.q}
-            .text-slate-300(class="md:text-xl space-y-8 [&_a]:text-slate-500 [&_a]:duration-300 hover:[&_a]:text-white [&>p]:leading-normal [&_li]:mb-8 [&>ol]:list-decimal [&>ol]:list-inside xl:w-2/3") !{marked(faq.a)}
-        .text-center(class="mb-[5vh] mt-[5vh]")
-          a.inline-block.text-xl.w-fit.text-slate-500.duration-300(href="#Tickets" class="hover:text-white") ^ Back to tickets
+      section.container.flex.justify-center(class="mb-[10vh]")
+        - var defaultCurrency = 'EUR'
+        - var currencySymbols = {EUR: '€', USD: '$', GBP: '£' }
+        .currencyToggle.inline-flex.rounded-full.text-slate-300
+          each currency in Object.keys(event.prices)
+            label(for=currency)
+              input.sr-only.peer(id=currency type="radio" name="currency" checked=(currency==defaultCurrency) value=currency)
+              div(class="hover:bg-slate-800 cursor-pointer mr-1 transition-all block px-4 py-1 rounded-full peer-checked:bg-slate-700 peer-focus:text-white peer-focus:bg-slate-700" ) #{currency}
+      each price, currency in event.prices
+        - var registrationLink = `/registration.html?currency=${currency}`
+        section.container.grid.grid-cols-1.justify-center.gap-y-32(data-pricing=currency class="2xl:grid-cols-3" class=(currency!==defaultCurrency ? 'hidden' : '' ))
+          .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+            h1.text-2xl.font-mono(class="lg:text-4xl") Main Day Only
+            h3.text-6xl
+              span=currencySymbols[currency]
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+              span.line-through.text-slate-300=price+200
+            .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+              .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
+            a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+          .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+            h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
+            h3.text-6xl
+              span=currencySymbols[currency]
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+              span.line-through.text-slate-300=price+200
+            .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+              .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
+            a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+          .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
+            h1.text-2xl.font-mono(class="lg:text-4xl") Main Day + Masterclass
+            h3.text-6xl
+              span=currencySymbols[currency]
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price*2
+              span.line-through.text-slate-300=price*2+400
+            .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
+              .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
+            a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+      section.container.text-center(class="mt-[10vh] mb-[40vh]") 
+        p.text-slate-600 * Additional 20% EU VAT charge applies to individuals, companies VAT non-payers, and companies in the Republic of Estonia.
+      footer#FAQ
+        section.container.space-y-4
+          h1.text-6xl(class="md:text-8xl") FAQ
+          h2.text-2xl(class="md:text-5xl") Frequently Asked Questions
+        section.container.mt-40.flex.flex-col.gap-y-10
+          each faq, index in event.faq
+            div.space-y-8
+              h4.text-lg.font-mono.font-bold(class="md:text-2xl")
+                span.text-lime-950 \##{index + 1} 
+                | #{faq.q}
+              .text-slate-300(class="md:text-xl space-y-8 [&_a]:text-slate-500 [&_a]:duration-300 hover:[&_a]:text-white [&>p]:leading-normal [&_li]:mb-8 [&>ol]:list-decimal [&>ol]:list-inside xl:w-2/3") !{marked(faq.a)}
+          .text-center(class="mb-[5vh] mt-[5vh]")
+            a.inline-block.text-xl.w-fit.text-slate-500.duration-300(href="#Tickets" class="hover:text-white") ^ Back to tickets

@@ -1,12 +1,4 @@
-const TOGGLE = '.timeZoneToggle';
-const toggles = $(TOGGLE)
-const toggleTexts = $(TOGGLE + ' .text')
-const toggleInputs = $(TOGGLE + ' input')
-
-const timeRanges = $('[data-date-from]')
-
 import $ from "cash-dom";
-
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js'
 import timezone from 'dayjs/plugin/timezone.js'
@@ -15,6 +7,12 @@ dayjs.extend(advancedFormat)
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
+const TOGGLE = '.timeZoneToggle';
+const toggles = $(TOGGLE)
+const toggleTexts = $(TOGGLE + ' .text')
+const toggleInputs = $(TOGGLE + ' input')
+
+const timeRanges = $('[data-date-from]')
 
 function timeZone(timeZoneName) {
     return new Date()

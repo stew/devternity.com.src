@@ -1,7 +1,7 @@
 - var title = `DevTernity ${event.year} registration`
 - var description = `DevTernity ${event.year} registration`
-- var mainDay = { title: 'Main Day', date: event.date, price: event.price }
-- var masterclasses = event.masterclasses.items.map(it => ({title: it.title, date: event.masterclasses.date, price: event.masterclasses.price}))
+- var mainDay = { title: 'Main Day', date: event.date }
+- var masterclasses = event.masterclasses.items.map(it => ({title: it.title, date: event.masterclasses.date}))
 - var masterclassesOnSale = masterclasses.filter(it => !it.sold_out)
 - var ticketOptions = [mainDay, ...masterclassesOnSale]
 doctype html
@@ -23,6 +23,7 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
         script(defer data-domain="devternity.com" data-api="/pla/event" src="/pla/script.js")
         script window.product = '#{event.product}'
         script window.ticketOptions = !{JSON.stringify(ticketOptions)}
+        script window.prices = !{JSON.stringify(event.prices)}
         script(src=require('./registration.mjs') defer)
     body#app.opacity-0.transition-opacity.duration-700
         .mx-auto.w-full.p-12(class="xl:w-3/4 min-h-screen")
@@ -76,10 +77,10 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                         .col-span-6.text-2xl.font-medium.leading-6.text-gray-900
                             h3.text-4xl.text-white(v-if="discount") 
                                 | Total: 
-                                span.line-through €{{total + discount}}
-                                |  €{{total}}
-                            h3.text-4xl.text-white(v-else) Total: €{{total}}
-                    p.text-sm.text-gray-500 * Additional 20% VAT charge applies to VAT non-payers and companies in the Republic of Estonia.
+                                span.line-through {{billing.currency}} {{total + discount}}
+                                |  {{billing.currency}} {{total}}
+                            h3.text-4xl.text-white(v-else) Total: {{billing.currency}} {{total}}
+                    p.text-sm.text-gray-500 * Additional 20% EU VAT charge applies to individuals, companies VAT non-payers, and companies in the Republic of Estonia.
 
                 .grid.grid-cols-6.gap-6.items-center.mt-8
                     .col-span-2.relative.transition-all

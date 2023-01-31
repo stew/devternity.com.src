@@ -23,11 +23,11 @@ export const applicationSchema = object({
         product: object({
             title: string().required(),
             date: string().matches(/^(\d{4})-(\d{2})-(\d{2})$/).required(),
-            price: number().required()
         }).required()
     })),
     billing: object({
         name: string().required(),
+        currency: string().length(3).required(),
         email: string().email().required(),
         company: object({
             po: string().default(undefined),
@@ -48,7 +48,8 @@ export const app = createApp({
             billing: {
                 name: '',
                 email: '',
-                company: undefined
+                company: undefined,
+                currency: this.resolveCurrency()
             },
             total: 0,
             discount: 0,
@@ -60,12 +61,20 @@ export const app = createApp({
         this.addMoreTickets();
     },
     methods: {
+        resolveCurrency() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlCurrency = urlParams.get('currency')
+            const urlIncludesKnownCurrency = this.$prices[urlCurrency];
+            return urlIncludesKnownCurrency ? urlCurrency : 'EUR'
+        },
+        ticketPrice() {
+            return this.$prices[this.billing.currency]
+        },
         formatted(date) {
             return dayjs(date).format("MMM Do")
         },
         recalculate() {
             const discounts = {
-                '_COFFEE': 1,
                 '_UPSKILL': 5,
                 '_SPONSORED': 100
             }
@@ -73,7 +82,8 @@ export const app = createApp({
             const matchingCode = Object.keys(discounts).find(code => this.promo.endsWith(code));
             const discountPercents = discounts[matchingCode] || 0;
 
-            const price = this.tickets.map(it => it.product.price || 0).reduce((it, that) => it + that);
+            const that = this;
+            const price = this.tickets.filter(it => !!it.product).map(() => that.ticketPrice()).reduce((it, that) => it + that, 0);
             const discount = Math.floor(price * discountPercents / 100);
 
             this.discount = discount;
@@ -93,7 +103,7 @@ export const app = createApp({
             this.recalculate();
         },
         toggleBillToCompany() {
-            this.billing.company = this.billing.company ? undefined : { }
+            this.billing.company = this.billing.company ? undefined : {}
         },
         register() {
             const { total, discount, tickets, promo, product, billing } = this;
@@ -125,4 +135,5 @@ export const app = createApp({
 })
 app.config.globalProperties.$product = window.product
 app.config.globalProperties.$ticketOptions = window.ticketOptions
+app.config.globalProperties.$prices = window.prices
 app.mount('#app')
