@@ -34,6 +34,31 @@ masterclasses:
 
 
     - instructor:
+        name: David Neal
+        img: David Neal.jpg
+      title: Practical Leadership for Developers
+      from: "13:00"
+      to: "21:00"
+      brief_description: |
+        # Practical Leadership for Developers
+
+        We all have an opportunity every day to make a postive impact on folks around us. These are often called "soft skills," but they can be some of the hardest to learn! We could call them "people skills," "essential skills," or "core skills." But, how about "**SKILLS OF AWESOMENESS?**" Yes, what we all need is more ways we can be awesome to each other, and awesome together. 
+        
+        You'll learn: 
+        * Why leadership and awesomeness skills matter to everyone
+        * How to become a better leader
+        * How to run effective meetings
+        * How to deal with conflict and find consensus
+        * How to get better at listening and communication
+        * How to encourage and motivate others
+        
+        And much more!
+
+        Through a series of practical exercises, we will discover and discuss the most important and relevant topics you want to cover, so that you can get the most value out of this masterclass! 
+        
+        The masterclass is led by David Neal – #1 speaker of 2021.
+
+    - instructor:
         name: Scott Wlaschin
         img: Scott Wlaschin.jpg
       title: Domain Modeling Made Functional
