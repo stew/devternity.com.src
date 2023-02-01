@@ -305,12 +305,12 @@ schedule:
     talks:
       - Thiago Ghisi
       - Daniel Terhorst-North
-      - John Romero
+      - Allen Holub
   - from: "15:30"
     to: "16:20"  
     talks:
-      - Allen Holub
       - Gregor Hohpe
+      - John Romero
       - ''
   - from: "16:40"
     to: "17:30"  
@@ -319,6 +319,16 @@ schedule:
       - ''
       - ''
 keynotes:
+  - name: Scott Hanselman
+    twitter: shanselman
+    bio: Principal Architect @ Microsoft, Blogger, Podcaster
+    img: Scott Hanselman.png
+    title: Scaling Yourself
+    description: |
+      # Scaling Yourself
+
+      As information workers, we are asked to absorb even more information than ever before. More blogs, more documentation, more patterns, more layers of abstraction. Now Twitter and Facebook compete with Email and Texts for our attention, keeping us up-to-date on our friends dietary details and movie attendance second-by-second. Does all this information take a toll on your psyche or sharpen the saw? Is it a matter of finding the right tools and filters to capture what you need, or do you just need to unplug.
+
   - name: Dave Farley
     twitter: davefarley77
     bio: Author of Modern Software Engineering and Continuous Delivery
@@ -345,15 +355,16 @@ keynotes:
     img: Kevlin Henney.png
 
 
-  - name: Sandi Metz
-    twitter: sandimetz
-    bio: Author of 99 Bottles of OOP and Practical Object Oriented Design
-    title: All The Little Things
+  - name: Robert Martin
+    twitter: unclebobmartin
+    bio: Author of Clean Code, Clean Coder, Clean Architecture, and Clean Agile
+    title: 'Clean Agile: Back to Basics'
     description: |
-      # All The Little Things
+      # Clean Agile: Back to Basics
 
-      In theory, object-oriented applications consist of small, interchangeable objects which know almost nothing about one another. In reality, many apps contain big classes full of long methods built of many conditionals. Our classes act more like procedures than objects; they know too much, they contain code we can't reuse, they're hard to change and they get worse every time we do so. This talk uses the principles of object-oriented design to break ugly procedures into pleasing objects which have just the right balance of knowledge and ignorance. It bridges the gap between theory and practice and reveals a few simple secrets of OOD that you can use to convert confusing, unmaintainable faux-OO code into understandable, reusable, easily testable objects.
-    img: Sandi Metz.jpg
+      Robert C. Martin (Uncle Bob) reintroduces Agile values and principles for a new generation of programmers and nonprogrammers alike, striping away misunderstandings and distractions that over the years made using Agile difficult. 
+    img: Robert Martin.png
+
 
 
   - name: Sam Newman
@@ -371,43 +382,26 @@ keynotes:
     img: Sam Newman.png
 
 
-  - name: Ian Cooper
-    twitter: icooper
-    bio: Principal Engineer, Global Integration Architect @ Just Eat Takeaway
-    title: 'TDD: Where Did It All Go Wrong (Revisited)'
+  - name: Sandi Metz
+    twitter: sandimetz
+    bio: Author of 99 Bottles of OOP and Practical Object Oriented Design
+    title: All The Little Things
     description: |
-      # TDD Revisited: Where Did It All Go Wrong
+      # All The Little Things
 
-      Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
-    img: Ian Cooper.png
+      In theory, object-oriented applications consist of small, interchangeable objects which know almost nothing about one another. In reality, many apps contain big classes full of long methods built of many conditionals. Our classes act more like procedures than objects; they know too much, they contain code we can't reuse, they're hard to change and they get worse every time we do so. This talk uses the principles of object-oriented design to break ugly procedures into pleasing objects which have just the right balance of knowledge and ignorance. It bridges the gap between theory and practice and reveals a few simple secrets of OOD that you can use to convert confusing, unmaintainable faux-OO code into understandable, reusable, easily testable objects.
+    img: Sandi Metz.jpg
 
 
-  - name: Robert Martin
-    twitter: unclebobmartin
-    bio: Author of Clean Code, Clean Coder, Clean Architecture, and Clean Agile
-    title: 'Clean Agile: Back to Basics'
+  - name: Allen Holub
+    twitter: allenholub
+    bio: Principal @ Hollub Associates Ltd, Author of Multiple Books
+    img: Allen Holub.png
+    title: "#NoEstimates – Why, When, and How"
     description: |
-      # Clean Agile: Back to Basics
-
-      Robert C. Martin (Uncle Bob) reintroduces Agile values and principles for a new generation of programmers and nonprogrammers alike, striping away misunderstandings and distractions that over the years made using Agile difficult. 
-    img: Robert Martin.png
-
-
-  - name: Scott Hanselman
-    twitter: shanselman
-    bio: Principal Architect @ Microsoft, Blogger, Podcaster
-    img: Scott Hanselman.png
-    title: Scaling Yourself
-    description: |
-      # Scaling Yourself
-
-      As information workers, we are asked to absorb even more information than ever before. More blogs, more documentation, more patterns, more layers of abstraction. Now Twitter and Facebook compete with Email and Texts for our attention, keeping us up-to-date on our friends dietary details and movie attendance second-by-second. Does all this information take a toll on your psyche or sharpen the saw? Is it a matter of finding the right tools and filters to capture what you need, or do you just need to unplug.
-
-
-  - name: Anna Boyko
-    bio: Staff Engineer @ Coinbase, Core Contributor @ Ethereum
-    img: Anna.png
-
+      # #NoEstimates – Why, When, and How
+      
+      This keynote presents my (and many other's) thinking about #NoEstimates. It argues that estimation is a bad thing, particularly in the Agile world, and presents ways to plan that don't involve estimation.
 
   - name: Venkat Subramaniam
     twitter: venkat_s
@@ -419,16 +413,55 @@ keynotes:
       Big up front design is discouraged in agile development. However, we know that architecture plays a significant part in software systems. Evolving architecture during the development of an application seems to be a risky business. In this presentation, we will discuss the reasons to evolve the architecture, some of the core principles that can help us develop in such a manner, and the ways to minimize the risk and succeed in creating a practical and useful architecture.
     img: Venkat Subramaniam.png
 
-
-  - name: Eduards Sizovs
-    twitter: eduardsi
-    bio: Mentor @ The Principal Dev, Founder of DevTernity
-    img: Eduards.png
-    title: "Clean Code: Techniques You've Never Heard About"
+  - name: Daniel Terhorst-North
+    twitter: tastapod
+    bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
+    img: Dan North.png
+    title: "CUPID: For Joyful Coding"
     description: |
-      # Clean Code: Techniques You've Never Heard About
+      # CUPID: For Joyful Coding
       
-      In this session, Eduards will go beyond basic clean coding techniques and reveal his favorite (and unusual) techniques for making real-world codebases cleaner and simpler. The examples will be taken from real enterprise projects.
+      Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
+      Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
+      Now he has codified his thoughts into his own pithy five-letter acronym, CUPID: Composable, Unix philosophy, Predictable, Idiomatic, Domain-based.
+      Why these characteristics, what do they mean, why should you care, and how can they improve your coding experience?
+
+  - name: John Romero
+    twitter: romero
+    bio: Game Designer, Programmer, Co-founder of id Software
+    img: John Romero.png
+    title: "The Early Days of id Software: Programming Principles"
+    description: |
+      # The Early Days of id Software: Programming Principles
+      
+      As co-founders of id Software, John Romero and John Carmack created the code behind the company's seminal titles. The principles they defined through experience in id’s earliest days built upon one another to produce a unique methodology and a constantly shippable codebase. In this talk, John Romero discusses id software’s early days, these programming principles and the events and games that led to their creation.
+
+  - name: Josh Long
+    twitter: starbuxman
+    bio: Author of Java and Spring Books, Java Champion
+    img: Starbuxman.jpg
+    title: How We Build Spring Framework
+    description: |
+      # How We Build Spring Framework
+      
+      Coming soon.
+
+
+
+  - name: Anna Boyko
+    bio: Staff Engineer @ Coinbase, Core Contributor @ Ethereum
+    img: Anna.png
+
+
+  - name: J.B. Rainsberger
+    twitter: jbrains
+    bio: Software Coach, Mentor, Consultant, TDD Trainer
+    img: Rainsberger.png
+    title: The Economics of Software Design
+    description: |
+      # The Economics of Software Design
+      
+      Every month, someone new asks me the question, "How do I convince my manager to let me refactor?" While it's true that a manager shouldn't constrain the programmer's plans to deliver high-quality code, the fact remains that some organisations allow their managers to assert this level of micro-control. In this talk I outline a set of models for justifying evolutionary design with basic economic concepts that relate directly to delivering, planning, and funding software projects. This talk will provide you with a solid argument to meet any skeptic's rational objections to writing tests first and letting both low-level design and architecture emerge.
 
 
   - name: Gregor Hohpe
@@ -472,61 +505,28 @@ keynotes:
       I had many turns back and forth. In the 15 years of my career, I went from being The "Tech Support" guy to Programmer to Project Manager to QA, back to Engineering/DevOps and Agile Consulting, and finally to Engineering Management in the Mobile space, where I finally found myself in the last five years.
 
       In this talk, I will tell you how all the left and right turns I took on the road prepared me to be where I'm with a much more solid foundation than the 'straight-line career path approach" would ever do.
-  - name: Josh Long
-    twitter: starbuxman
-    bio: Author of Java and Spring Books, Java Champion
-    img: Starbuxman.jpg
-    title: How We Build Spring Framework
+
+
+  - name: Ian Cooper
+    twitter: icooper
+    bio: Principal Engineer, Global Integration Architect @ Just Eat Takeaway
+    title: 'TDD: Where Did It All Go Wrong (Revisited)'
     description: |
-      # How We Build Spring Framework
-      
-      Coming soon.
+      # TDD Revisited: Where Did It All Go Wrong
 
-  - name: J.B. Rainsberger
-    twitter: jbrains
-    bio: Software Coach, Mentor, Consultant, TDD Trainer
-    img: Rainsberger.png
-    title: The Economics of Software Design
+      Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
+    img: Ian Cooper.png
+
+
+  - name: Eduards Sizovs
+    twitter: eduardsi
+    bio: Mentor @ The Principal Dev, Founder of DevTernity
+    img: Eduards.png
+    title: "Clean Code: Techniques You've Never Heard About"
     description: |
-      # The Economics of Software Design
+      # Clean Code: Techniques You've Never Heard About
       
-      Every month, someone new asks me the question, "How do I convince my manager to let me refactor?" While it's true that a manager shouldn't constrain the programmer's plans to deliver high-quality code, the fact remains that some organisations allow their managers to assert this level of micro-control. In this talk I outline a set of models for justifying evolutionary design with basic economic concepts that relate directly to delivering, planning, and funding software projects. This talk will provide you with a solid argument to meet any skeptic's rational objections to writing tests first and letting both low-level design and architecture emerge.
-
-  - name: Daniel Terhorst-North
-    twitter: tastapod
-    bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
-    img: Dan North.png
-    title: "CUPID: For Joyful Coding"
-    description: |
-      # CUPID: For Joyful Coding
-      
-      Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
-      Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
-      Now he has codified his thoughts into his own pithy five-letter acronym, CUPID: Composable, Unix philosophy, Predictable, Idiomatic, Domain-based.
-      Why these characteristics, what do they mean, why should you care, and how can they improve your coding experience?
-
-  - name: John Romero
-    twitter: romero
-    bio: Game Designer, Programmer, Co-founder of id Software
-    img: John Romero.png
-    title: "The Early Days of id Software: Programming Principles"
-    description: |
-      # The Early Days of id Software: Programming Principles
-      
-      As co-founders of id Software, John Romero and John Carmack created the code behind the company's seminal titles. The principles they defined through experience in id’s earliest days built upon one another to produce a unique methodology and a constantly shippable codebase. In this talk, John Romero discusses id software’s early days, these programming principles and the events and games that led to their creation.
-
-
-  - name: Allen Holub
-    twitter: allenholub
-    bio: Principal @ Hollub Associates Ltd, Author of Multiple Books
-    img: Allen Holub.png
-    title: "#NoEstimates – Why, When, and How"
-    description: |
-      # #NoEstimates – Why, When, and How
-      
-      This keynote presents my (and many other's) thinking about #NoEstimates. It argues that estimation is a bad thing, particularly in the Agile world, and presents ways to plan that don't involve estimation.
-
-
+      In this session, Eduards will go beyond basic clean coding techniques and reveal his favorite (and unusual) techniques for making real-world codebases cleaner and simpler. The examples will be taken from real enterprise projects.
 
 faq:
   - q: Why online?
