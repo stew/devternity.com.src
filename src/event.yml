@@ -91,6 +91,8 @@ masterclasses:
         We will be using F# as our development language. The principles will be applicable
         to other languages. No experience with F# needed.
       almost_sold_out: true
+
+
     - instructor:
         name: Ian Cooper
         img: Ian Cooper.png
@@ -116,6 +118,30 @@ masterclasses:
         * and much more!
 
         We will use Rabbit MQ message broker. Hands-on exercises are offered in C#, JavaScript, Python and Go. 
+
+
+    - instructor:
+        name: Allen Holub
+        img: Allen Holub.png
+      title: Incremental Architecture
+      from: '14:00'
+      to: '23:00'
+      brief_description: |
+        # Incremental Architecture
+
+        You can’t simultaneously fight your code and be Agile—it slows you down too much. Your code’s design must evolve incrementally along with your understanding of the product. In this masterclass, you’ll learn **everything you need to create highly adaptable designs**. Along the way, you’ll also experience Event Storming and other Domain-Driven Design techniques.
+        
+        You’ll learn:
+        * How to design a system that can evolve incrementally
+        * SOLDIER principles (Simple, Obvious, Lightweight, Domain focused, Independent, Essential, Refactorable)
+        * Architectural patterns appropriate for incremental development
+        * How to create strictly-isolated highly decoupled subsystems
+        * Domain-focused architectures (including DDD)
+        * How to use the domain to maintain system coherence as the architecture grows
+        * How to identify key abstractions, bounded contexts, entities, aggregates.
+        
+        In all, you’ll learn how to build a coherent and highly maintainable system and architecture that can easily accommodate changing requirements and grow incrementally as the system evolves
+
     - instructor:
         name: Jakub Pilimon
         img: Jakub Pilimon.jpg
@@ -283,7 +309,7 @@ schedule:
   - from: "15:30"
     to: "16:20"  
     talks:
-      - ''
+      - Allen Holub
       - ''
       - ''
   - from: "16:40"
@@ -477,6 +503,18 @@ keynotes:
       # The Early Days of id Software: Programming Principles
       
       As co-founders of id Software, John Romero and John Carmack created the code behind the company's seminal titles. The principles they defined through experience in id’s earliest days built upon one another to produce a unique methodology and a constantly shippable codebase. In this talk, John Romero discusses id software’s early days, these programming principles and the events and games that led to their creation.
+
+
+  - name: Allen Holub
+    twitter: allenholub
+    bio: Principal @ Hollub Associates Ltd, Author of Multiple Books, Pluralsight Author
+    img: Allen Holub.png
+    title: "#NoEstimates – Why, When, and How"
+    description: |
+      # #NoEstimates – Why, When, and How
+      
+      This keynote presents my (and many other's) thinking about #NoEstimates. It argues that estimation is a bad thing, particularly in the Agile world, and presents ways to plan that don't involve estimation.
+
 faq:
   - q: Why online?
     a: |
