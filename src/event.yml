@@ -297,7 +297,7 @@ schedule:
   - from: "13:10"
     to: "14:00"  
     talks:
-      - Gregor Hohpe
+      - Robert Martin
       - Sam Newman
       - Josh Long
   - from: "14:20"
@@ -310,7 +310,7 @@ schedule:
     to: "16:20"  
     talks:
       - Allen Holub
-      - ''
+      - Gregor Hohpe
       - ''
   - from: "16:40"
     to: "17:30"  
@@ -382,17 +382,15 @@ keynotes:
     img: Ian Cooper.png
 
 
-  - name: Adam Tornhill
-    twitter: adamtornhill
-    bio: Author of Code as a Crime Scene, CTO, Creator of CodeScene
-    title: 'Code Red: The Business Impact of Code Quality'
+  - name: Robert Martin
+    twitter: unclebobmartin
+    bio: Author of Clean Code, Clean Coder, Clean Architecture, and Clean Agile
+    title: 'Clean Agile: Back to Basics'
     description: |
-      # Code Red: The Business Impact of Code Quality
+      # Clean Agile: Back to Basics
 
-      Code quality is an abstract concept that fails to get traction at the business level. Consequently, software companies keep trading code quality for new features. The resulting technical debt is estimated to waste up to 42% of developers’ time, causing stress and uncertainty, as well as making our job less enjoyable than it should be. Without clear and quantifiable benefits, it’s hard to build a business case for code quality.
-
-      In this talk, Adam takes on the challenge by tuning the code analysis microscope towards a business outcome. We do that by combining novel code quality metrics with analyses of how the engineering organization works with the code. We then take those metrics a step further by connecting them to values like time-to-market, customer satisfaction, and road-map risks. This makes it possible to a) prioritize the parts of your system that benefit the most from improvements, b) communicate quality trade-offs in terms of actual costs, and c) identify high-risk parts of the application so that we can focus our efforts on the areas that need them the most. All recommendations are supported by data and brand-new research on real-world codebases. This is a perspective on software development that will change how you view code. Promise.
-    img: Tornhill.jpg
+      Robert C. Martin (Uncle Bob) reintroduces Agile values and principles for a new generation of programmers and nonprogrammers alike, striping away misunderstandings and distractions that over the years made using Agile difficult. 
+    img: Robert Martin.png
 
 
   - name: Scott Hanselman
@@ -442,6 +440,19 @@ keynotes:
       # The Architect Elevator: Connecting Penthouse and Engine Room
       
       Many large enterprises are feeling pressure: digital disruptors attack with brand-new business models and no legacy; the Facebook generation” has dramatically increased user expectations; and access to state-of-the-art technologies has been democratized by cloud providers. This is tough stuff for enterprises that have been, and still are, very successful, but are built around traditional technology and organizational structures. “Turning the tanker”, as the need to transform is often described, has become a board room-level topic in many traditional enterprises. Chief IT Architects and CTOs play a key role in such a digital transformation endeavor. They combine the technical, communication, and organizational skills to create business value from a tech stack refresh, to look behind buzzwords like “agile” and “DevOps”, and to build a technology platform that assures quality while moving faster. They do so by riding the “Architect Elevator” from the penthouse, where the business strategy is set, to the engine room, where the enabling technology is implemented. I rode that elevator for 5 years in a major financial services organization and am now advising major corporations on their digital journey. I collect stories from the daily life of IT transformation and package them in lighthearted, but meaningful anecdotes.
+
+
+  - name: Adam Tornhill
+    twitter: adamtornhill
+    bio: Author of Code as a Crime Scene, CTO, Creator of CodeScene
+    title: 'Code Red: The Business Impact of Code Quality'
+    description: |
+      # Code Red: The Business Impact of Code Quality
+
+      Code quality is an abstract concept that fails to get traction at the business level. Consequently, software companies keep trading code quality for new features. The resulting technical debt is estimated to waste up to 42% of developers’ time, causing stress and uncertainty, as well as making our job less enjoyable than it should be. Without clear and quantifiable benefits, it’s hard to build a business case for code quality.
+
+      In this talk, Adam takes on the challenge by tuning the code analysis microscope towards a business outcome. We do that by combining novel code quality metrics with analyses of how the engineering organization works with the code. We then take those metrics a step further by connecting them to values like time-to-market, customer satisfaction, and road-map risks. This makes it possible to a) prioritize the parts of your system that benefit the most from improvements, b) communicate quality trade-offs in terms of actual costs, and c) identify high-risk parts of the application so that we can focus our efforts on the areas that need them the most. All recommendations are supported by data and brand-new research on real-world codebases. This is a perspective on software development that will change how you view code. Promise.
+    img: Tornhill.jpg
 
   - name: Julia Kirsina
     twitter: unicorncoding
@@ -514,6 +525,8 @@ keynotes:
       # #NoEstimates – Why, When, and How
       
       This keynote presents my (and many other's) thinking about #NoEstimates. It argues that estimation is a bad thing, particularly in the Agile world, and presents ways to plan that don't involve estimation.
+
+
 
 faq:
   - q: Why online?
