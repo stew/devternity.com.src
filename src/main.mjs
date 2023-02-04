@@ -5,7 +5,7 @@ import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
 import { CurrencySwitcher } from "./prices.mjs";
 
-let role = 0;
+let role = 1;
 function showNextRole() {
     if (role === 4) {
         role = 0
@@ -16,7 +16,7 @@ function showNextRole() {
 
 setInterval(() => {
     showNextRole()
-}, 4000)
+}, 2500)
 
 
 function initTimeZoneSwitches() {
