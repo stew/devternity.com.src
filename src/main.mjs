@@ -16,7 +16,7 @@ function showNextRole() {
 
 setInterval(() => {
     showNextRole()
-}, 3000)
+}, 4000)
 
 
 function initTimeZoneSwitches() {

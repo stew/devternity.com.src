@@ -5,10 +5,9 @@
 #turningTo span {
   position: absolute;
   left: 10px;
-  width: 500px;
   right: 0;
   top: 0;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 @keyframes rotate {
