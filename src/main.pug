@@ -110,8 +110,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
                 span#turningTo.relative
           h3.text-xl.text-slate-300(class="lg:text-3xl")
             span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
-          button.text-xl.animate-button.uppercase.border.border-red-500.font-bold.text-neutral-200.rounded-xl.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600')
-            a.block.py-3(href='#Tickets') Buy tickets
+          a.flex.text-xl.py-3.justify-center.uppercase.border.border-slate-700.font-bold.text-neutral-200.rounded-xl.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600' href='#Tickets') Buy tickets
           - var monthsUntilConference = dayjs(event.date).diff(dayjs(), 'months')
           if monthsUntilConference <= 3
             h4#countdown.text-slate-300(class="" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
