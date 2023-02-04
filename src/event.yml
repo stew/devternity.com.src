@@ -468,9 +468,9 @@ keynotes:
     twitter: ghohpe
     bio: Author of The Software Architect Elevator and Enterprise Integration Patterns
     img: Gregor.png
-    title: "The Architect Elevator: Connecting Penthouse and Engine Room"
+    title: "The Architect Elevator: Redefining The Architect's Role"
     description: |
-      # The Architect Elevator: Connecting Penthouse and Engine Room
+      # The Architect Elevator: Redefining The Architect's Role
       
       Many large enterprises are feeling pressure: digital disruptors attack with brand-new business models and no legacy; the Facebook generation” has dramatically increased user expectations; and access to state-of-the-art technologies has been democratized by cloud providers. This is tough stuff for enterprises that have been, and still are, very successful, but are built around traditional technology and organizational structures. “Turning the tanker”, as the need to transform is often described, has become a board room-level topic in many traditional enterprises. Chief IT Architects and CTOs play a key role in such a digital transformation endeavor. They combine the technical, communication, and organizational skills to create business value from a tech stack refresh, to look behind buzzwords like “agile” and “DevOps”, and to build a technology platform that assures quality while moving faster. They do so by riding the “Architect Elevator” from the penthouse, where the business strategy is set, to the engine room, where the enabling technology is implemented. I rode that elevator for 5 years in a major financial services organization and am now advising major corporations on their digital journey. I collect stories from the daily life of IT transformation and package them in lighthearted, but meaningful anecdotes.
 
@@ -531,7 +531,11 @@ keynotes:
 faq:
   - q: Why online?
     a: |
-      International online events, if organized with love, beat offline events in accessibility, convenience, productivity, price, and quality. If you care, they are also better for the environment. Furthermore, the quality of discussions and knowledge sharing also wins over offline, where developers socialize in small groups and mostly with their colleagues. Thanks to amazing DevTernity attendees, Slack is always on fire. And if you want to hangout IRL, we'll connect you with attendees living nearby for discussion, socialization, and drinks. Boom.
+      If organized with love, online events beat offline events in accessibility, convenience, inclusiveness, productivity, price, and quality. If you care, they are also better for the environment. 
+
+      Furthermore, the quality of discussions and knowledge sharing outperforms offline, where developers socialize in small groups and mostly with their peers. At DevTernity, Slack is always on fire.
+
+      Want to hangout IRL? We'll connect you with attendees living nearby for discussion, socialization, and drinks. Boom.
 
       The future of education is online. And DevTernity is leading the way.
   - q: What time zone will the conference take place?

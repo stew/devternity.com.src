@@ -101,25 +101,30 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
   else
     body.text-white.antialiased.opacity-0
       .sky
-        nav.container.flex.items-center.justify-end.gap-8.h-20
+        //- nav.container.flex.items-center.justify-end.gap-8.h-20
           each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
             a.text-slate-500(href=`#${navItem}` class="md:text-2xl hover:text-white hover:duration-300")=navItem
-        section.container.text-center.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
-          h1.text-7xl(class="lg:text-9xl") DevTernity
-          h2.text-2xl(class="lg:text-5xl leading-tight [&>*]:leading-tight")
-            | Turning developers into 
-            span.text-lime-950 architects
-            |  and 
-            span.text-lime-950 tech leads
-            | .
+        section.container.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
+          h1.text-7xl(class="lg:text-9xl mt-24") DevTernity
+          h2.relative(class="text-lg md:text-2xl lg:text-5xl leading-tight [&>*]:leading-tight -left-[75px]  md:-left-[100px]  lg:-left-[200px]")
+            span Turning developers into
+            span#turningTo.text-lime-950.relative
+              span.transition-opacity.duration-1000 senior developers.
+              span.transition-opacity.duration-1000.opacity-0 staff engineers.
+              span.transition-opacity.duration-1000.opacity-0 software architects.
+              span.transition-opacity.duration-1000.opacity-0 engineering leaders.
           h3.text-xl.text-slate-300(class="lg:text-3xl")
             span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
-          h4#countdown.text-slate-300(class="lg:text-2xl" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
+          button.text-xl.animate-button.uppercase.border.border-red-500.font-bold.text-neutral-200.rounded-xl.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600')
+            a.block.py-3(href='#Tickets') Buy tickets
+          - var monthsUntilConference = dayjs(event.date).diff(dayjs(), 'months')
+          if monthsUntilConference <= 3
+            h4#countdown.text-slate-300(class="" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
         section.container.flex.items-center.text-slate-300(class="lg:w-3/5 mb-[50vh] mt-[20vh]")
           .flex.flex-col.gap-10.text-2xl
             .font-bold DevTernity is the #1 conference for professional software developers.
-            p We help developers thrive in senior technical roles. To achieve this ambitious goal, we focus on fundamental skills – coding, architecture, engineering practices, and tech leadership.
-            p Start preparing for an architect, engineering leader, or CTO role today. 
+            p Since 2015, we have helped thousands of engineers thrive in senior technical roles. We don't focus on shiny new frameworks that come and go. Here you'll develop fundamental skills paramount to your success – coding, architecture, engineering practices, and tech leadership.
+            p I am looking forward to seeing you at the conference. It's going to be a blast.
             p.text-right.font-mono
               span(class="before:content-['>'] before:mr-2 before:text-lime-950") Eduards Sizovs, DevTernity founder
         section#Speakers.container.space-y-4.pb-40

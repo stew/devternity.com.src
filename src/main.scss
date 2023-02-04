@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+#turningTo span {
+  position: absolute;
+  left: 10px;
+  width: 500px;
+  right: 0;
+  top: 0;
+  white-space: normal;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+}
+
+#turningTo span.show {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+}

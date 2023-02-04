@@ -3,7 +3,21 @@ import { Sky } from "./sky.mjs";
 import { Modal } from "./modal.mjs"
 import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
-import { PriceConverter, CurrencySwitcher } from "./prices.mjs";
+import { CurrencySwitcher } from "./prices.mjs";
+
+let role = 0;
+function showNextRole() {
+    if (role === 4) {
+        role = 0
+    }
+    $('#turningTo').children().addClass('opacity-0').removeClass('opacity-100')
+    $('#turningTo').children().eq(role++).removeClass('opacity-0').addClass('opacity-100')
+}
+
+setInterval(() => {
+    showNextRole()
+}, 3000)
+
 
 function initTimeZoneSwitches() {
     const switches = new Switches();
@@ -61,6 +75,8 @@ function initCurrencySwitcher() {
     const switcher = new CurrencySwitcher();
     switcher.init();
 }
+
+
 
 initModal();
 initSky();
