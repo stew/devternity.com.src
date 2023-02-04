@@ -4,19 +4,30 @@ import { Modal } from "./modal.mjs"
 import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
 import { CurrencySwitcher } from "./prices.mjs";
+import Typed from "typed.js";
 
-let role = 1;
-function showNextRole() {
-    if (role === 4) {
-        role = 0
-    }
-    $('#turningTo').children().addClass('opacity-0').removeClass('opacity-100')
-    $('#turningTo').children().eq(role++).removeClass('opacity-0').addClass('opacity-100')
-}
 
-setInterval(() => {
-    showNextRole()
-}, 2500)
+var options = {
+  strings: ['senior engineers.', 'software architects.', 'engineering leaders.'],
+  typeSpeed: 40,
+  backSpeed: 40,
+  loop: true,
+};
+
+new Typed('#turningTo', options);
+
+// let role = 1;
+// function showNextRole() {
+//     if (role === 4) {
+//         role = 0
+//     }
+//     $('#turningTo').children().addClass('opacity-0').removeClass('opacity-100')
+//     $('#turningTo').children().eq(role++).removeClass('opacity-0').addClass('opacity-100')
+// }
+
+// setInterval(() => {
+//     showNextRole()
+// }, 2500)
 
 
 function initTimeZoneSwitches() {

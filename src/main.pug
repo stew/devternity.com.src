@@ -101,18 +101,13 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
   else
     body.text-white.antialiased.opacity-0
       .sky
-        //- nav.container.flex.items-center.justify-end.gap-8.h-20
-          each navItem in [ "Speakers", "Masterclasses", "Tickets", "FAQ" ]
-            a.text-slate-500(href=`#${navItem}` class="md:text-2xl hover:text-white hover:duration-300")=navItem
         section.container.flex.flex-col.gap-10.items-center.justify-center.h-screen(class="lg:gap-14")
           h1.text-7xl(class="lg:text-9xl mt-24") DevTernity
           h2.relative(class="text-lg md:text-2xl lg:text-5xl leading-tight [&>*]:leading-tight -left-[75px]  md:-left-[100px]  lg:-left-[200px]")
             span Turning developers into
-            span#turningTo.text-lime-950.relative
-              span.transition-opacity.duration-1000 senior developers.
-              span.transition-opacity.duration-1000.opacity-0 staff engineers.
-              span.transition-opacity.duration-1000.opacity-0 software architects.
-              span.transition-opacity.duration-1000.opacity-0 engineering leaders.
+            span.text-lime-950.relative
+              span.absolute.top-0.left-2.whitespace-nowrap
+                span#turningTo.relative
           h3.text-xl.text-slate-300(class="lg:text-3xl")
             span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
           button.text-xl.animate-button.uppercase.border.border-red-500.font-bold.text-neutral-200.rounded-xl.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600')
