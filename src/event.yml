@@ -32,7 +32,32 @@ masterclasses:
         
         And much more!
 
+    - instructor:
+        name: Jakub Nabrdalik
+        img: Jakub Nabrdalik.png
+      title: Microservices, Modular Monoliths, and Event-Driven Systems
+      from: "09:00"
+      to: "17:00"
+      brief_description: |
+        # Microservices, Modular Monoliths, and Event-Driven Systems
 
+        In this masterclass, I’ll take you through three different styles of enterprise service architecture: modular monoliths, distributed synchronous systems, and event-driven systems. 
+        
+        Together, we will design a non-trivial backend system and find out the strengths and weaknesses of each architectural approach. We will discuss the typical mistakes and problems developers face during service architecture design and how to solve them. You will learn how to choose the best architecture style for your project, and how to design hybrid solutions, leveraging the best parts of each architecture style. 
+        
+        Topics include:
+        * Understanding the main styles of service and backend architecture
+        * Microservies or monoliths? Is there a middle ground?
+        * How to improve monoliths with modularity; Intro to Modular Monoliths
+        * How and when to split the system into services with REST/RPC
+        * How and when to become event-driven and fully async
+        * How to design non-trivial backend and service architecture
+        * How to avoid common errors in designing backend and service architectures
+        * How to use C4 model to communicate your architecture
+        * ...and much more!
+        
+        This masterclass covers fundamental concepts, relevant to all programming platforms and languages; developers and architects with different backgrounds can attend.
+        
     - instructor:
         name: David Neal
         img: David Neal.jpg
