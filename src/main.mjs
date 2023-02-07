@@ -16,19 +16,6 @@ var options = {
 
 new Typed('#turningTo', options);
 
-// let role = 1;
-// function showNextRole() {
-//     if (role === 4) {
-//         role = 0
-//     }
-//     $('#turningTo').children().addClass('opacity-0').removeClass('opacity-100')
-//     $('#turningTo').children().eq(role++).removeClass('opacity-0').addClass('opacity-100')
-// }
-
-// setInterval(() => {
-//     showNextRole()
-// }, 2500)
-
 
 function initTimeZoneSwitches() {
     const switches = new Switches();
@@ -78,7 +65,7 @@ function initModal() {
 
 function initPageEmerging() {
     $(window).on('pageshow', () => {
-        $('body').removeClass('opacity-0').addClass('opacity-100 duration-500');
+        $('.later').removeClass('opacity-0').addClass('opacity-100 duration-500');
     })
 }
 
