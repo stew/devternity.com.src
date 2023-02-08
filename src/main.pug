@@ -230,7 +230,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h2.text-2xl(class="md:text-5xl") Frequently Asked Questions
         section.container.mt-40.flex.flex-col.gap-y-10
           each faq, index in event.faq
-            div.space-y-8
+            div.space-y-8(id=index + 1)
               h4.text-lg.font-mono.font-bold(class="md:text-2xl")
                 span.text-lime-950 \##{index + 1} 
                 | #{faq.q}
