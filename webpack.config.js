@@ -21,6 +21,7 @@ module.exports = {
   entry: {
     index: './src/main.pug',
     registration: './src/registration.pug',
+    privacy: './src/privacy.pug',
     ticket: './src/ticket.pug',
     coc: './src/coc.pug'
   },
