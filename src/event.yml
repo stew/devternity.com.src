@@ -536,7 +536,7 @@ keynotes:
     description: |
       # How To Make Your Code Suck Less
 
-      In this session, I'll go beyond basic clean coding techniques and reveal some of my favorite (and very effective) techniques for making real-world enterprise applications cleaner. We'll touch on many topics: naming, levels of abstraction, dealing with large objects, OO design, and much more. The examples will be taken from real enterprise projects.
+      In this session, I'll go beyond basic clean coding techniques and reveal some of my favorite (and very effective) ideas, heuristics, and practices for making real-world enterprise applications cleaner. We'll touch on many topics: naming, levels of abstraction, dealing with large objects, OO design, and much more. The examples will be taken from real enterprise projects.
 
 faq:
   - q: Why online?
