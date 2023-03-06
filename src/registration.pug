@@ -38,7 +38,7 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                     .col-span-3
                         input(type="text" v-model="tickets[index].email" placeholder="Email" class="w-full text-white bg-transparent font-mono border-0 border-b focus:border-lime-950 focus:ring-0" :class="errors.includes(`tickets[${index}].email`) ? 'border-red-500': 'border-gray-700'" )
                     .col-span-3
-                        select(required v-model="tickets[index].product" @change="changeTicket()" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0 overflow-hidden	" :class="errors.includes(`tickets[${index}].product`) ? 'border-red-500': 'border-gray-700'")
+                        select(required v-model="tickets[index].product" @change="changeTicket(index)" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0 overflow-hidden	" :class="errors.includes(`tickets[${index}].product`) ? 'border-red-500': 'border-gray-700'")
                             option(value="" disabled selected) Choose a ticket
                             option(:value="ticketOption" v-bind:key="index" v-for="(ticketOption, index) in ticketOptions") {{ticketOption.title}} ({{formatted(ticketOption.date)}})
                     .col-span-1

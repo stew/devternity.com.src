@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /registration.html
+Disallow: /ticket.html

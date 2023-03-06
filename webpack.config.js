@@ -38,6 +38,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         "CNAME",
+        "robots.txt"
       ],
       options: {
         concurrency: 100,

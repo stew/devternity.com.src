@@ -21,6 +21,7 @@ export const applicationSchema = object({
         email: string().email().required(),
         id: string().uuid().required(),
         product: object({
+            price: number().required(),
             title: string().required(),
             date: string().matches(/^(\d{4})-(\d{2})-(\d{2})$/).required(),
         }).required()
@@ -67,9 +68,6 @@ export const app = createApp({
             const urlIncludesKnownCurrency = this.$prices[urlCurrency];
             return urlIncludesKnownCurrency ? urlCurrency : 'EUR'
         },
-        ticketPrice() {
-            return this.$prices[this.billing.currency]
-        },
         formatted(date) {
             return dayjs(date).format("MMM Do")
         },
@@ -82,8 +80,7 @@ export const app = createApp({
             const matchingCode = Object.keys(discounts).find(code => this.promo.endsWith(code));
             const discountPercents = discounts[matchingCode] || 0;
 
-            const that = this;
-            const price = this.tickets.filter(it => !!it.product).map(() => that.ticketPrice()).reduce((it, that) => it + that, 0);
+            const price = this.tickets.filter(it => !!it.product).map(it => it.product.price).reduce((it, that) => it + that, 0);
             const discount = Math.floor(price * discountPercents / 100);
 
             this.discount = discount;
@@ -92,7 +89,8 @@ export const app = createApp({
         addMoreTickets() {
             this.tickets.push({ name: '', email: '', product: '', id: uuid() })
         },
-        changeTicket() {
+        changeTicket(index) {
+            this.tickets[index].product.price = this.$prices[this.billing.currency]
             this.recalculate()
         },
         deleteTicket(index) {
