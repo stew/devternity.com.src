@@ -333,8 +333,8 @@ schedule:
     to: "16:20"
     talks:
       - Gregor Hohpe
+      - Jimmy Bogard      
       - John Romero
-      - ""
   - from: "16:40"
     to: "17:30"
     talks:
@@ -518,6 +518,16 @@ keynotes:
 
       In this talk, I will tell you how all the left and right turns I took on the road prepared me to be where I'm with a much more solid foundation than the 'straight-line career path approach" would ever do.
 
+  - name: Eduards Sizovs
+    twitter: eduardsi
+    bio: Mentor @ The Principal Dev, Founder of DevTernity
+    img: Eduards.png
+    title: "How To Make Your Code Suck Less"
+    description: |
+      # How To Make Your Code Suck Less
+
+      In this session, I'll go beyond basic clean coding techniques and reveal some of my favorite (and very effective) ideas, heuristics, and practices for making real-world enterprise applications cleaner. We'll touch on many topics: naming, levels of abstraction, dealing with large objects, OO design, and much more. The examples will be taken from real enterprise projects.
+
   - name: Ian Cooper
     twitter: icooper
     bio: Principal Engineer, Global Integration Architect @ Just Eat Takeaway
@@ -528,15 +538,15 @@ keynotes:
       Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
     img: Ian Cooper.png
 
-  - name: Eduards Sizovs
-    twitter: eduardsi
-    bio: Mentor @ The Principal Dev, Founder of DevTernity
-    img: Eduards.png
-    title: "How To Make Your Code Suck Less"
+  - name: Jimmy Bogard
+    twitter: jbogard
+    bio: Chief Architect @ Headspring, Microsoft MVP, Creator of MediatR and AutoMapper
+    title: Vertical Slice Architecture
     description: |
-      # How To Make Your Code Suck Less
+      # Vertical Slice Architecture
 
-      In this session, I'll go beyond basic clean coding techniques and reveal some of my favorite (and very effective) ideas, heuristics, and practices for making real-world enterprise applications cleaner. We'll touch on many topics: naming, levels of abstraction, dealing with large objects, OO design, and much more. The examples will be taken from real enterprise projects.
+      Moving from a layered architecture to a vertical slice architecture can be a bit daunting. We remove abstractions, complex structures, and focus building on the axis of change, then what's next? What new structures, patterns, and policies will need to be introduced in this style of architecture? How will we deal with common business functionality, and where do concepts like CQRS and DDD fit in? In this session, we'll introduce the idea of vertical slice architectures, and dive into the patterns, tools, and techniques used with slices. We'll also cover how you can fit vertical slices into different kinds of systems, from desktop, SPA, and normal MVC applications. Finally, we'll look at some of the new challenges that come with slices and layers, and how a different approach provides a much more maintainable end result.
+    img: Jimmy Bogard.png
 
 faq:
   - q: Why online?
