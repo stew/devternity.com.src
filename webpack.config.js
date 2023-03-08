@@ -23,6 +23,7 @@ module.exports = {
     registration: './src/registration.pug',
     privacy: './src/privacy.pug',
     ticket: './src/ticket.pug',
+    invoice: './src/invoice.pug',
     coc: './src/coc.pug'
   },
   output: {
