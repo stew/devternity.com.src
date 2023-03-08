@@ -334,11 +334,11 @@ schedule:
     talks:
       - Gregor Hohpe
       - Jimmy Bogard      
-      - John Romero
+      - Sven Peters
   - from: "16:40"
     to: "17:30"
     talks:
-      - ""
+      - John Romero
       - ""
       - ""
 keynotes:
@@ -537,6 +537,21 @@ keynotes:
 
       Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
     img: Ian Cooper.png
+
+
+  - name: Sven Peters
+    twitter: svenpet
+    bio: Developer Advocate @ Atlassian, ex-MongoDB
+    title: "Developer Joy – How Great Teams Get s%*t Done"
+    description: |
+      # Developer Joy – How Great Teams Get s%*t Done
+
+      Software development has become more complex over the years: Building and running a distributed architecture in the cloud, ensuring observability, discussing user experience with design and product, and keeping a healthy balance between dev speed and code quality isn’t easy. Just be agile and practice DevOps, they say.
+
+      Join Sven and learn how great software teams measure and improve their developer productivity, coordinate work across teams, run microservice teams, and create a healthy and joyful engineering culture. Always backed up by data instead of opinions.
+
+      The talk will demonstrate how teams at Atlassian and other tech companies faced development challenges, reinvented themselves, and created new ways of working to get s%*t done.
+    img: Sven.png    
 
   - name: Jimmy Bogard
     twitter: jbogard
