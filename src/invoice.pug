@@ -24,7 +24,9 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                 h1.text-6xl.font-bold.tracking-tighter TAX INVOICE
                 .inline-flex.gap-2
                     h2.text-2xl.font-bold.tracking-tighter \#{{invoice.no}} 
-                    span(class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-red-500 text-white rounded-full") Awaiting payment
+                    span(v-if="invoice.status === 'unpaid'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-amber-300 text-white rounded-full") Awaiting payment
+                    span(v-if="invoice.status === 'cancelled'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-red-500 text-white rounded-full") Cancelled
+                    span(v-if="invoice.status === 'paid'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-green-500 text-white rounded-full") Paid Successfully
                 .text-slate-500
                     | {{dayjs(invoice.issued).format("Do MMMM YYYY")}}
                     br
