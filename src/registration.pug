@@ -57,6 +57,10 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                     .col-span-3
                         input(type="text" v-model="billing.name" placeholder="Your name" class="font-mono w-full text-white bg-transparent border-0 border-b   focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.name`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3
+                        select(required v-model="billing.country" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0 overflow-hidden" :class="errors.includes(`billing.country`) ? 'border-red-500': 'border-gray-700'")
+                            option(value="" disabled selected) Country
+                            option(:value="country" v-bind:key="country" v-for="country in countries") {{country}}
+                    .col-span-6
                         input(type="text" v-model="billing.email" placeholder="Billing email" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.email`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3
                         .flex.items-center
