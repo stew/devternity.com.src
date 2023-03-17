@@ -6,6 +6,14 @@ import { Switches, Times } from "./timezones.mjs";
 import { CurrencySwitcher } from "./prices.mjs";
 import Typed from "typed.js";
 
+import * as Sentry from "@sentry/browser";
+import { BrowserTracing } from "@sentry/tracing";
+
+Sentry.init({
+  dsn: "https://623d5f87c6b14ea1ad82cba7afc5fb21@o4504854084255744.ingest.sentry.io/4504854087139328",
+  integrations: [new BrowserTracing()],
+  tracesSampleRate: 1.0,
+});
 
 var options = {
   strings: ['senior engineers.', 'software architects.', 'engineering leaders.'],
@@ -13,8 +21,6 @@ var options = {
   backSpeed: 40,
   loop: true,
 };
-
-new Typed('#turningTo', options);
 
 
 function initTimeZoneSwitches() {
@@ -74,11 +80,15 @@ function initCurrencySwitcher() {
     switcher.init();
 }
 
+function initTyper() {
+    new Typed('#turningTo', options);
+}
 
 
+initPageEmerging();
 initModal();
 initSky();
-initPageEmerging();
 initCountdown();
 initTimeZoneSwitches();
 initCurrencySwitcher();
+initTyper()
