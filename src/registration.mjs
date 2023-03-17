@@ -7,6 +7,9 @@ import dayjs from "dayjs";
 import advancedFormat from 'dayjs/plugin/advancedFormat.js'
 dayjs.extend(advancedFormat)
 
+import * as Sentry from "@sentry/vue";
+import { BrowserTracing } from "@sentry/tracing";
+
 const countries = {
     "AF": "Afghanistan",
     "AX": "Aland Islands",
@@ -384,6 +387,13 @@ export const app = createApp({
         }
     }
 })
+
+Sentry.init({
+    app,
+    dsn: "https://623d5f87c6b14ea1ad82cba7afc5fb21@o4504854084255744.ingest.sentry.io/4504854087139328",
+    tracesSampleRate: 1.0,
+  });
+
 app.config.globalProperties.$product = window.product
 app.config.globalProperties.$ticketOptions = window.ticketOptions
 app.config.globalProperties.$prices = window.prices

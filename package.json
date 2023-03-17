@@ -37,6 +37,7 @@
   "dependencies": {
     "@sentry/browser": "^7.43.0",
     "@sentry/tracing": "^7.43.0",
+    "@sentry/vue": "^7.43.0",
     "cash-dom": "^8.1.2",
     "dayjs": "^1.11.7",
     "ky": "^0.33.2",
