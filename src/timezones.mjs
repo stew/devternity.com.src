@@ -26,7 +26,7 @@ function timeZone(timeZoneName) {
 
 export class Switches {
     constructor() {
-        this.localTimeZone = timeZone('longGeneric');  // Malaysia Time
+        this.localTimeZone = timeZone('long');  // Malaysia Time
         this.localTimeOffset = timeZone('short');      // GMT+8
         toggleTexts.text(`Show ${this.localTimeZone} (${this.localTimeOffset})`);
     }
