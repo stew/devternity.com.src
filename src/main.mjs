@@ -10,16 +10,16 @@ import * as Sentry from "@sentry/browser";
 import { BrowserTracing } from "@sentry/tracing";
 
 Sentry.init({
-  dsn: "https://623d5f87c6b14ea1ad82cba7afc5fb21@o4504854084255744.ingest.sentry.io/4504854087139328",
-  integrations: [new BrowserTracing()],
-  tracesSampleRate: 1.0,
+    dsn: "https://623d5f87c6b14ea1ad82cba7afc5fb21@o4504854084255744.ingest.sentry.io/4504854087139328",
+    integrations: [new BrowserTracing()],
+    tracesSampleRate: 1.0,
 });
 
 var options = {
-  strings: ['senior engineers.', 'software architects.', 'engineering leaders.'],
-  typeSpeed: 40,
-  backSpeed: 40,
-  loop: true,
+    strings: ['senior engineers.', 'software architects.', 'engineering leaders.'],
+    typeSpeed: 40,
+    backSpeed: 40,
+    loop: true,
 };
 
 
@@ -45,6 +45,10 @@ function initCountdown() {
 }
 
 function initSky() {
+    if (!Element.prototype.animate) {
+        return;
+    }
+
     const sky = new Sky();
     $(window).on('load', () => {
         sky.redraw();
