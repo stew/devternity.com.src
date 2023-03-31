@@ -198,6 +198,7 @@ masterclasses:
       from: "09:00"
       to: "17:00"
       title: "Programming in Kotlin: The Essential Parts"
+      almost_sold_out: true
       brief_description: |
         # Programming in Kotlin: The Essential Parts
 
@@ -333,7 +334,7 @@ schedule:
     to: "16:20"
     talks:
       - Gregor Hohpe
-      - Jimmy Bogard      
+      - Jimmy Bogard
       - Sven Peters
   - from: "16:40"
     to: "17:30"
@@ -548,7 +549,6 @@ keynotes:
       Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
     img: Ian Cooper.png
 
-
   - name: Sven Peters
     twitter: svenpet
     bio: Developer Advocate @ Atlassian, ex-MongoDB
@@ -561,7 +561,7 @@ keynotes:
       Join Sven and learn how great software teams measure and improve their developer productivity, coordinate work across teams, run microservice teams, and create a healthy and joyful engineering culture. Always backed up by data instead of opinions.
 
       The talk will demonstrate how teams at Atlassian and other tech companies faced development challenges, reinvented themselves, and created new ways of working to get s%*t done.
-    img: Sven.png    
+    img: Sven.png
 
   - name: Jimmy Bogard
     twitter: jbogard
