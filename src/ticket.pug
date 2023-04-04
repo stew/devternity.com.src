@@ -13,7 +13,7 @@ html.scroll-smooth.antialiased(lang="en")
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
     link(href='https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')    
     script(src=require('./ticket.mjs') defer)
-body#app.bg-black.text-white.opacity-0.transition-all.duration-700
+body#app.bg-black.text-white.opacity-0
     .ticketNotFound.flex.flex-col.items-center.justify-center.gap-4.h-screen(v-if="Object.keys(ticket).length === 0")
         h1.text-6xl No ticket found.
         h2.text-3xl You can purchase tickets at 
