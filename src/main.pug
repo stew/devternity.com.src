@@ -117,8 +117,8 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
         section.container.flex.items-center.text-slate-300(class="lg:w-3/5 mb-[50vh] mt-[20vh]")
           .flex.flex-col.gap-10.text-2xl
             .font-bold DevTernity is the #1 conference for professional software developers.
-            p Since 2015, we have helped thousands of engineers thrive in senior technical roles. We don't focus on a single framework or tools that come and go. Here you'll develop fundamental skills paramount to your success – coding, architecture, engineering practices, and tech leadership.
-            p I am looking forward to seeing you at the conference. It's going to be a blast.
+            p Since 2015, we have helped thousands of engineers thrive in senior technical roles. We don't focus on a single programming language, framework, or tools that come and go. Here you'll develop core skills paramount to your success – coding, architecture, engineering practices, and tech leadership.
+            p I am looking forward to seeing you at the conference. It's going to be a blast! 🚀
             p.text-right.font-mono
               span(class="before:content-['>'] before:mr-2 before:text-lime-950") Eduards Sizovs, DevTernity founder
         section#Speakers.container.space-y-4.pb-40
@@ -224,10 +224,21 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
             a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
       section.container.text-center(class="mt-[10vh] mb-[40vh]") 
         p.text-slate-600 * Additional 20% EU VAT charge applies to individuals, companies VAT non-payers, and companies in the Republic of Estonia.
-      footer#FAQ
+      section.container#Partners
+        h1.w-full.mb-4.text-center.text-base.font-semibold.uppercase.text-gray-400.tracking-wider
+          | Our friends
+        .max-w-7xl.mx-auto.flex.flex-wrap.justify-around.items-center.gap-12.py-12.px-4
+          each partner in event.partners
+            a(class='text-gray-400 hover:text-gray-200' target='_blank' href=partner.link rel="noopener noreferrer nofollow")
+              img(src=require(`./images/sponsors/${partner.title.toLowerCase()}.svg`) alt=partner.title class="w-[140px] h-auto max-h-12 fill-current")
+
+
+
+      footer#FAQ(class="mt-[40vh]")
         section.container.space-y-4
           h1.text-6xl(class="md:text-8xl") FAQ
           h2.text-2xl(class="md:text-5xl") Frequently Asked Questions
+
         section.container.mt-40.flex.flex-col.gap-y-10
           each faq, index in event.faq
             div.space-y-8(id=index + 1)

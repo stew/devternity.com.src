@@ -44,7 +44,7 @@ module.exports = {
       options: {
         concurrency: 100,
       },
-    })    
+    })
   ],
   module: {
     rules: [
@@ -65,12 +65,16 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpe?g|webp)$/,
+        test: /\.(png|jpe?g|webp)$/,
         include: /src[\\/]images/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/img/[name]-[ext]',
         },
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset/inline',
       },
       {
         test: /\.(png|jpg)$/i,

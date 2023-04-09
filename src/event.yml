@@ -8,6 +8,30 @@ prices:
   USD: 435
 registration_opens: "2023-02-28"
 status: on_sale # on_sale or empty
+partners:
+  - title: Google
+    link: https://www.google.com
+  - title: Logitech
+    link: https://www.logitech.com
+  - title: DigitalOcean
+    link: https://www.digitalocean.com
+  - title: Slack
+    link: https://www.slack.com
+  - title: Microsoft
+    link: https://www.microsoft.com
+  - title: Atlassian
+    link: https://www.atlassian.com
+  - title: Pulumi
+    link: https://pulumi.com
+  - title: AWS
+    link: https://aws.amazon.com
+  - title: Coursera
+    link: https://coursera.com
+  - title: Gitlab
+    link: https://gitlab.com
+  - title: JetBrains
+    link: https://www.jetbrains.com
+
 masterclasses:
   date: "2023-12-08"
   items:
