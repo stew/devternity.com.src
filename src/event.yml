@@ -31,6 +31,9 @@ partners:
     link: https://gitlab.com
   - title: DevITUK
     link: https://devitjobs.uk/jobs/all/remote
+  - title: DevEvents
+    follow: true
+    link: https://dev.events/tech
   - title: JetBrains
     link: https://www.jetbrains.com
 

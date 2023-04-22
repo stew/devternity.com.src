@@ -229,7 +229,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           | Our friends
         .max-w-7xl.mx-auto.flex.flex-wrap.justify-around.items-center.gap-12.py-12.px-4
           each partner in event.partners
-            a(class='text-gray-400 hover:text-gray-200' target='_blank' href=partner.link rel="noopener noreferrer nofollow")
+            a(class='text-gray-400 hover:text-gray-200' target='_blank' href=partner.link rel=partner.follow ? "" : "noopener noreferrer nofollow")
               img(src=require(`./images/sponsors/${partner.title.toLowerCase()}.svg`) alt=partner.title class="w-[140px] h-auto max-h-12 fill-current")
 
 
