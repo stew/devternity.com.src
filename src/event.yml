@@ -56,7 +56,7 @@ masterclasses:
         * Prioritize technical debt in large-scale systems
         * Balance the trade-off between improving existing code versus adding new features
         * Put quantitative numbers on the costs so that you can make the business case for larger improvements to non-technical stakeholders
-          
+
         Go through real-world case studies from both Microservices and Monoliths.
 
         And much more!
@@ -70,9 +70,9 @@ masterclasses:
       brief_description: |
         # Microservices, Modular Monoliths, and Event-Driven Systems
 
-        In this masterclass, I’ll take you through three different styles of enterprise service architecture: modular monoliths, distributed synchronous systems, and event-driven systems. 
+        In this masterclass, I’ll take you through three different styles of enterprise service architecture: modular monoliths, distributed synchronous systems, and event-driven systems.
 
-        Together, we will design a non-trivial backend system and find out the strengths and weaknesses of each architectural approach. We will discuss the typical mistakes and problems developers face during service architecture design and how to solve them. You will learn how to choose the best architecture style for your project, and how to design hybrid solutions, leveraging the best parts of each architecture style. 
+        Together, we will design a non-trivial backend system and find out the strengths and weaknesses of each architectural approach. We will discuss the typical mistakes and problems developers face during service architecture design and how to solve them. You will learn how to choose the best architecture style for your project, and how to design hybrid solutions, leveraging the best parts of each architecture style.
 
         Topics include:
         * Understanding the main styles of service and backend architecture
@@ -96,9 +96,9 @@ masterclasses:
       brief_description: |
         # Practical Leadership for Developers
 
-        We all have an opportunity every day to make a postive impact on folks around us. These are often called "soft skills," but they can be some of the hardest to learn! We could call them "people skills," "essential skills," or "core skills." But, how about "**SKILLS OF AWESOMENESS?**" Yes, what we all need is more ways we can be awesome to each other, and awesome together. 
+        We all have an opportunity every day to make a postive impact on folks around us. These are often called "soft skills," but they can be some of the hardest to learn! We could call them "people skills," "essential skills," or "core skills." But, how about "**SKILLS OF AWESOMENESS?**" Yes, what we all need is more ways we can be awesome to each other, and awesome together.
 
-        You'll learn: 
+        You'll learn:
         * Why leadership and awesomeness skills matter to everyone
         * How to become a better leader
         * How to run effective meetings
@@ -108,7 +108,7 @@ masterclasses:
 
         And much more!
 
-        Through a series of practical exercises, we will discover and discuss the most important and relevant topics you want to cover, so that you can get the most value out of this masterclass! 
+        Through a series of practical exercises, we will discover and discuss the most important and relevant topics you want to cover, so that you can get the most value out of this masterclass!
 
         The masterclass is led by David Neal – #1 speaker of 2021.
 
@@ -123,11 +123,11 @@ masterclasses:
 
         Functional programming can be an excellent approach to designing
         decoupled, reusable systems with a rich domain model. This masterclass will
-        show you why and how. 
+        show you why and how.
 
         You''ll learn the core concepts of FP, and how to
         apply them to crafting domain logic, capturing business rules, designing business
-        workflows, error handling, and much more, including: 
+        workflows, error handling, and much more, including:
         * Introduction to functional programming
         * Functions and types
         * Composition as the fundamental principle
@@ -158,7 +158,7 @@ masterclasses:
 
         Increasingly developers are relying on distributed architectures to solve the problems of scaling their applications and their development teams. But that means they now have to consider the problem of getting the parts of their systems to talk to each other.
 
-        In this masterclass, we will look at distributed systems, such as microservices, and how we integrate them. We will understand why we would prefer messaging, the fundamentals and key concepts of messaging, and how to build an event-driven architecture. 
+        In this masterclass, we will look at distributed systems, such as microservices, and how we integrate them. We will understand why we would prefer messaging, the fundamentals and key concepts of messaging, and how to build an event-driven architecture.
 
         Topics covered include:
         * Why and when distribute?
@@ -205,12 +205,12 @@ masterclasses:
 
         Are you struggling with your codebase which causes problems
         like poor maintenance, unreadability, performance, and poor testability? After this masterclass, you will be ready to identify and repair architectural
-        and code root causes of those issues using proven patterns and techniques from Domain-Driven Design, Test-Driven Development, Object-Oriented Programming, and modularization. 
+        and code root causes of those issues using proven patterns and techniques from Domain-Driven Design, Test-Driven Development, Object-Oriented Programming, and modularization.
 
         During code exercises, we will walk through solutions
-        to issues like: 
+        to issues like:
         * What to do with a “God Classes”?
-        * Modules/classes with huge coupling and with overload of business logic 
+        * Modules/classes with huge coupling and with overload of business logic
         * Mismatch between the code model and the business model of the reality
         * How to repair data inconsistency?
         * Inefficient reads from my database?
@@ -257,9 +257,9 @@ masterclasses:
       brief_description: |
         # Modern Software Engineering
 
-        In this masterclass, guided by continuous delivery expert David Farley, we'll learn durable principles at the heart of effective, modern software development. 
+        In this masterclass, guided by continuous delivery expert David Farley, we'll learn durable principles at the heart of effective, modern software development.
 
-        Farley's techniques cohere into a unified, scientific, and foundational approach to solving practical software development problems within realistic economic constraints. 
+        Farley's techniques cohere into a unified, scientific, and foundational approach to solving practical software development problems within realistic economic constraints.
 
         The topics include:
         * Doing what works to build better software faster
@@ -283,7 +283,7 @@ masterclasses:
         In this masterclass, through code examples, hands-on exercises,
         and discussions you''ll learn how to design a clean and pragmatic architecture.
 
-        The topics include: 
+        The topics include:
         * Layered Architecture: strict and relaxed variants
         * Onion Architecture (aka Clean, Hexagonal, Ports-and-Adapters, Universal)
         * Controllers: typical design options with tradeoffs
@@ -389,9 +389,9 @@ keynotes:
     description: |
       # Modern Software Engineering
 
-      In this session, continuous delivery pioneer David Farley illuminates durable principles at the heart of effective, modern software development. 
+      In this session, continuous delivery pioneer David Farley illuminates durable principles at the heart of effective, modern software development.
 
-      He distills the discipline into two core exercises: learning and exploration and managing complexity. 
+      He distills the discipline into two core exercises: learning and exploration and managing complexity.
 
       For each, he defines principles that can help you improve everything from your mindset to the quality of your code and describes approaches proven to promote success.
     img: Dave Farley.jpg
@@ -603,15 +603,6 @@ keynotes:
     img: Jimmy Bogard.png
 
 faq:
-  - q: Why online?
-    a: |
-      We believe that the future of education is online.
-
-      If organized with love, online events beat offline events in accessibility, convenience, inclusiveness, productivity, price, and quality. If you care, they are also better for the environment. 
-
-      Furthermore, the quality of discussions and knowledge sharing outperforms offline, where developers socialize in small groups and mostly with their peers. At DevTernity, Slack is always on fire.
-
-      Want to hangout IRL? We'll connect you with attendees living nearby for discussion, socialization, and drinks. Boom.
   - q: What time zone will the conference take place?
     a: |
       The conference will take place in **Greenwich Mean Time (GMT) timezone.** You can switch between GMT and your local timezone when viewing the schedule.
