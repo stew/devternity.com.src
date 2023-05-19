@@ -328,6 +328,32 @@ masterclasses:
         * How to ground your architecture and avoid overdesign
 
         And much more!
+    - instructor:
+        name: J.B. Rainsberger
+        img: Rainsberger.png
+      title: "Evolutionary Design: Beyond the Basics"
+      from: "11:00"
+      to: "17:00"
+      brief_description: |
+        # Evolutionary Design: Beyond the Basics
+
+        In this course, we discuss complex tradeoff decisions involved in making evolutionary design a core, everyday programming practice. You’ll learn how to start to make the design flex, how to balance production with protecting your production capacity, and how to expand your view from the elements of simple design to higher-level principles of modularity.
+
+        Key topics:
+        * Shifting attention from behavior mistakes to design mistakes.
+        * How the L and D in SOLID might be all you really need.
+        * Balancing customer tests (BDD) with programmer tests (TDD).
+        * Taming mock object madness!
+        * Breaking through your refactoring rut.
+        * Client-First Design with (or without!) Test Doubles.
+        * The Universal Architecture and how architecture relates to design.
+        * Deciding when to introduce relentlessly tiny steps.
+        * Guiding your colleagues to buy into guiding the design to evolve.
+        * Patterns of writing tests: which ones, when, and why?
+        * Exploring how evolutionary design differs in procedural, object-oriented, and functional programming.
+        * Learning to trust the habits you’ve built.
+
+        And much more!
 schedule:
   - from: "09:00"
     to: "09:50"
