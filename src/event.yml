@@ -490,15 +490,17 @@ keynotes:
     twitter: tastapod
     bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
     img: Dan North.png
-    title: "CUPID: For Joyful Coding"
+    title: The Most Dangerous Phrase
     description: |
-      # CUPID: For Joyful Coding
+      # The Most Dangerous Phrase
 
-      Some codebases are nicer to work with than others. This is true for applications, services, libraries, frameworks, even programming languages themselves. Is this a purely personal choice or are there universal characteristics of software that can make code a joy to work with?
-      Daniel has been thinking about this for a long time, especially since he poked a stick at the SOLID principles for fun a few years ago and people came after him with pitchforks. His post about why he feels SOLID is outdated ended up on the front page of Hacker News!
-      Now he has codified his thoughts into his own pithy five-letter acronym, CUPID: Composable, Unix philosophy, Predictable, Idiomatic, Domain-based.
-      Why these characteristics, what do they mean, why should you care, and how can they improve your coding experience?
+      Some advice is timeless; it ages like a fine wine. Each time you revisit it you discover a nuance, a new connection to something else. As you grow, the advice is waiting there to reveal another layer you had never considered.
 
+      Some advice is a product of its time; it ages like milk. It starts fresh, then it begins to smell, and eventually it rots and can even become harmful! It made sense in the context and constraints of its day, but things have changed and it is no longer relevant.
+
+      As Admiral Grace Hopper famously said: "The most dangerous phrase you can use is 'But we've always done it this way!'" Daniel believes this is why so many people have an almost religious zeal for SOLID, Scrum, and other antiquities.
+
+      In this session, Daniel argues from first principles why ideas like SOLID and Scrum made sense in their day, over a quarter century ago, and why they have been superseded and should now be considered harmful. For contrast, he suggests Continuous Delivery and lean product development are ageing like fine wines. If there is time, he will show how methods like SAFe have never been relevant and never will be, but can be very appealing to a certain kind of manager.
   - name: John Romero
     twitter: romero
     bio: Game Designer, Programmer, Co-founder of id Software
