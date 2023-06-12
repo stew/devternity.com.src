@@ -370,7 +370,7 @@ schedule:
   - from: "11:20"
     to: "12:10"
     talks:
-      - Eduards Sizovs
+      - Kelsey Hightower
       - Ian Cooper
       - Sam Newman
   - from: "13:10"
@@ -576,18 +576,7 @@ keynotes:
 
       In this talk, I will tell you how all the left and right turns I took on the road prepared me to be where I'm with a much more solid foundation than the 'straight-line career path approach" would ever do.
 
-  - name: Eduards Sizovs
-    twitter: eduardsi
-    bio: Mentor @ The Principal Dev, Founder of DevTernity
-    img: Eduards.png
-    title: "How To Make Your Code Suck Less"
-    description: |
-      # How To Make Your Code Suck Less
-
-      In this session, I'll go beyond basic clean coding techniques and reveal some of my favorite (and very effective) ideas, heuristics, and practices for making real-world enterprise applications cleaner. We'll touch on many topics: naming, levels of abstraction, dealing with large objects, OO design, and much more. The examples will be taken from real enterprise projects.
-
   - name: Kristine Howard
-    twitter: eduardsi
     bio: Head of Developer Relations at Amazon Web Services (AWS)
     img: Kris.png
     title: "How to Interview Developers (and enjoy it)"
@@ -629,6 +618,15 @@ keynotes:
 
       Moving from a layered architecture to a vertical slice architecture can be a bit daunting. We remove abstractions, complex structures, and focus building on the axis of change, then what's next? What new structures, patterns, and policies will need to be introduced in this style of architecture? How will we deal with common business functionality, and where do concepts like CQRS and DDD fit in? In this session, we'll introduce the idea of vertical slice architectures, and dive into the patterns, tools, and techniques used with slices. We'll also cover how you can fit vertical slices into different kinds of systems, from desktop, SPA, and normal MVC applications. Finally, we'll look at some of the new challenges that come with slices and layers, and how a different approach provides a much more maintainable end result.
     img: Jimmy Bogard.png
+
+  - name: Kelsey Hightower
+    bio: Distinguished Engineer, Staff Developer Advocate @ Google
+    img: Kelsey.png
+    title: Skills Commonly Missing from Many Senior Engineers
+    description: |
+      # Skills Commonly Missing from Many Senior Engineers
+
+      Most have learned to communicate with compilers but not people, so they lack the skill to progress their ideas and solutions beyond the confines of a small team, code base, or the outside world. Code is going to continue to get easier to write, test, and deploy, and that's going to require the future of software development to change from spending most of your time in an IDE to in front of people. As the saying goes: "some people have ideas and some ideas have people", and it's going to require an additional set of skills to do that. Let'l talk about these skills.
 
 faq:
   - q: What time zone will the conference take place?
