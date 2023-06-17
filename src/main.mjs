@@ -4,7 +4,6 @@ import { Modal } from "./modal.mjs"
 import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
 import { CurrencySwitcher } from "./prices.mjs";
-import Typed from "typed.js";
 
 import * as Sentry from "@sentry/browser";
 import { BrowserTracing } from "@sentry/tracing";
@@ -14,14 +13,6 @@ Sentry.init({
     integrations: [new BrowserTracing()],
     tracesSampleRate: 1.0,
 });
-
-var options = {
-    strings: ['senior engineers.', 'software architects.', 'engineering leaders.'],
-    typeSpeed: 40,
-    backSpeed: 40,
-    loop: true,
-};
-
 
 function initTimeZoneSwitches() {
     const switches = new Switches();
@@ -84,10 +75,6 @@ function initCurrencySwitcher() {
     switcher.init();
 }
 
-function initTyper() {
-    new Typed('#turningTo', options);
-}
-
 
 initPageEmerging();
 initModal();
@@ -95,4 +82,12 @@ initSky();
 initCountdown();
 initTimeZoneSwitches();
 initCurrencySwitcher();
-initTyper()
+
+$(window).on('scroll', () => {
+    const scroll = $(window).prop('scrollY');
+    if (scroll >= 150) {
+        $('.excellent').addClass("opacity-0 duration-500");
+    } else {
+        $('.excellent').removeClass("opacity-0");
+    }
+});

@@ -39,6 +39,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         "CNAME",
+        "video.mp4",
         "robots.txt"
       ],
       options: {

@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.splash {
+  height: 800px;
+}
+
+.splash h1::after {
+  margin-left: 5px;
+  color: #84ff3d;
+  content: ".";
+  animation: blink 1s linear infinite;
+  position: relative;
+  z-index: 20;
+}
+
+#video {
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 800px;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(238, 177, 191, 0.2) 5%,
+    rgba(212, 45, 171, 0.2) 25%,
+    rgba(77, 29, 99, 0.2) 50%,
+    rgba(3, 2, 67, 0.2) 80%
+  );
+}
