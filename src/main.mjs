@@ -1,5 +1,4 @@
 import $ from "cash-dom";
-import { Sky } from "./sky.mjs";
 import { Modal } from "./modal.mjs"
 import { Countdown } from "./countdown.mjs";
 import { Switches, Times } from "./timezones.mjs";
@@ -35,27 +34,7 @@ function initCountdown() {
     countdown.startTicking();
 }
 
-function initSky() {
-    if (!Element.prototype.animate) {
-        return;
-    }
 
-    const sky = new Sky();
-    $(window).on('load', () => {
-        sky.redraw();
-    })
-
-    var oldWidth = sky.width();
-    var oldHeight = sky.height();
-    $(window).on('resize', () => {
-        const hasSkyGrownBigger = oldWidth < sky.width() || oldHeight < sky.height();
-        if (hasSkyGrownBigger) {
-            sky.redraw();
-            oldWidth = sky.width();
-            oldHeight = sky.height();
-        }
-    })
-}
 
 function initModal() {
     $('[data-modal]').on('click', (e) => {
@@ -78,7 +57,6 @@ function initCurrencySwitcher() {
 
 initPageEmerging();
 initModal();
-initSky();
 initCountdown();
 initTimeZoneSwitches();
 initCurrencySwitcher();

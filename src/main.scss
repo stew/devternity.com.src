@@ -2,28 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.splash {
-  height: 800px;
-}
-
-.splash h1::after {
+h1.devternity::after {
   margin-left: 5px;
   color: #84ff3d;
   content: ".";
   animation: blink 1s linear infinite;
-  position: relative;
-  z-index: 20;
-}
-
-#video {
-  position: absolute;
-  display: block;
-  top: 0px;
-  right: 0px;
-  min-width: 100%;
-  min-height: 800px;
-  z-index: -10;
-  opacity: 0.4;
 }
 
 @keyframes blink {

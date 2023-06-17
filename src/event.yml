@@ -649,19 +649,7 @@ faq:
   - q: Who is behind the conference?
     a: DevTernity is founded and led by [Eduards Sizovs](https://www.linkedin.com/in/eduardsi/). Being entirely vendor-independent and accepting no sponsorship is a prerequisite for maintaining unbiased views and exceptional quality of all sessions.
   - q: How do I pay for the conference?
-    a: |
-      After registration, you'll receive a tax invoice that you can pay by Visa/Mastercard/AMEX or via bank transfer. We don't send quotes, proposals, or fill out vendor forms. Your internal procurement procedure is all on you.
-
-      Bills/invoices are issued by:
-      ```
-      DevTernity OÜ
-      Registration number: 14226860
-      VAT number: EE101974721
-      Moisavahe 38-129 Tartu, Estonia, 50708
-      Bank: AS LHV Pank
-      IBAN: EE757700771002512472
-      SWIFT: LHVBEE22
-      ```
+    a: After registration, you'll receive a tax invoice that you can pay by Visa/Mastercard/AMEX or via bank transfer.
   - q: How can I follow the news and updates?
     a: |
       <div class="flex gap-4 items-center">
