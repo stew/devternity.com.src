@@ -396,7 +396,7 @@ schedule:
     talks:
       - John Romero
       - Scott Hanselman
-      - ""
+      - David Heinemeier Hansson
 keynotes:
   - name: Robert Martin
     twitter: unclebobmartin
@@ -421,6 +421,16 @@ keynotes:
 
       For each, he defines principles that can help you improve everything from your mindset to the quality of your code and describes approaches proven to promote success.
     img: Dave Farley.jpg
+
+  - name: David Heinemeier Hansson
+    twitter: dhh
+    bio: Creator of Ruby on Rails, Co-founder @ Basecamp, Hey
+    img: DHH.png
+    title: "The Most Important Things: Fireside with DHH"
+    description: |
+      # A Fireside with David Heinemeier Hansson
+
+      In this fireside, we'll be talking with David Heinemeier Hansson about the future of Rails, Basecamp's migration from clouds, what makes a good engineer, hiring, self-development, and living a full life.
 
   - name: Scott Hanselman
     twitter: shanselman
