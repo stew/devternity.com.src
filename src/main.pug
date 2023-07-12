@@ -97,7 +97,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
     link(href='https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')
     link(rel="stylesheet" href=require('./main.scss'))
     script(src=require('./main.mjs') defer)
-    script(defer data-domain="devternity.com" data-api="/pla/event" src="/pla/script.js")
+    script(src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "149e24b8de864f61acf02f4e10ab951c"}' defer)
   if !event.status
     body.text-white.antialiased.overflow-hidden
       .sky
