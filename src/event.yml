@@ -6,6 +6,7 @@ prices:
   EUR: 399
   GBP: 360
   USD: 435
+priceHint: Additional 20% VAT charge applies to EU individuals, EU companies VAT non-payers, and companies in the Republic of Estonia.
 registration_opens: "2023-02-28"
 status: on_sale # on_sale or empty
 partners:
