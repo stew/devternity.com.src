@@ -42,6 +42,58 @@ masterclasses:
   date: "2023-12-08"
   items:
     - instructor:
+        name: Jimmy Bogard
+        img: Jimmy Bogard.png
+      title: "Domain-Driven Design in Theory and Practice"
+      from: "14:00"
+      to: "21:00"
+      brief_description: |
+        # Domain-Driven Design in Theory and Practice
+
+        Understand the concepts of DDD but feeling overwhelmed to implement? Feeling overwhelmed by complex examples and can't connect how to implement DDD in your project? Looking for more concrete guidance on the concepts and principles of DDD and want to learn how to connect it to real-world code? If this sounds familiar, then this masterclass is for you.
+
+        We cover both the theory and patterns of DDD, and connect it to code with hands-on examples in .NET 6.
+
+        In this masterclass, you'll learn:
+        * Where DDD fits in to software delivery and what business problems it addresses
+        * When to use DDD and when not to use it
+        * How to craft and enforce a ubiquitous language
+        * The fundamental modeling building blocks
+        * The role of refactoring in shaping and reshaping our model
+        * How to define bounded contexts and microservices
+        * Realizing a pragmatic implementation with ASP.NET Core 6 and EF Core 6
+        * ...and much more!
+
+        We spend some time on the theory and concepts of DDD and then applying it to a real-world, complex example with hands-on code exercises.
+
+        We will be using .NET as our development platform, but the learned concepts will be applicable to other languages and platforms.
+
+    - instructor:
+        name: J.B. Rainsberger
+        img: Rainsberger.png
+      title: "Evolutionary Design: Beyond the Basics"
+      from: "11:00"
+      to: "17:00"
+      brief_description: |
+        # Evolutionary Design: Beyond the Basics
+
+        In this course, we discuss complex tradeoff decisions involved in making evolutionary design a core, everyday programming practice. You’ll learn how to start to make the design flex, how to balance production with protecting your production capacity, and how to expand your view from the elements of simple design to higher-level principles of modularity.
+
+        Key topics:
+        * How to crack the chicken-and-egg problem: I need to write tests in order to refactor, and I need to refactor in order to write tests.
+        * How to understand when to refactor and when to rewrite, and how to do that safely.
+        * How to break through your refactoring rut.
+        * How to balanace customer tests (BDD) with programmer tests (TDD).
+        * How to tame mock object madness!
+        * How to write good tests.
+        * How architecture relates to design.
+        * How to guide your colleagues to buy into evolutionary design.
+        * How to build effective refactoring habits.
+        * Learning to trust the habits you’ve built.
+
+        And much more!
+
+    - instructor:
         name: Adam Tornhill
         img: Tornhill.jpg
       title: Prioritizing Technical Debt in Large-Scale Systems
@@ -61,32 +113,6 @@ masterclasses:
         Go through real-world case studies from both Microservices and Monoliths.
 
         And much more!
-
-    - instructor:
-        name: Jakub Nabrdalik
-        img: Jakub Nabrdalik.png
-      title: Microservices, Modular Monoliths, and Event-Driven Systems
-      from: "09:00"
-      to: "17:00"
-      brief_description: |
-        # Microservices, Modular Monoliths, and Event-Driven Systems
-
-        In this masterclass, I’ll take you through three different styles of enterprise service architecture: modular monoliths, distributed synchronous systems, and event-driven systems.
-
-        Together, we will design a non-trivial backend system and find out the strengths and weaknesses of each architectural approach. We will discuss the typical mistakes and problems developers face during service architecture design and how to solve them. You will learn how to choose the best architecture style for your project, and how to design hybrid solutions, leveraging the best parts of each architecture style.
-
-        Topics include:
-        * Understanding the main styles of service and backend architecture
-        * Microservies or monoliths? Is there a middle ground?
-        * How to improve monoliths with modularity; Intro to Modular Monoliths
-        * How and when to split the system into services with REST/RPC
-        * How and when to become event-driven and fully async
-        * How to design non-trivial backend and service architecture
-        * How to avoid common errors in designing backend and service architectures
-        * How to use C4 model to communicate your architecture
-        * ...and much more!
-
-        This masterclass covers fundamental concepts, relevant to all programming platforms and languages; developers and architects with different backgrounds can attend.
 
     - instructor:
         name: David Neal
@@ -146,6 +172,32 @@ masterclasses:
         We will be using F# as our development language. The principles will be applicable
         to other languages. No experience with F# needed.
       almost_sold_out: true
+
+    - instructor:
+        name: Jakub Nabrdalik
+        img: Jakub Nabrdalik.png
+      title: Microservices, Modular Monoliths, and Event-Driven Systems
+      from: "09:00"
+      to: "17:00"
+      brief_description: |
+        # Microservices, Modular Monoliths, and Event-Driven Systems
+
+        In this masterclass, I’ll take you through three different styles of enterprise service architecture: modular monoliths, distributed synchronous systems, and event-driven systems.
+
+        Together, we will design a non-trivial backend system and find out the strengths and weaknesses of each architectural approach. We will discuss the typical mistakes and problems developers face during service architecture design and how to solve them. You will learn how to choose the best architecture style for your project, and how to design hybrid solutions, leveraging the best parts of each architecture style.
+
+        Topics include:
+        * Understanding the main styles of service and backend architecture
+        * Microservies or monoliths? Is there a middle ground?
+        * How to improve monoliths with modularity; Intro to Modular Monoliths
+        * How and when to split the system into services with REST/RPC
+        * How and when to become event-driven and fully async
+        * How to design non-trivial backend and service architecture
+        * How to avoid common errors in designing backend and service architectures
+        * How to use C4 model to communicate your architecture
+        * ...and much more!
+
+        This masterclass covers fundamental concepts, relevant to all programming platforms and languages; developers and architects with different backgrounds can attend.
 
     - instructor:
         name: Ian Cooper
@@ -323,73 +375,50 @@ masterclasses:
         * How to ground your architecture and avoid overdesign
 
         And much more!
-    - instructor:
-        name: J.B. Rainsberger
-        img: Rainsberger.png
-      title: "Evolutionary Design: Beyond the Basics"
-      from: "11:00"
-      to: "17:00"
-      brief_description: |
-        # Evolutionary Design: Beyond the Basics
 
-        In this course, we discuss complex tradeoff decisions involved in making evolutionary design a core, everyday programming practice. You’ll learn how to start to make the design flex, how to balance production with protecting your production capacity, and how to expand your view from the elements of simple design to higher-level principles of modularity.
-
-        Key topics:
-        * How to crack the chicken-and-egg problem: I need to write tests in order to refactor, and I need to refactor in order to write tests.
-        * How to understand when to refactor and when to rewrite, and how to do that safely.
-        * How to break through your refactoring rut.
-        * How to balanace customer tests (BDD) with programmer tests (TDD).
-        * How to tame mock object madness!
-        * How to write good tests.
-        * How architecture relates to design.
-        * How to guide your colleagues to buy into evolutionary design.
-        * How to build effective refactoring habits.
-        * Learning to trust the habits you’ve built.
-
-        And much more!
 schedule:
   - from: "09:00"
     to: "09:50"
     talks:
-      - Dave Farley
       - Kevlin Henney
-      - Sandi Metz
+      - Adam Tornhill
+      - Daniel Terhorst-North
   - from: "10:10"
     to: "11:00"
     talks:
-      - Adam Tornhill
-      - Venkat Subramaniam
-      - J.B. Rainsberger
+      - Gregor Hohpe
+      - Ian Cooper
+      - Kristine Howard
   - from: "11:20"
     to: "12:10"
     talks:
-      - Kelsey Hightower
-      - Ian Cooper
+      - Dave Farley
       - Sam Newman
+      - Sven Peters
   - from: "13:10"
     to: "14:00"
     talks:
       - Robert Martin
-      - Josh Long
-      - Kristine Howard
+      - Jimmy Bogard
+      - Thiago Ghisi
   - from: "14:20"
     to: "15:10"
     talks:
-      - Thiago Ghisi
-      - Daniel Terhorst-North
-      - Allen Holub
+      - Sandi Metz
+      - Venkat Subramaniam
+      - David Heinemeier Hansson
   - from: "15:30"
     to: "16:20"
     talks:
-      - Gregor Hohpe
-      - Jimmy Bogard
-      - Sven Peters
+      - Kelsey Hightower
+      - Josh Long
+      - J.B. Rainsberger
   - from: "16:40"
     to: "17:30"
     talks:
-      - John Romero
       - Scott Hanselman
-      - David Heinemeier Hansson
+      - John Romero
+      - Allen Holub
 keynotes:
   - name: Robert Martin
     twitter: unclebobmartin
@@ -423,7 +452,7 @@ keynotes:
     description: |
       # A Fireside with David Heinemeier Hansson
 
-      At the upcoming DevTernity, we'll have a special guest David Heinemeier Hansson, and we'll be talking about the future of Rails, why and how Basecamp has moved from cloud to bare metal, what makes a good developer, hiring, self-development, and life.
+      Meet our special guest – David Heinemeier Hansson – the creator of Ruby on Rails, CTO and co-founder of Basecamp and Hey. In this fireside chat we'll be talking about the future of Rails, why and how Basecamp has moved from cloud to bare metal, what makes a good developer, hiring, self-development, and life.
 
   - name: Scott Hanselman
     twitter: shanselman
