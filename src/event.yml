@@ -55,13 +55,14 @@ masterclasses:
         We cover both the theory and patterns of DDD, and connect it to code with hands-on examples in .NET 6.
 
         In this masterclass, you'll learn:
-        * Where DDD fits in to software delivery and what business problems it addresses
-        * When to use DDD and when not to use it
+        * What problems DDD addresses, when to use it, and when **not** to use it
+        * The fundamental DDD building blocks — entities, value objects, domain services, etc.
+        * How to integrate DDD into your software delivery
+        * How to find and enforce service boundaries
+        * How to define bounded contexts between microservices
         * How to craft and enforce a ubiquitous language
-        * The fundamental modeling building blocks
-        * The role of refactoring in shaping and reshaping our model
-        * How to define bounded contexts and microservices
-        * Realizing a pragmatic implementation with ASP.NET Core 6 and EF Core 6
+        * How to continuously refactor our model as our domain understanding evolves
+        * How to pragmatically apply DDD in ASP.NET Core 6 and EF Core 6
         * ...and much more!
 
         We spend some time on the theory and concepts of DDD and then applying it to a real-world, complex example with hands-on code exercises.
@@ -661,9 +662,9 @@ keynotes:
       Most have learned to communicate with compilers but not people, so they lack the skill to progress their ideas and solutions beyond the confines of a small team, code base, or the outside world. Code is going to continue to get easier to write, test, and deploy, and that's going to require the future of software development to change from spending most of your time in an IDE to in front of people. As the saying goes: "some people have ideas and some ideas have people", and it's going to require an additional set of skills to do that. Let'l talk about these skills.
 
 faq:
-  - q: What time zone will the conference take place?
+  - q: What time zone will the conference take place in?
     a: |
-      The conference will take place in **Greenwich Mean Time (GMT) timezone.** You can switch between GMT and your local timezone when viewing the schedule.
+      The conference will take place in **Greenwich Mean Time (GMT) timezone.**
 
       Because no timezone works equally well for everyone, you are in good company with attendees from 75+ countries, including caffeinated attendees joining at night. If you can't survive the whole day for various reasons (family, timezone, etc.), you can watch the missing parts later.
   - q: Will the sessions be recorded for watching later?
@@ -671,7 +672,7 @@ faq:
   - q: Will I be able to switch between tracks?
     a: Yes, you will be able to switch between tracks on the fly.
   - q: Can I change the ticket holder (attendee)?
-    a: Yes, you can change the attendee info yourself by typing a new name or email on the e-ticket. You don't have to inform conference organizers on this occasion.
+    a: Yes, you can change the attendee info yourself by typing a new name/email on the e-ticket. You don't have to inform conference organizers on this occasion.
   - q: Is it OK if I buy one ticket and watch the conference with colleagues who don't hold tickets?
     a: No. You have to purchase a ticket for every viewer (attendee). Be a good citizen.
   - q: Will I receive a certificate of attendance?
