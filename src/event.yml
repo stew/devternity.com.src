@@ -658,7 +658,7 @@ keynotes:
     description: |
       # Solving JS Fatigue Using Fundamental Web Architecture and Htmx
 
-      In the last decade, the SPA architecture and the JSON API have allowed much more sophisticated web applications to be built and the approach has been formalized by libraries such as React and Vue. In the last few years, however, we have seen the rise of an associated phenomena: Javascript Fatigue in which developers admit to being overwhelmed by the complexity of the SPA architecture. Join this talk to learn how to compress the complexity of web development without losing all the benefits of SPA.
+      SPA architecture and the JSON API have allowed much more sophisticated web applications to be built and the approach has been formalized by libraries such as React and Vue. In the last few years, however, we have seen the rise of an associated phenomena: Javascript Fatigue in which developers admit to being overwhelmed by the complexity of the SPA architecture. Join this talk to learn how to compress the complexity of web development without losing all the benefits of SPA.
 
 faq:
   - q: What time zone will the conference take place in?
