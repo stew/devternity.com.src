@@ -393,7 +393,7 @@ schedule:
   - from: "11:20"
     to: "12:10"
     talks:
-      - Dave Farley
+      - Venkat Subramaniam
       - Sam Newman
       - Sven Peters
   - from: "13:10"
@@ -406,7 +406,7 @@ schedule:
     to: "15:10"
     talks:
       - Sandi Metz
-      - Venkat Subramaniam
+      - Dave Farley
       - David Heinemeier Hansson
   - from: "15:30"
     to: "16:20"
