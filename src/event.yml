@@ -407,8 +407,8 @@ schedule:
     to: "15:10"
     talks:
       - Sandi Metz
-      - Venkat Subramaniam
       - David Heinemeier Hansson
+      - Fred George
   - from: "15:30"
     to: "16:20"
     talks:
@@ -510,15 +510,14 @@ keynotes:
 
       This keynote presents my (and many other's) thinking about #NoEstimates. It argues that estimation is a bad thing, particularly in the Agile world, and presents ways to plan that don't involve estimation.
 
-  - name: Venkat Subramaniam
-    twitter: venkat_s
-    bio: Founder @ Agile Developer, Author of 10+ Programming Books
-    title: Towards Evolutionary Architecture
+  - name: Fred George
+    bio: Co-inventor of Microservices, Principal Consultant @ Fred George Consulting
+    title: Sabotaging a Transformation
     description: |
-      # Towards Evolutionary Architecture
+      # Sabotaging a Transformation
 
-      Big up front design is discouraged in agile development. However, we know that architecture plays a significant part in software systems. Evolving architecture during the development of an application seems to be a risky business. In this presentation, we will discuss the reasons to evolve the architecture, some of the core principles that can help us develop in such a manner, and the ways to minimize the risk and succeed in creating a practical and useful architecture.
-    img: Venkat Subramaniam.png
+      Transformations are difficult, and often simply fail. After all, change is usually disruptive. Even an organization that wants to embrace change can see mediocre results. The underlying causes vary from ignorance on how to transform, to full and hostile resistance. In this talk, we will discuss the various causes and the strategies we can use to overcome (or at least mitigate) this resistance to change, and create meaningful transformations with our clients.
+    img: Fred George.jpg
 
   - name: Daniel Terhorst-North
     twitter: tastapod
