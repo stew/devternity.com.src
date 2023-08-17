@@ -47,6 +47,7 @@ masterclasses:
       title: "Domain-Driven Design: Theory and Practice"
       from: "14:00"
       to: "21:00"
+      almost_sold_out: true
       brief_description: |
         # Domain-Driven Design in Theory and Practice
 
@@ -75,6 +76,7 @@ masterclasses:
       title: "Evolutionary Design: Beyond the Basics"
       from: "11:00"
       to: "17:00"
+      almost_sold_out: true
       brief_description: |
         # Evolutionary Design: Beyond the Basics
 
@@ -206,7 +208,6 @@ masterclasses:
       title: Practical Messaging
       from: "09:00"
       to: "17:00"
-      almost_sold_out: true
       brief_description: |
         # Practical Messaging
 
