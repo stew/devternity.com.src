@@ -42,6 +42,36 @@ masterclasses:
   date: "2023-12-08"
   items:
     - instructor:
+        name: Kevlin Henney
+        img: Kevlin Henney.png
+      title: Agile Architecture
+      from: "09:00"
+      to: "17:00"
+      brief_description: |
+        # Agile Architecture
+
+        Every system has an architecture, whether accidental or
+        intentional, and regardless of whether it was put in place by a nominated
+        architect or whether it emerged from the decisions and discussions of a team.
+
+        All too often the focus of what is often described as architecture is centred
+        around a specific set of platform technologies, which forms only one part
+        of the set of concerns an architecture should. And all too often architecture
+        is seen as a separate concern from development process, whereas the two are
+        intertwined — **what you build is influenced by how you build it, and vice versa.**
+
+        The course covers a wide range of topics through a number of practical exercises,
+        with plenty of time dedicated to group discussion:
+        * The relationship between development process and architecture
+        * The roles and failure modes of testing, modelling and technology platforms
+        * Different architectural styles and design patterns
+        * How to transform product vision into architecture
+        * Future-proofing your architecture, and accounting for uncertainty
+        * How to ground your architecture and avoid overdesign
+
+        And much more!
+
+    - instructor:
         name: Jimmy Bogard
         img: Jimmy Bogard.png
       title: "Domain-Driven Design: Theory and Practice"
@@ -71,12 +101,32 @@ masterclasses:
         We will be using .NET as our development platform, but the learned concepts will be applicable to other languages and platforms.
 
     - instructor:
+        name: Anton Arhipov
+        img: Anton Arhipov.jpg
+      from: "09:00"
+      to: "17:00"
+      title: "Programming in Kotlin: The Essential Parts"
+      almost_sold_out: true
+      brief_description: |
+        # Programming in Kotlin: The Essential Parts
+        In this masterclass you'll learn the essential parts of Kotlin: an elegant, powerful, and a pleasant language to work with. We'll focus on fundamental parts of Kotlin, it's imperative and functional programming capabilities, how Kotlin provides elegance without compromising performance by tactfully channeling the JDK. We will also dive into how to interact between Kotlin and Java code.
+
+        You'll learn:
+        * How to work with ease to exploit the power of Kotlin
+        * How to write code in idiomatic Kotlin
+        * How to use powerful features of Kotlin, including extension functions and nullable types
+        * How to write type-safe, maintainable code
+        * How to leverage both imperative and functional style as appropriate
+        * How to use Kotlin's performance related features
+        * Intermix Kotlin with Java code
+        * and much more!
+
+    - instructor:
         name: J.B. Rainsberger
         img: Rainsberger.png
       title: "Evolutionary Design: Beyond the Basics"
       from: "11:00"
       to: "17:00"
-      almost_sold_out: true
       brief_description: |
         # Evolutionary Design: Beyond the Basics
 
@@ -328,36 +378,6 @@ masterclasses:
         * and much more!
 
         This masterclass uses Java as a reference language.
-    - instructor:
-        name: Kevlin Henney
-        img: Kevlin Henney.png
-      title: Agile Architecture
-      from: "09:00"
-      to: "17:00"
-      brief_description: |
-        # Agile Architecture
-
-        Every system has an architecture, whether accidental or
-        intentional, and regardless of whether it was put in place by a nominated
-        architect or whether it emerged from the decisions and discussions of a team.
-
-        All too often the focus of what is often described as architecture is centred
-        around a specific set of platform technologies, which forms only one part
-        of the set of concerns an architecture should. And all too often architecture
-        is seen as a separate concern from development process, whereas the two are
-        intertwined — **what you build is influenced by how you build it, and vice versa.**
-
-        The course covers a wide range of topics through a number of practical exercises,
-        with plenty of time dedicated to group discussion:
-        * The relationship between development process and architecture
-        * The roles and failure modes of testing, modelling and technology platforms
-        * Different architectural styles and design patterns
-        * How to transform product vision into architecture
-        * Future-proofing your architecture, and accounting for uncertainty
-        * How to ground your architecture and avoid overdesign
-
-        And much more!
-
 schedule:
   - from: "09:00"
     to: "09:50"
