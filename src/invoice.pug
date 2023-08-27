@@ -3,7 +3,7 @@ html.scroll-smooth.antialiased(lang="en")
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(name='theme-color' content='#000000')
-    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')    
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
     link(rel='stylesheet' href=require('./ticket.scss'))
     link(rel="shortcut icon" type="image/png" href=require('./images/logo.png'))
     link(rel="icon" href=require('./images/logo.png'))
@@ -11,19 +11,19 @@ html.scroll-smooth.antialiased(lang="en")
     title Tax invoice
     link(rel='preconnect' href='https://fonts.googleapis.com')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-    link(href='https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')    
+    link(href='https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')
     script(src=require('./invoice.mjs') defer)
 body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-slate-100.to-slate-300.flex.flex-col.items-center(class="print:bg-none min-h-screen min-w-[1024px]")
 
     .text-right.p-4(class="print:hidden w-[1024px]")
-        button(onclick="window.print()" class="inline-block px-5 py-2 mx-auto text-white bg-slate-400 rounded-full hover:bg-slate-500") Print
-    
+        button(onclick="window.print()" class="inline-block px-5 py-2 mx-auto text-white bg-slate-400 rounded-full hover:bg-slate-500") Print / Save as PDF
+
     .flex.flex-col.gap-10.bg-white.p-16(class="shadow-md w-[1024px] print:shadow-none")
         .flex.justify-between
             .space-y-4(class="w-3/4")
                 h1.text-6xl.font-bold.tracking-tighter TAX INVOICE
                 .inline-flex.gap-2
-                    h2.text-2xl.font-bold.tracking-tighter \#{{invoice.no}} 
+                    h2.text-2xl.font-bold.tracking-tighter \#{{invoice.no}}
                     span(v-if="invoice.status === 'unpaid'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-amber-300 text-white rounded-full") Awaiting payment
                     span(v-if="invoice.status === 'cancelled'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-red-500 text-white rounded-full") Cancelled
                     span(v-if="invoice.status === 'paid'" class="print:hidden text-xs inline-flex items-center font-bold uppercase px-3 py-1 bg-green-500 text-white rounded-full") Paid Successfully
@@ -50,9 +50,9 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                     th.px-3.py-4 Description
                     th.px-3.py-4.text-right(class="w-[150px]") Price {{invoice.billing.currency}}
             tbody
-                tr.bg-white(v-for="(item, index) in invoice.orders")  
+                tr.bg-white(v-for="(item, index) in invoice.orders")
                     td.px-3.py-1.text-teal-500.align-top  \#{{index + 1}}
-                    td.px-3.py-1  
+                    td.px-3.py-1
                         | {{item.product.title}}, {{dayjs(item.product.date).format("Do MMM YYYY")}}
                         br
                         span.text-xs.text-slate-400 {{item.name}}
@@ -77,7 +77,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                 tr(v-if="showAed")
                     td.px-3.py-1 &nbsp;
                     td.px-3.py-1.text-right.text-slate-900.font-bold SUBTOTAL
-                    td.px-3.py-1.text-right {{invoice.subtotalAed}} AED                       
+                    td.px-3.py-1.text-right {{invoice.subtotalAed}} AED
                 tr(v-if="showAed")
                     td.px-3.py-1 &nbsp;
                     td.px-3.py-1.text-right.text-slate-900.font-bold VAT 0%
@@ -85,7 +85,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                 tr(v-if="showAed")
                     td.px-3.py-1 &nbsp;
                     td.px-3.py-1.text-right.text-slate-900.font-bold TOTAL
-                    td.px-3.py-1.text-right {{invoice.totalAed}} AED                    
+                    td.px-3.py-1.text-right {{invoice.totalAed}} AED
 
 
         .flex.gap-24.mt-12
@@ -97,7 +97,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                     | Business license: 47008316
                     br
                     | Address: RAKEZ Compass Coworking,
-                    br 
+                    br
                     | Al Shohada Road, Al Hamra Industrial Zone,
                     br
                     | Ras Al Khaimah, United Arab Emirates
@@ -113,7 +113,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                     br
                     | PAYMENT DESCRIPTION: {{invoice.no}}
 
-                        
+
         .xxx
             h3.font-bold.flex.gap-1
                 svg.w-6.h-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke-width='1.5' stroke='currentColor')
@@ -125,14 +125,14 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                     br
                 | VAT is taxable at zero rate because services are exported outside the GCC.
         .xxx
-            h3.font-bold.flex.gap-1 
+            h3.font-bold.flex.gap-1
                 svg.w-6.h-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke-width='1.5' stroke='currentColor')
-                    path(stroke-linecap='round' stroke-linejoin='round' d='M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z')                    
+                    path(stroke-linecap='round' stroke-linejoin='round' d='M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z')
                 | PAY WITH VISA/MASTERCARD/AMEX
             p.text-slate-500
                 a(:href="checkoutLink()" class="text-teal-500 hover:text-teal-600") {{checkoutLink()}}
 
-            
+
 
 
 
