@@ -156,21 +156,23 @@ masterclasses:
       brief_description: |
         # Coding Practices for Professional Developers
 
-        Many of us are familiar with the challenges posed by legacy applications. Some have the luxury of starting with a clean slate, but over time, even greenfield projects can morph into something reminiscent of the legacy apps we once struggled with.
+        Many of us are familiar with the challenges posed by legacy applications. Some have the luxury of starting with a clean slate, but over time, even greenfield projects can morph into something reminiscent of the legacy apps we once struggled with. These shared issues often lead both legacy and greenfield applications to a state where implementing even a minor change becomes a painful endeavor.
 
-        In this masterclass, you'll learn practices that every professional Java developer needs to know in order to circumvent these challenges while building real-world business applications:
+        How can we circumvent these challenges? What path should we tread? What are our goals? What defines an exemplary application? Let's collaboratively construct such an application during this masterclass!
+
+        Join us for this masterclass where you will delve into practices that every professional developer should not only comprehend but also implement while building a Java-based business application. Throughout the course, you will:
 
           * Engage extensively in Test-Driven Development (TDD)
-          * Craft clean and expressive tests using modern tools like Groovy and Spock
+          * Craft tests using contemporary tools like Groovy and Spock
           * Master patterns and practices for writing tests that don't break when you refactor code internals
           * Construct robust business objects and rich domain models and understand the rationale behind it
           * Write business code that is configurable and detached from external systems such as DB or HTTP services
           * Develop a clear understanding of how to properly organize your code in packages and layers
           * ...and much more!
 
-          At the end of this masterclass, you will have adeptly grasped TDD principles and XP techniques. You will have honed your ability to create clean and robust tests using Groovy and Spock. Furthermore, you will gain a clear perspective on how to systematically organize code across diverse layers and packages, allowing you to seamlessly implement these insights in your own projects.
-
         This masterclass is dedicated to developers able to code and complete exercises in Java.
+
+        Embark on this journey to refine your coding practices and emerge as a more adept professional developer!
 
     - instructor:
         name: Adam Tornhill
