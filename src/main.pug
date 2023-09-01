@@ -36,8 +36,9 @@ mixin timezoneToggle
   .timeZoneToggle.top-0.left-0.z-10.transition-opacity.w-full.text-slate-500.pt-4
     label.inline-flex.items-center.cursor-pointer.relative
       input.sr-only.peer(type='checkbox' value='')
-      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-4 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[6px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
-      span.ml-3.text-lg.text
+      .w-9.h-5.rounded-full.peer.ring-2.ring-lime-950(class="duration-300 peer-checked:bg-slate-700 peer-focus:ring-4 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-slate-300 after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all")
+      span.ml-3.text-sm.info
+
 html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slate-800")
   head
     meta(charset='utf-8')

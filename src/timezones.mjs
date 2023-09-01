@@ -9,7 +9,7 @@ dayjs.extend(timezone)
 
 const TOGGLE = '.timeZoneToggle';
 const toggles = $(TOGGLE)
-const toggleTexts = $(TOGGLE + ' .text')
+const toggleTexts = $(TOGGLE + ' .info')
 const toggleInputs = $(TOGGLE + ' input')
 
 const timeRanges = $('[data-date-from]')
