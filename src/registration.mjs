@@ -374,7 +374,7 @@ export const app = createApp({
                 console.log(app)
                 this.errors = []
                 this.status = 'progress'
-                ky.post('https://api.devternity.com/applications', { json: app })
+                ky.post('https://devternity.glitch.me/applications', { json: app })
                     .then(() => {
                         this.status = 'success'
                     }).catch(() => {
@@ -393,7 +393,7 @@ Sentry.init({
     dsn: "https://623d5f87c6b14ea1ad82cba7afc5fb21@o4504854084255744.ingest.sentry.io/4504854087139328",
     integrations: [new BrowserTracing()],
     tracesSampleRate: 1.0,
-  });
+});
 
 app.config.globalProperties.$product = window.product
 app.config.globalProperties.$ticketOptions = window.ticketOptions
