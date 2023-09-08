@@ -102,8 +102,10 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                 .globalMessage.text-sm.text-center.mt-6
                     .text-red-400(v-if="status === 'error'" role='alert')
                         strong.font-bold Something went wrong!
-                        span.block(class='sm:inline')  To register, please send an email to
-                            span.font-mono  hello@devternity.com or try again in a few hours.
+                        span.block(class='sm:inline')
+                            |  To register, please send an email to
+                            span.font-mono  hello@devternity.com
+                            |  or try again in a few hours.
 
                     .text-green-400(v-if="status === 'success'" role='alert')
                         strong.font-bold Well done!
