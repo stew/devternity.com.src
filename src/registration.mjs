@@ -374,7 +374,7 @@ export const app = createApp({
                 console.log(app)
                 this.errors = []
                 this.status = 'progress'
-                ky.post('https://devternity.glitch.me/applications', { json: app })
+                ky.post('https://api.devternity.com/applications', { json: app })
                     .then(() => {
                         this.status = 'success'
                     }).catch(() => {
