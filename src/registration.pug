@@ -1,9 +1,8 @@
 - var title = `DevTernity ${event.year} registration`
 - var description = `DevTernity ${event.year} registration`
 - var mainDay = { title: 'Main Day', date: event.date }
-- var masterclasses = event.masterclasses.items.map(it => ({title: it.title, date: event.masterclasses.date}))
-- var masterclassesOnSale = masterclasses.filter(it => !it.sold_out)
-- var ticketOptions = [mainDay, ...masterclassesOnSale]
+- var masterclasses = event.masterclasses.items.filter(it => !it.sold_out).map(it => ({title: it.title, date: event.masterclasses.date}))
+- var ticketOptions = [mainDay, ...masterclasses]
 doctype html
 html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-black to-slate-800")
     head
