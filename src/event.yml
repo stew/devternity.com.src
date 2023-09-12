@@ -258,6 +258,7 @@ masterclasses:
         name: Jakub Nabrdalik
         img: Jakub Nabrdalik.png
       title: Microservices, Modular Monoliths, and Event-Driven Systems
+      sold_out: true
       from: "09:00"
       to: "17:00"
       brief_description: |
