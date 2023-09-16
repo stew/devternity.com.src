@@ -24,8 +24,8 @@ partners:
     link: https://www.atlassian.com
   - title: Pulumi
     link: https://pulumi.com
-  - title: AWS
-    link: https://aws.amazon.com
+  - title: Turkish
+    link: https://turkishtechnology.com
   - title: Coursera
     link: https://coursera.com
   - title: Gitlab
@@ -35,6 +35,8 @@ partners:
   - title: DevEvents
     follow: true
     link: https://dev.events/tech
+  - title: AWS
+    link: https://aws.amazon.com
   - title: JetBrains
     link: https://www.jetbrains.com
 
