@@ -1,0 +1,43 @@
+name: Ship Everything
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  devternity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install and Build
+        run: npm install && npm run build -- --realm=${{github.job}}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.PAT }}
+          repository-name: ${{github.job}}/${{github.job}}.com.src
+          folder: ${{github.job}}/dist
+
+  javanexus:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install and Build
+        run: npm install && npm run build -- --realm=${{github.job}}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.PAT }}
+          repository-name: ${{github.job}}/${{github.job}}.com.src
+          folder: ${{github.job}}/dist
