@@ -2,66 +2,66 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        title DevTernity — Privacy Policy
+        title #{event.name} — Privacy Policy
         meta(name="viewport" content="width=device-width, initial-scale=1")
         meta(http-equiv="x-ua-compatible" content="ie=edge")
-        meta(name="description" content="Privacy Policy for DevTernity")
+        meta(name="description" content=`Privacy Policy for ${event.name}`)
         meta(name="keywords" content="")
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css")     
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css")
     body
         section.hero.is-info.is-bold.is-medium
             .hero-head
                 .container
             .hero-body
                 .container
-                    h1.title DevTernity — Privacy Notice
+                    h1.title #{event.name} — Privacy Notice
                     h2.subtitle Last updated December 01, 2022
         section.section
             .container.content
                 p
                     | This privacy notice for DevTernity OU ("Company," "we," "us," or "our"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
                     ul
-                        li Visit our website at https://devternity.com, or any website of ours that links to this privacy notice
+                        li Visit our website at #{event.website}, or any website of ours that links to this privacy notice
                         li Engage with us in other related ways, including any sales, marketing, or events
-                    | Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at 
-                    strong hello@devternity.com.
+                    | Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at
+                    strong  #{event.email}
 
                 h2 WHAT INFORMATION DO WE COLLECT?
                 p We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.  The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
-                    ul 
+                    ul
                         li
                             strong names
-                        li 
+                        li
                             strong email addresses
-                        li 
+                        li
                             strong billing addresses
                     | We do not process sensitive information.
                 h2 HOW DO WE PROCESS YOUR INFORMATION?
                 p We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
                 p We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
-                    ul 
-                        li 
-                            strong To deliver and facilitate delivery of services to the user. 
+                    ul
+                        li
+                            strong To deliver and facilitate delivery of services to the user.
                             | We may process your information to provide you with the requested service.
-                        li 
-                            strong To respond to user inquiries/offer support to users. 
+                        li
+                            strong To respond to user inquiries/offer support to users.
                             | We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
-                        li 
-                            strong To send administrative information to you. 
+                        li
+                            strong To send administrative information to you.
                             | We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
-                        li 
-                            strong To fulfill and manage your orders. 
+                        li
+                            strong To fulfill and manage your orders.
                             | We may process your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.
-                        li 
-                            strong To save or protect an individual's vital interest. 
+                        li
+                            strong To save or protect an individual's vital interest.
                             | We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.
                 h2 WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
                 p We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.
-                p 
+                p
                     strong If you are located in the EU or UK, this section applies to you.
                     | The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:
                     ul
-                        li We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. 
+                        li We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time.
                         li We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.
                         li We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
                         li We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person. In legal terms, we are generally the "data controller" under European data protection laws of the personal information described in this privacy notice, since we determine the means and/or purposes of the data processing we perform. This privacy notice does not apply to the personal information we process as a "data processor" on behalf of our customers. In those situations, the customer that we provide services to and with whom we have entered into a data processing agreement is the "data controller" responsible for your personal information, and we merely process your information on their behalf in accordance with your instructions. If you want to know more about our customers' privacy practices, you should read their privacy policies and direct any questions you have to them.
@@ -86,19 +86,19 @@ html(lang="en")
                 h2 HOW DO WE KEEP YOUR INFORMATION SAFE?
                 p We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
                 h2 DO WE COLLECT INFORMATION FROM MINORS?
-                p We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at 
-                    strong hello@devternity.com.
+                p We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at
+                    strong #{event.email}
                 h2 WHAT ARE YOUR PRIVACY RIGHTS?
                 p In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided below. We will consider and act upon any request in accordance with applicable data protection laws.
                 p You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.
-                p If you would at any time like to review or change the information in your account or terminate your account, you can contact us using the contact information provided. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements. If you have questions or comments about your privacy rights, you may email us at hello@devternity.com.
+                p If you would at any time like to review or change the information in your account or terminate your account, you can contact us using the contact information provided. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements. If you have questions or comments about your privacy rights, you may email us at #{event.email}.
                 h2 DO WE MAKE UPDATES TO THIS NOTICE?
                 p We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
                 h2 HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-                p If you have questions or comments about this notice, you may email us at 
-                    strong hello@devternity.com. 
-                    | If you are a resident in the European Economic Area, the "data controller" of your personal information is DevTernity OU. DevTernity OU has appointed Eduards Sizovs to be its representative in the EEA. You can contact them directly regarding the processing of your information by DevTernity OU, by email at 
-                    strong eduards@devternity.com
+                p If you have questions or comments about this notice, you may email us at
+                    strong  #{event.email}
+                    |  if you are a resident in the European Economic Area, the "data controller" of your personal information is DevTernity OU. DevTernity OU has appointed Eduards Sizovs to be its representative in the EEA. You can contact them directly regarding the processing of your information by DevTernity OU, by email at
+                    strong  #{event.email}
                 h2 HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-                p Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please emails us at 
-                    strong hello@devternity.com.
+                p Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please emails us at
+                    strong  #{event.email}

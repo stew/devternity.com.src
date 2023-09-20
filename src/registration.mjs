@@ -330,6 +330,7 @@ export const app = createApp({
         recalculate() {
             const discounts = {
                 '_UPSKILL': 5,
+                '_LEVELUP': 10,
                 '_SPONSORED': 100
             }
 

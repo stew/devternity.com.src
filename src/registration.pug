@@ -1,5 +1,5 @@
-- var title = `DevTernity ${event.year} registration`
-- var description = `DevTernity ${event.year} registration`
+- var title = `${event.name} ${event.year} registration`
+- var description = `${event.name} ${event.year} registration`
 - var mainDay = { title: 'Main Day', date: event.date }
 - var masterclasses = event.masterclasses.items.filter(it => !it.sold_out).map(it => ({title: it.title, date: event.masterclasses.date}))
 - var ticketOptions = [mainDay, ...masterclasses]
@@ -12,9 +12,9 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
         meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
         meta(name='description' content=description)
         meta(name='viewport' content='width=device-width')
-        link(rel="shortcut icon" type="image/png" href=require('./images/logo.png'))
-        link(rel="icon" href=require('./images/logo.png'))
-        link(rel="shortcut icon" sizes="64x64" href=require('./images/logo.png'))
+        link(rel="shortcut icon" type="image/png" href=require(`/${env.event}/images/logo.png`))
+        link(rel="icon" href=require(`/${env.event}/images/logo.png`))
+        link(rel="shortcut icon" sizes="64x64" href=require(`/${env.event}/images/logo.png`))
         link(rel="stylesheet" href=require('./registration.scss'))
         link(rel='preconnect' href='https://fonts.googleapis.com')
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
@@ -101,7 +101,7 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                         strong.font-bold Something went wrong!
                         span.block(class='sm:inline')
                             |  To register, please send an email to
-                            span.font-mono  hello@devternity.com
+                            span.font-mono  #{event.email}
                             |  or try again in a few hours.
 
                     .text-green-400(v-if="status === 'success'" role='alert')

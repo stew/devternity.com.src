@@ -19,10 +19,17 @@ jobs:
           node-version: "18"
       - name: Install and Build
         run: npm install && npm run build
-      - name: Deploy 🚀
+
+      - name: Deploy DevTernity
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.PAK }}
           repository-name: devternity/devternity.com.src
-          branch: gh-pages
-          folder: dist
+          folder: devternity/dist
+
+      - name: Deploy JavaNexus
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.PAK }}
+          repository-name: sizovs/java-nexus
+          folder: javanexus/dist
