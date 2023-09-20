@@ -23,13 +23,13 @@ jobs:
       - name: Deploy DevTernity
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.PAK }}
+          token: ${{ secrets.PAT }}
           repository-name: devternity/devternity.com.src
           folder: devternity/dist
 
       - name: Deploy JavaNexus
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.PAK }}
+          token: ${{ secrets.PAT }}
           repository-name: sizovs/java-nexus
           folder: javanexus/dist
