@@ -24,7 +24,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository-name: ${{github.job}}/${{github.job}}.com.src
-          folder: ${{github.job}}/dist
+          folder: dist
 
   javanexus:
     runs-on: ubuntu-latest
@@ -44,4 +44,4 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository-name: ${{github.job}}/${{github.job}}.com.src
-          folder: ${{github.job}}/dist
+          folder: dist

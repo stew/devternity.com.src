@@ -31,7 +31,6 @@ module.exports = env => {
       coc: './src/coc.pug'
     },
     output: {
-      path: path.resolve(__dirname, `${env.event}/dist`),
       filename: '[name].[contenthash].js',
       clean: true
     },
@@ -44,9 +43,9 @@ module.exports = env => {
       }),
       new CopyPlugin({
         patterns: [
-          `./${env.event}/CNAME`,
-          `./${env.event}/video.mp4`,
-          `./${env.event}/images`,
+          `./src/${env.event}/CNAME`,
+          `./src/${env.event}/video.mp4`,
+          `./src/${env.event}/images`,
           "robots.txt"
         ],
         options: {
@@ -69,7 +68,7 @@ module.exports = env => {
               marked,
               slugify,
               env,
-              event: yaml.load(fs.readFileSync(`./${env.event}/event.yml`, 'utf8'))
+              event: yaml.load(fs.readFileSync(`./src/${env.event}/event.yml`, 'utf8'))
             }
           }
         },
@@ -77,8 +76,8 @@ module.exports = env => {
           test: /\.(png|jpe?g|webp)$/,
           include: [
             /src[\\/]images/,
-            /devternity[\\/]images/,
-            /javanexus[\\/]images/,
+            /src[\\/]devternity[\\/]images/,
+            /src[\\/]javanexus[\\/]images/,
           ],
           type: 'asset/resource',
           generator: {
