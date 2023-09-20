@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --mode=production",
-    "dev": "webpack --mode=development",
-    "serve": "webpack serve --mode=development",
+    "build": "webpack --mode=production --env event=$event",
+    "dev": "webpack --mode=development --env event=$event",
+    "serve": "webpack serve --mode=development --env event=$event",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "author": "",
