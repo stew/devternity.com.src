@@ -16,9 +16,11 @@ jobs:
         with:
           node-version: "18"
       - name: Install and Build
-        run: event=${{github.job}} npm install && npm run build
+        run: npm install && npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
+        env:
+          event: ${{ github.job }}
         with:
           token: ${{ secrets.PAT }}
           repository-name: ${{github.job}}/${{github.job}}.com.src
@@ -34,9 +36,11 @@ jobs:
         with:
           node-version: "18"
       - name: Install and Build
-        run: event=${{github.job}} npm install && npm run build
+        run: npm install && npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
+        env:
+          event: ${{ github.job }}
         with:
           token: ${{ secrets.PAT }}
           repository-name: ${{github.job}}/${{github.job}}.com.src
