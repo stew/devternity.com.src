@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "18"
       - name: Install and Build
-        run: npm install && npm run build -- --realm=${{github.job}}
+        run: event=${{github.job}} npm install && npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: "18"
       - name: Install and Build
-        run: npm install && npm run build -- --realm=${{github.job}}
+        run: event=${{github.job}} npm install && npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

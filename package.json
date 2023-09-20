@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "webpack --mode=production --env event='devternity'",
-    "dev": "webpack --mode=development --env event='devternity'",
-    "serve": "webpack serve --mode=development --env event='devternity'",
-    "build-java": "webpack --mode=production --env event='javanexus'",
-    "dev-java": "webpack --mode=development --env event='javanexus'",
-    "serve-java": "webpack serve --mode=development --env event='javanexus'",
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "serve": "webpack serve --mode=development",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "author": "",
