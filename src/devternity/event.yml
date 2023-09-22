@@ -3,13 +3,15 @@ product: DT_RIX_23
 name: DevTernity
 nameHint: "The #1 Developer Conference"
 description: DevTernity is the top software developer conference focusing on coding, architecture, and engineering practices
-slogan: Turning developers into architects and engineering leaders since 2015
+slogan: Turning developers into architects and engineering leaders
 about: |
   DevTernity is the **#1 international software development conference.**
 
   Through a series of inspiring talks, discussions, and practical masterclasses led by top minds of our industry, you'll develop skills paramount to your success – **coding, architecture, engineering practices, and tech leadership.**
 
   Start preparing for an architect, engineering leader, or CTO role today.
+
+  <div class="text-4xl">IT'S A MUST-SEE.</div>
 website: https://devternity.com
 email: hello@devternity.com
 year: 2023
@@ -19,8 +21,6 @@ prices:
   GBP: 360
   USD: 435
 priceHint: Additional 20% VAT charge applies to EU individuals, EU companies VAT non-payers, and companies in the Republic of Estonia.
-registration_opens: "2023-02-28"
-status: on_sale # on_sale or empty
 partners:
   - title: Google
     link: https://www.google.com
@@ -399,6 +399,7 @@ masterclasses:
       title: Clean and Pragmatic Architecture
       from: "08:00"
       to: "16:00"
+      sold_out: true
       brief_description: |
         # Clean and Pragmatic Architecture
 

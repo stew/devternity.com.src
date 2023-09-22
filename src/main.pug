@@ -104,7 +104,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
         source(src="video.mp4" type="video/mp4")
       +excellent
       .container.flex.flex-col.gap-10.items-center.justify-center.h-full
-        h1(class="tracking-tight text-7xl lg:text-9xl ") #{event.name}.
+        h1(class="tracking-tight text-center text-6xl lg:text-9xl ") #{event.name} #{event.year}.
         h2(class="text-center text-lg md:text-2xl lg:text-3xl ") #{event.slogan}.
         h3.text-slate-300(class="lg:text-2xl")
           span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
@@ -115,7 +115,6 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
     section.text-center.container.flex.items-center.text-slate-300(class="lg:w-3/5 mb-[50vh] mt-[20vh]")
       .flex.flex-col.gap-10(class="text-normal md:text-2xl")
         | !{marked(event.about)}
-        .text-4xl IT'S A MUST-SEE.
         .flex.text-center.justify-center
           +stars
     section#Speakers.container.space-y-4.pb-40

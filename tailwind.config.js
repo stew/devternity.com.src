@@ -1,5 +1,5 @@
 module.exports = {
-    content: ["./src/**/*.{pug,html,mjs}", "safelist.txt"],
+    content: ["./src/**/*.{pug,html,mjs,yml}", "safelist.txt"],
     theme: {
         extend: {
             colors: {
