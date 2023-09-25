@@ -66,7 +66,7 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                     .col-span-3(v-if="billing.company")
                         input(type="text" placeholder="Company name" v-model="billing.company.name" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.name`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3(v-if="billing.company")
-                        input(type="text" placeholder="Address (please include country)" v-model="billing.company.address" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.address`) ? 'border-red-500': 'border-gray-700'")
+                        input(type="text" placeholder="Address" v-model="billing.company.address" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.address`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-6(v-if="billing.company")
                         input(type="text" placeholder="Purchase Order (optional)" v-model="billing.company.po" class="font-mono w-full text-white bg-transparent border-0 border-b  focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.company.po`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-6(v-if="billing.company")

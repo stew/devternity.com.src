@@ -23,10 +23,10 @@ jobs:
           event: ${{ github.job }}
         with:
           token: ${{ secrets.PAT }}
-          repository-name: ${{github.job}}/${{github.job}}.com.src
+          repository-name: devternity/${{github.job}}.com.src
           folder: dist
 
-  javanexus:
+  jdkon:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -43,5 +43,5 @@ jobs:
           event: ${{ github.job }}
         with:
           token: ${{ secrets.PAT }}
-          repository-name: ${{github.job}}/${{github.job}}.com.src
+          repository-name: devternity/${{github.job}}.com.src
           folder: dist

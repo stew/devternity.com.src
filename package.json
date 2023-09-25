@@ -6,9 +6,9 @@
     "build-devternity": "webpack --mode=production --env event='devternity'",
     "dev-devternity": "webpack --mode=development --env event='devternity'",
     "serve-devternity": "webpack serve --mode=development --env event='devternity'",
-    "build-javanexus": "webpack --mode=production --env event='javanexus'",
-    "dev-javanexus": "webpack --mode=development --env event='javanexus'",
-    "serve-javanexus": "webpack serve --mode=development --env event='javanexus'",
+    "build-jdkon": "webpack --mode=production --env event='jdkon'",
+    "dev-jdkon": "webpack --mode=development --env event='jdkon'",
+    "serve-jdkon": "webpack serve --mode=development --env event='jdkon'",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "author": "",

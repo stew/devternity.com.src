@@ -77,7 +77,7 @@ module.exports = env => {
           include: [
             /src[\\/]images/,
             /src[\\/]devternity[\\/]images/,
-            /src[\\/]javanexus[\\/]images/,
+            /src[\\/]jdkon[\\/]images/,
           ],
           type: 'asset/resource',
           generator: {
