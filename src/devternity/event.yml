@@ -326,6 +326,7 @@ masterclasses:
       title: Incremental Architecture
       from: "14:00"
       to: "23:00"
+      sold_out: true
       brief_description: |
         # Incremental Architecture
 
