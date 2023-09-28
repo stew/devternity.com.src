@@ -262,9 +262,9 @@ schedule:
   - from: "14:20"
     to: "15:10"
     talks:
+      - J.B. Rainsberger
+      - Bartlomiej Slota
       - Eduards Sizovs
-      -
-      -
   - from: "15:30"
     to: "16:20"
     talks:
@@ -407,6 +407,15 @@ keynotes:
     bio: Software Craftswoman, Tech Influencer @ Instagram
     img: Julia.jpg
 
+  - name: J.B. Rainsberger
+    bio: Software Coach, Mentor, Consultant, TDD Trainer
+    img: Rainsberger.png
+    title: The Well-Balanced Programmer
+    description: |
+      # The Well-Balanced Programmer
+
+      A well-balanced programmer feels comfortable dealing with designing software, managing projects, and working with people. Companies seem to want to hire "the best", but well-balanced programmers relatively rare. Although many programmers feel confident arguing about algorithms, modularity, and scalability in design sessions, they would stand out from their peers if they also had incredible habits for managing their work, knew how to negotiate features with product owners, had intelligent conversations with project managers about the risks in their project, and understood what lies behind the irrationality of the people and systems around them. Sadly, most programmers don't appreciate the value of these skills. Others don't know how to get started learning them. I started programming computers because people are messy! I'd like to share a curated collection of concepts for you explore that will help you become irresistibly valuable to your employer or clients. I plan to share the design principles and programming techniques that amplified my skills the most over the last 20 years. In addition, I'll describe how I learned the key non-programming concepts, techniques, and approaches that have endeared me to fellow programmers, managers, and clients. I offer you a very practical approach to issues like influencing peers, negotiating with stakeholders, and adopting new ways of working safely. I'll help you start to build a personal work system that will free your mind to do your best work. I know how this might sound. I promise to share concrete techniques that you can begin applying right away. Of course, these techniques aren't magic, so you'll have to read some more and practise on your own, but you will know how to get started right away on becoming the well-balanced programmer that every manager and co-worker will love to have on their team.
+
   - name: Peter Gafert
     bio: Creator of ArchUnit, Principal Consultant @ TNG Technology Consulting
     title: Unit-Testing Your Architecture with ArchUnit
@@ -420,11 +429,11 @@ keynotes:
       This session will show through lots of live coding, how the open source library ArchUnit can help to maintain these structures.
     img: PeterGafert.jpg
 
-  - name: Bartłomiej Słota
+  - name: Bartlomiej Slota
     bio: Software Engineer, Speaker, Trainer @ Bottega IT Minds
-    title: Coding Practices for Professional Java Developers
+    title: Make Your Architecture Scream with Functional Domain Modeling
     description: |
-      # Coding Practices for Professional Java Developers
+      # Make Your Architecture Scream with Functional Domain Modeling
 
       TBA
     img: Bart.jpg
