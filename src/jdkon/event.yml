@@ -435,7 +435,7 @@ keynotes:
     description: |
       # Make Your Architecture Scream with Functional Domain Modeling
 
-      TBA
+      Have you ever heard that Domain Driven Design is like Object-Oriented programming taken to the next level? But is it always the case? It's time to explore a fresh perspective and envision business processes as workflows, and pipelines. By embracing functional programming concepts, we'll elevate our Java applications to new heights. Join us in this session as we apply functional programming principles to our Java codebase and delve into their profound impact on security, testability, readability, and more.
     img: Bart.jpg
 
   - name: Eduards Sizovs
