@@ -97,7 +97,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
     link(href='https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap' rel='stylesheet')
     link(rel="stylesheet" href=require('./main.scss'))
     script(src=require('./main.mjs') defer)
-    script(src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "149e24b8de864f61acf02f4e10ab951c"}' defer)
+    script(src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon=`{"token": "${event.cfAnalytics}"}` defer)
   body.text-white.antialiased
     section.later.opacity-0(class="lg:gap-14 h-screen overflow-hidden relative")
       video(autoplay loop playsinline muted class="absolute block top-0 right-0 min-h-full min-w-full max-w-none -z-10 opacity-40")

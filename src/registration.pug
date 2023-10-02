@@ -23,7 +23,7 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
         script window.ticketOptions = !{JSON.stringify(ticketOptions)}
         script window.prices = !{JSON.stringify(event.prices)}
         script(src=require('./registration.mjs') defer)
-        script(src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "149e24b8de864f61acf02f4e10ab951c"}' defer)
+        script(src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon=`{"token": "${event.cfAnalytics}"}` defer)
     body#app.opacity-0.transition-opacity.duration-700
         .mx-auto.w-full.p-12(class="xl:w-3/4 min-h-screen")
             .h-full.rounded-xl(class="2xl:p-28")
