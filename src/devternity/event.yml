@@ -216,6 +216,7 @@ masterclasses:
       title: Practical Leadership for Developers
       from: "13:00"
       to: "21:00"
+      sold_out: true
       brief_description: |
         # Practical Leadership for Developers
 
