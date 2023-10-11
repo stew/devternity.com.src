@@ -267,7 +267,7 @@ $(window).on('pageshow', () => {
 export const applicationSchema = object({
     promo: string().ensure(),
     product: string().required(),
-    total: number().positive().integer().required(),
+    total: number().integer().required(),
     discount: number().integer().required(),
     tickets: array(object({
         name: string().required(),
