@@ -449,7 +449,9 @@ keynotes:
     description: |
       # Clean Domain: Patterns, Principles, Practices
 
-      In this session, packed with practical code examples, you'll learn principles, practices, and patterns for making your software domain models richer, cleaner, and more expressive. If you're working on an enterprise Java application that doesn't have a rich domain model, the session will still be applicable to you.
+      In my 15+ years of consulting experience, I reviewed hundreds of Java applications, and only a few had a well-crafted and clean domain model. Unfortunately, most suffered from various *repeating* design smells – from poor naming to excessive coupling to fundamentally flawed OO design.
+
+      In this session, packed with practical code examples, I'll reveal you principles, practices, and patterns for making your software domain models richer, cleaner, and more expressive. Because life is too short to work on domain models that suck.
     img: Eduards.png
 
 faq:
