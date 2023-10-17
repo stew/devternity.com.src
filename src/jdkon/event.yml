@@ -85,6 +85,29 @@ masterclasses:
         At the end of the masterclasses, you'll have a much deeper understanding of database access, JDBC, and Hibernate, and will be able to troubleshoot and optimize data access performance in your own projects.
 
     - instructor:
+        name: Peter Gafert
+        img: PeterGafert.jpg
+      title: ArchUnit In Practice
+      from: "09:00"
+      to: "17:00"
+      brief_description: |
+        # ArchUnit In Practice
+
+        In this workshop, I'm going to take you on a journey through the features of ArchUnit. We will first check out the basics of the core and rules API and then look at various real-world examples you could come across in your daily work. This journey will take us through code examples for which we will write architecture rules of various scope and difficulty. On the way, we will also cover typical pitfalls you might encounter while applying ArchUnit to real-world projects.
+
+        You'll learn how to:
+        * Define and enforce strict architectural rules between classes, packages, layers, and slices, ensuring your system's integrity remains intact.
+        * Leverage ArchUnit high-level constructs for enforcing layered, onion, or sliced architectures.
+        *  Use ArchUnit to gradually improve legacy codebases with thousands of violations and prevent the code base from further deterioration.
+        * Get rid of circular dependencies between classes and packages.
+        * Derive architecture rules from PlantUML diagrams.
+        * Understand, calculate, and enforce critical architecture/quality/complexity metrics.
+        * Extend ArchUnit with custom functionality/assertions/rules.
+        * and much more!
+
+        You will leave this workshop with an in-depth knowledge about ArchUnit's capabilities and applying it to a wide variety of real-world scenarios that will help to keep your projects consistent and maintainable over the whole application life span.
+
+    - instructor:
         name: Oliver Drotbohm
         img: Oliver.jpg
       title: Building Modular Applications with Spring
