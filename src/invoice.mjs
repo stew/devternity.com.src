@@ -19,7 +19,7 @@ export const app = createApp({
     },
     methods: {
         checkoutLink() {
-            return 'https://sales.devternity.ee/checkout/' + this.invoiceId;
+            return 'https://api.devternity.com/checkout/' + this.invoiceId;
         },
         fetchInvoice() {
             ky("https://devternity-22e74.firebaseio.com/invoices/" + this.invoiceId + ".json").json()
