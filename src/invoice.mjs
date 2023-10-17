@@ -10,7 +10,8 @@ export const app = createApp({
         return {
             invoiceId: new URLSearchParams(window.location.search).get('id'),
             showAed: new URLSearchParams(window.location.search).has('forex'),
-            invoice: undefined
+            invoice: undefined,
+            iban: undefined
         }
     },
     created() {
@@ -22,11 +23,17 @@ export const app = createApp({
         },
         fetchInvoice() {
             ky("https://devternity-22e74.firebaseio.com/invoices/" + this.invoiceId + ".json").json()
-            .then(response => {
-                this.invoice = response
-            }).finally(() => {
-                $('body').removeClass('opacity-0').addClass('opacity-100');
-            })
+                .then(response => {
+                    this.invoice = response
+                    const ibans = {
+                        'AED': 'AE170860000009323162912',
+                        'EUR': 'AE390860000009928994446',
+                        'USD': 'AE090860000009820208710'
+                    }
+                    this.iban = ibans[this.invoice.billing.currency]
+                }).finally(() => {
+                    $('body').removeClass('opacity-0').addClass('opacity-100');
+                })
         },
         dayjs
     }
