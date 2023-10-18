@@ -293,7 +293,7 @@ schedule:
     to: "16:20"
     talks:
       - Jakub Nabrdalik
-      -
+      - Simon Martinelli
       -
   - from: "16:40"
     to: "17:30"
@@ -483,6 +483,22 @@ keynotes:
 
       In this session, packed with practical code examples, I'll teach you principles, practices, and patterns for making your software domain models richer, cleaner, and more expressive. Because life is too short to work on domain models that suck.
     img: Eduards.png
+
+  - name: Simon Martinelli
+    bio: Software Architect, Java Expert Group Member, Vaadin Community Award Winner
+    title: "Do You Really Need JavaScript?"
+    description: |
+      # Do You Really Need JavaScript?
+
+      The gap between frontend and backend in web development has widened in recent years. In frontend programming, frameworks such as Angular, React, or Vue.js are predominant, forcing developers to use a different programming language and a different ecosystem.
+
+      This has made it more difficult for Java developers to find their way around, and in many projects, frontend and backend developers are separated.
+
+      However, it can be beneficial in many ways if a developer can develop both the frontend and backend. But as a Java developer, do I have to get familiar with a whole new ecosystem?
+      No, there is an exciting alternative!
+
+      This talk shows how to develop dynamic web applications quickly as a Java full-stack developer using Thymeleaf and htmx. htmx gives you access to AJAX, CSS Transitions, WebSockets and Server-Sent Events directly in HTML, using attributes so that you can build modern user interfaces with the simplicity and power of hypertext
+    img: Simon Martinelli.png
 
 faq:
   - q: What time zone will the conference take place in?
