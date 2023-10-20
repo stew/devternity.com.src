@@ -352,6 +352,7 @@ masterclasses:
       title: Pragmatic Refactoring Towards Better Architecture
       from: "09:00"
       to: "17:00"
+      sold_out: true
       brief_description: |
         # Pragmatic Refactoring Towards Better Architecture
 
