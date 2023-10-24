@@ -284,6 +284,7 @@ export const applicationSchema = object({
         country: string().required().default(undefined),
         currency: string().length(3).required(),
         email: string().email().required(),
+        method: string().required().default(undefined),
         company: object({
             po: string().default(undefined),
             name: string().required(),
@@ -305,6 +306,7 @@ export const app = createApp({
                 name: '',
                 email: '',
                 company: undefined,
+                method: "",
                 country: "",
                 currency: this.resolveCurrency()
             },

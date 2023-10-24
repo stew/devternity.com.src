@@ -21,7 +21,7 @@ prices:
   EUR: 399
   GBP: 360
   USD: 435
-priceHint: Additional 20% VAT charge applies to EU individuals, EU companies VAT non-payers, and companies in the Republic of Estonia.
+priceHint:
 partners:
   - title: Google
     link: https://www.google.com

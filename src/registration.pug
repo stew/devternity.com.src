@@ -51,6 +51,12 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                 p.text-lg(class="text-slate-500 md:text-2xl mb-16") After registration, you'll get an invoice. You can pay via bank transfer or with Visa/Mastercard.
 
                 .grid.grid-cols-9.gap-6.items-center
+                    .col-span-6
+                        select(required v-model="billing.method" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0 overflow-hidden" :class="errors.includes(`billing.method`) ? 'border-red-500': 'border-gray-700'")
+                            option(value="" disabled selected) Payment method
+                            option(value="CARD") Visa/Mastercard
+                            option(value="BANK") Bank transfer
+                    .col-span-3
                     .col-span-3
                         input(type="text" v-model="billing.name" placeholder="Your name" class="font-mono w-full text-white bg-transparent border-0 border-b   focus:border-lime-950 focus:ring-0" :class="errors.includes(`billing.name`) ? 'border-red-500': 'border-gray-700'")
                     .col-span-3
