@@ -24,7 +24,7 @@ export const app = createApp({
         fetchInvoice() {
             ky("https://devternity-22e74.firebaseio.com/invoices/" + this.invoiceId + ".json").json()
                 .then(response => {
-                    this.invoice = response
+                    this.invoice = { ...response, orders: response.orders.filter(it => !!it) };
                     const ibans = {
                         'AED': 'AE170860000009323162912',
                         'EUR': 'AE390860000009928994446',
