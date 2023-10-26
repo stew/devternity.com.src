@@ -30,7 +30,7 @@ body#app.bg-black.text-white.opacity-0
             .h-full.bg-black.p-16.pb-4.flex.flex-col(class="rounded-[15px]")
                 .absolute.top-4.right-4.font-mono.text-sm(class="before:content-['{'] before:mr-2 before:text-lime-950 after:content-['}'] after:ml-2 after:text-lime-950")
                     span.text-slate-600 Ticket ID:
-                    span.text-slate-600.uppercase.whitespace-nowrap.cursor-pointer(@click="copy(ticket.id)") {{ticket.id}}
+                    span.text-slate-600.whitespace-nowrap.cursor-pointer(@click="copy(ticket.id)") {{ticket.id}}
                 .content
                     h1.text-2xl.mt-2.text-slate-200(class="md:text-5xl") {{ticket.product.title}}
                     h2.text-lg.mt-2.text-slate-200(class="md:text-2xl") {{formatted(ticket.product.date)}}
