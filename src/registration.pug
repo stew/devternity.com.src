@@ -87,7 +87,8 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                                 span.line-through {{billing.currency}} {{total + discount}}
                                 |  {{billing.currency}} {{total}}
                             h3.text-4xl.text-white(v-else) Total: {{billing.currency}} {{total}}
-                    p.text-sm.text-gray-500 * #{event.priceHint}
+                    if event.priceHint
+                        p.text-sm.text-gray-500 * #{event.priceHint}
 
                 .grid.grid-cols-6.gap-6.items-center.mt-8
                     .col-span-2.relative.transition-all

@@ -195,7 +195,10 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h1.text-2xl.font-mono(class="lg:text-4xl") Main Day Only
           h3.text-6xl
             span=currencySymbols[currency]
-            span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+            if event.priceHint
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+            else
+              span.mr-4=price
             span.line-through.text-slate-300=price+200
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
             .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
@@ -204,7 +207,10 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
           h3.text-6xl
             span=currencySymbols[currency]
-            span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+            if event.priceHint
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price
+            else
+              span.mr-4=price
             span.line-through.text-slate-300=price+200
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
             .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
@@ -213,13 +219,17 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           h1.text-2xl.font-mono(class="lg:text-4xl") Main Day + Masterclass
           h3.text-6xl
             span=currencySymbols[currency]
-            span.mr-4(class="after:content-['*'] after:text-slate-300")=price*2
+            if event.priceHint
+              span.mr-4(class="after:content-['*'] after:text-slate-300")=price*2
+            else
+              span.mr-4=price*2
             span.line-through.text-slate-300=price*2+400
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
             .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
           a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
     section.container.text-center(class="mt-[10vh] mb-[40vh]")
-      p.text-slate-600 * #{event.priceHint}
+      if event.priceHint
+        p.text-slate-600 * #{event.priceHint}
     section.container#Partners
       h1.w-full.mb-4.text-center.text-base.font-semibold.uppercase.text-gray-400.tracking-wider
         | Our friends
