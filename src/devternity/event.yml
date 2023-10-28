@@ -439,13 +439,13 @@ schedule:
   - from: "10:10"
     to: "11:00"
     talks:
-      - Gregor Hohpe
+      - Dave Farley
       - Ian Cooper
       - Kristine Howard
   - from: "11:20"
     to: "12:10"
     talks:
-      - Dave Farley
+      - Gregor Hohpe
       - Sam Newman
       - Sven Peters
   - from: "13:10"
