@@ -125,7 +125,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
       .flex.flex-wrap.text-center.gap-x-10.gap-y-24
         each speaker, index in event.keynotes
           .basis-80.flex.flex-col.items-center.gap-1
-            img.rounded-full.h-28.w-28(alt=speaker.name src=require(`images/speakers/${speaker.img}`))
+            img.rounded-full.h-28.w-28(alt=speaker.name data-speaker=speaker.name src=require(`images/speakers/${speaker.img}`))
             h3.text-2xl.font-mono(data-ite='5' class="before:content-['>'] before:mr-2 before:text-lime-950")=speaker.name
             p.font-mono.text-xl.text-slate-500(data-ite='5')=speaker.bio
       if speakersToBeAnnounced
