@@ -28,7 +28,8 @@ export const app = createApp({
                     const ibans = {
                         'AED': 'AE170860000009323162912',
                         'EUR': 'AE390860000009928994446',
-                        'USD': 'AE090860000009820208710'
+                        'USD': 'AE090860000009820208710',
+                        'GBP': 'AE160860000009548466285'
                     }
                     this.iban = ibans[this.invoice.billing.currency]
                 }).finally(() => {
