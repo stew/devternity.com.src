@@ -93,7 +93,7 @@ masterclasses:
       title: "Domain-Driven Design: Theory and Practice"
       from: "14:00"
       to: "21:00"
-      almost_sold_out: true
+      sold_out: true
       brief_description: |
         # Domain-Driven Design in Theory and Practice
 
