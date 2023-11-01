@@ -345,15 +345,15 @@ keynotes:
 
   - name: Jakub Nabrdalik
     bio: Software Architect, Mentor, Trainer @ Bottega IT Minds
-    title: "Microservices and Modules: Modeling for Processes, not Databases"
+    title: "Migrating to Microservices: A Step by Step Guide"
     description: |
-      # Microservices and Modules: Modeling for Processes, not Databases
+      # Migrating to Microservices: A Step by Step Guide
 
-      One of the most dangerous errors people make designing modules and microservices is thinking in terms of data and databases, instead of processes. In microservices this breaks the data locality paradigm and creates a distributed monolith. In modules this creates anemic domain and makes the whole architecture tightly coupled and frankly... pointless.
+      I’ve worked with microservices for 8 years now, and I’ve migrated systems from monoliths / distributed monoliths to microservices. Companies call me to help them in this process, and I kind of worked my “standard” way of how to approach this, and how to do it in practice. In this talk, I’d like to show you step by step what I do when I help companies migrate to microservices. This talk is not about how to design microservices (I’ve already talked about it a lot, and I give workshops on that), but what exactly I do in the process, and what you should not forget about. So it’s everything apart from architecture itself.
 
-      In this talk let me show you some examples of those errors, and how to free yourself from 3rd-normal-form database way of thinking, and start using high level languages for what they really were design for: complex processes.
+      Of course every company is a bit different and this is not the only way to do it, but if I show you what it usually means for me perhaps you will find something you didn’t take into account in your process, if you are ever in such a situation.
 
-      If data centric approach were good for complex business software, we would be building apps using only SQL.
+      And if you are currently working with monolith (distributed or not), this may be really useful.
     img: Jakub Nabrdalik.png
 
   - name: Oliver Drotbohm
