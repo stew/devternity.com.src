@@ -71,7 +71,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                         td.px-3.py-1 &nbsp;
                         td.px-3.py-1.text-right SUBTOTAL
                         td.px-3.py-1.text-right {{invoice.subtotal}} {{invoice.billing.currency}}
-                    tr
+                    tr(v-if="iamVatPayer")
                         td.px-3.py-1 &nbsp;
                         td.px-3.py-1.text-right VAT 0%
                         td.px-3.py-1.text-right {{invoice.vat}} {{invoice.billing.currency}}
@@ -87,7 +87,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                         td.px-3.py-1 &nbsp;
                         td.px-3.py-1.text-right SUBTOTAL
                         td.px-3.py-1.text-right {{invoice.subtotalAed}} AED
-                    tr(v-if="showAed")
+                    tr(v-if="showAed && iamVatPayer")
                         td.px-3.py-1 &nbsp;
                         td.px-3.py-1.text-right VAT 0%
                         td.px-3.py-1.text-right {{invoice.vatAed}} AED
@@ -133,7 +133,8 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                     span(v-if="invoice.billing.company?.po")
                         | PO number: {{invoice.billing.company.po}}.
                         br
-                    | VAT is taxable at zero rate because services are exported outside the GCC.
+                    span(v-if="iamVatPayer") VAT is taxable at zero rate because services are exported outside the GCC.
+                    span(v-else) TechPlatforms LLC is not registered for VAT.
             .xxx
                 h3.font-bold.flex.gap-1
                     svg.w-6.h-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke-width='1.5' stroke='currentColor')

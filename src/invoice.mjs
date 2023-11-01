@@ -31,6 +31,7 @@ export const app = createApp({
                         'USD': 'AE090860000009820208710',
                         'GBP': 'AE160860000009548466285'
                     }
+                    this.iamVatPayer = false
                     this.iban = ibans[this.invoice.billing.currency]
                 }).finally(() => {
                     $('body').removeClass('opacity-0').addClass('opacity-100');
