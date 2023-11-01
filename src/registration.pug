@@ -105,11 +105,11 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
 
                 .globalMessage.text-sm.text-center.mt-6
                     .text-red-400(v-if="status === 'error'" role='alert')
-                        strong.font-bold Something went wrong!
+                        strong.font-bold  Something went wrong! Please try again.
                         span.block(class='sm:inline')
-                            |  To register, please send an email to
+                            |  If the error persists, please send an email to
                             span.font-mono  #{event.email}
-                            |  or try again in a few hours.
+                            | .
 
                     .text-green-400(v-if="status === 'success'" role='alert')
                         strong.font-bold Well done!
