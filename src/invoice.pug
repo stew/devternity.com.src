@@ -59,34 +59,41 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                         td.px-3.py-1(v-else)
                             | {{item.product.title}}
                         td.px-3.py-1.text-right.align-top {{item.product.price}} {{invoice.billing.currency}}
-                tfoot.tracking-tight.font-bold
-                    tr.border-t-2.border-teal-500
-                        td.px-3.pt-4 &nbsp;
-                        td.px-3.pt-4.text-right.text-slate-900.font-bold SUBTOTAL
-                        td.px-3.pt-4.text-right {{invoice.subtotal}} {{invoice.billing.currency}}
+                tfoot.tracking-tight
+                    tr.h-4
+                        td(colspan="3")
+                            hr.border-teal-500.border-1
+                    tr(v-if="invoice.discount")
+                        td.px-3.py-1 &nbsp;
+                        td.px-3.py-1.text-right DISCOUNT
+                        td.px-3.py-1.text-right {{invoice.discount}} {{invoice.billing.currency}}
                     tr
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold VAT 0%
+                        td.px-3.py-1.text-right SUBTOTAL
+                        td.px-3.py-1.text-right {{invoice.subtotal}} {{invoice.billing.currency}}
+                    tr
+                        td.px-3.py-1 &nbsp;
+                        td.px-3.py-1.text-right VAT 0%
                         td.px-3.py-1.text-right {{invoice.vat}} {{invoice.billing.currency}}
-                    tr
+                    tr.text-slate-900.font-bold
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold TOTAL
+                        td.px-3.py-1.text-right TOTAL
                         td.px-3.py-1.text-right {{invoice.total}} {{invoice.billing.currency}}
                     tr(v-if="showAed")
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold EXCHANGE RATE
+                        td.px-3.py-1.text-right EXCHANGE RATE
                         td.px-3.py-1.text-right {{invoice.exchangeRate}}
                     tr(v-if="showAed")
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold SUBTOTAL
+                        td.px-3.py-1.text-right SUBTOTAL
                         td.px-3.py-1.text-right {{invoice.subtotalAed}} AED
                     tr(v-if="showAed")
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold VAT 0%
+                        td.px-3.py-1.text-right VAT 0%
                         td.px-3.py-1.text-right {{invoice.vatAed}} AED
-                    tr(v-if="showAed")
+                    tr.text-slate-900.font-bold(v-if="showAed")
                         td.px-3.py-1 &nbsp;
-                        td.px-3.py-1.text-right.text-slate-900.font-bold TOTAL
+                        td.px-3.py-1.text-right TOTAL
                         td.px-3.py-1.text-right {{invoice.totalAed}} AED
 
 
