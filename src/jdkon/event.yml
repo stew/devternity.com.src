@@ -262,7 +262,7 @@ schedule:
   - from: "09:00"
     to: "09:50"
     talks:
-      - Dave Farley
+      - Robert Martin
       - Chris Chedgey
       - Vlad Mihalcea
   - from: "10:10"
@@ -294,7 +294,7 @@ schedule:
     talks:
       - Jakub Nabrdalik
       - Simon Martinelli
-      -
+      - Dave Farley
   - from: "16:40"
     to: "17:30"
     talks:
@@ -303,18 +303,15 @@ schedule:
       -
 
 keynotes:
-  - name: Dave Farley
-    bio: Author of Modern Software Engineering and Continuous Delivery
-    title: Taking Back "Software Engineering" – Craftsmanship is Insufficient
+  - name: Robert Martin
+    twitter: unclebobmartin
+    bio: Author of Clean Code, Clean Coder, Clean Architecture, and Clean Agile
+    title: "Functional Design: Principles, Patterns, and Practices"
     description: |
-      # Taking Back "Software Engineering" – Craftsmanship is Insufficient
+      # Functional Design: Principles, Patterns, and Practices
 
-      Craftsmanship is not enough. Would you fly in a plane designed by a craftsman or would you prefer your aircraft to be designed by engineers?
-
-      Engineering is the application of iterative, empirical, practical science to real-world problems. Craftsmanship is a wonderful thing, and as a reaction to the terrible abuses of the term engineering in software development software craftsmanship has helped in our learning of what really works.
-
-      It is time to define what our "engineering" discipline should entail.
-    img: Dave Farley.jpg
+      In Functional Design, renowned software engineer Robert C. Martin ("Uncle Bob") explains how and why to use functional programming to build better systems for real customers. Martin compares conventional object-oriented coding structures in Java to those enabled by functional languages, identifies the best roles for each, and shows how to build better systems by judiciously using them in context.
+    img: Robert Martin.png
 
   - name: Josh Long
     bio: Author of Java and Spring Books, Java Champion
@@ -333,6 +330,19 @@ keynotes:
 
       TBA
     img: Victor Rentea.jpg
+
+  - name: Dave Farley
+    bio: Author of Modern Software Engineering and Continuous Delivery
+    title: Taking Back "Software Engineering" – Craftsmanship is Insufficient
+    description: |
+      # Taking Back "Software Engineering" – Craftsmanship is Insufficient
+
+      Craftsmanship is not enough. Would you fly in a plane designed by a craftsman or would you prefer your aircraft to be designed by engineers?
+
+      Engineering is the application of iterative, empirical, practical science to real-world problems. Craftsmanship is a wonderful thing, and as a reaction to the terrible abuses of the term engineering in software development software craftsmanship has helped in our learning of what really works.
+
+      It is time to define what our "engineering" discipline should entail.
+    img: Dave Farley.jpg
 
   - name: Lukas Eder
     bio: Java Champion, creator of jOOQ, the best way to write SQL in Java
