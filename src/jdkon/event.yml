@@ -2,14 +2,14 @@
 product: JDKON_23
 name: JDKon
 nameHint: "#1 Java Developer Conference"
-description: The place where professional Java developers grow
-slogan: The place where professional Java developers grow
+description: "#1 international conference designed specifically for professional Java developers"
+slogan: "#1 international conference designed specifically for professional Java developers"
 about: |
-  JDKon is the **#1 international conference for professional Java developers.**
+  **The Java ecosystem is evolving at lightning speed, and the way we build our applications must evolve, too.**
 
-  Through practical demos, discussions, and masterclasses guided by the world’s leading Java experts, you’ll learn how to build **clean, efficient, and maintainable Java applications.**
+  Through practical demos, discussions, and workshops led by the world's leading Java experts, you'll learn how to build **modern, clean, and efficient real-world Java applications.**
 
-  Join us to stay up-to-date with modern Java architectures, frameworks, and coding practices. **And become a better Java developer.**
+  Join us and stay up-to-date with modern Java architectures, frameworks, and coding practices.
 
   <div class="text-4xl">IT'S A MUST-SEE.</div>
 website: https://jdkon.io
