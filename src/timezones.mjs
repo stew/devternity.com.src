@@ -49,13 +49,13 @@ export class Switches {
 
 export class Times {
     localize() {
-        const DEFAULT_TZ = 'Europe/London';
+        const DEFAULT_TZ = 'GMT';
         const timeZone = toggleInputs.is(':checked') ? dayjs.tz.guess() : DEFAULT_TZ;
-
         timeRanges.each((_index, e) => {
-            const from = dayjs($(e).data('date-from')).tz(timeZone).format('H:mm')
-            const to = dayjs($(e).data('date-to')).tz(timeZone).format('H:mm <br>z')
-            $(e).html(`${from} - ${to}`);
+            const from = dayjs($(e).data('date-from')).tz(timeZone);
+            const to = dayjs($(e).data('date-to')).tz(timeZone);
+            const timeZoneWithOffset = to.format('z')
+            $(e).html(`${from.format('H:mm')} - ${to.format('H:mm')}<br>${timeZoneWithOffset === 'UTC' ? 'GMT' : timeZoneWithOffset}`);
         })
     }
 }
