@@ -55,7 +55,7 @@ export class Times {
             const from = dayjs($(e).data('date-from')).tz(timeZone);
             const to = dayjs($(e).data('date-to')).tz(timeZone);
             const timeZoneWithOffset = to.format('z')
-            $(e).html(`${from.format('H:mm')} - ${to.format('H:mm')}<br>${timeZoneWithOffset === 'UTC' ? 'GMT' : timeZoneWithOffset}`);
+            $(e).html(`${from.format('H:mm')} - ${to.format('H:mm')} <br>${timeZoneWithOffset === 'UTC' ? 'GMT' : timeZoneWithOffset}`);
         })
     }
 }
