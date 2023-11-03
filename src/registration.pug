@@ -54,7 +54,8 @@ html.scroll-smooth.antialiased(lang="en" class="bg-black bg-gradient-to-r from-b
                     .col-span-6
                         select(required v-model="billing.method" class="[&:invalid]:text-gray-500 font-mono w-full text-white bg-transparent border-0 border-b focus:border-lime-950 focus:ring-0 overflow-hidden" :class="errors.includes(`billing.method`) ? 'border-red-500': 'border-gray-700'")
                             option(value="" disabled selected) Payment method
-                            option(value="CARD") Visa/Mastercard
+                            option(value="CARD") Card (Visa/Mastercard)
+                            option(value="AMEX") Card (AMEX)
                             option(value="BANK") Bank transfer
                     .col-span-3
                     .col-span-3
