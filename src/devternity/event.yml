@@ -241,6 +241,7 @@ masterclasses:
         name: Scott Wlaschin
         img: Scott Wlaschin.jpg
       title: Domain Modeling Made Functional
+      sold_out: true
       from: "09:00"
       to: "17:00"
       brief_description: |
