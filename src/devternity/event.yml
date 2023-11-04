@@ -196,6 +196,7 @@ masterclasses:
       title: Prioritizing Technical Debt in Large-Scale Systems
       from: "09:00"
       to: "15:00"
+      sold_oue: true
       brief_description: |
         # Prioritizing Technical Debt in Large-Scale Systems
 
