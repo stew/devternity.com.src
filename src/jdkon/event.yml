@@ -463,11 +463,19 @@ keynotes:
 
   - name: Matt Raible
     bio: Java Champion, Developer Advocate Architect @ Okta, Inc.
-    title: The Battle of Quarkus, Micronaut, and Spring
+    title: The Battle of Quarkus, Micronaut, Helidon, and Spring
     description: |
-      # The Battle of Quarkus, Micronaut, and Spring
+      # The Battle of Quarkus, Micronaut, Helidon, and Spring
 
-      Coming soon.
+      Use Spring Boot! No, use Micronaut!! Nooooo, Quarkus is the best!!! What about Helidon?
+
+      Many developers praise the hottest and fastest Java REST frameworks: Micronaut, Quarkus, Spring Boot, and Helidon. In this session, you'll learn how to do the following with each framework:
+
+      ✅ Build a REST API
+      ✅ Secure your API with OAuth 2.0
+      ✅ Optimize for production with Docker and GraalVM
+
+      I'll also share some performance numbers and pretty graphs to compare community metrics.
     img: MattRaible.jpg
 
   - name: Peter Gafert
