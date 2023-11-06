@@ -3,7 +3,11 @@ import $ from "cash-dom";
 import ky from 'ky';
 import dayjs from "dayjs";
 import advancedFormat from 'dayjs/plugin/advancedFormat.js'
+import isSameOrAfter from 'dayjs/plugin/isSameOrAfter.js'
+
 dayjs.extend(advancedFormat)
+dayjs.extend(isSameOrAfter)
+
 
 export const app = createApp({
     data() {
@@ -31,7 +35,7 @@ export const app = createApp({
                         'USD': 'AE090860000009820208710',
                         'GBP': 'AE160860000009548466285'
                     }
-                    this.iamVatPayer = false
+                    this.iamVatPayer = dayjs(this.invoice.issued).isSameOrAfter('2023-12-01', 'day')
                     this.iban = ibans[this.invoice.billing.currency]
                 }).finally(() => {
                     $('body').removeClass('opacity-0').addClass('opacity-100');
