@@ -142,6 +142,7 @@ masterclasses:
         name: J.B. Rainsberger
         img: Rainsberger.png
       title: "Evolutionary Design: Beyond the Basics"
+      sold_out: true
       from: "11:00"
       to: "17:00"
       brief_description: |
