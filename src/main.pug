@@ -175,7 +175,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           .speaker.inline-flex.gap-2.items-center
             img.rounded-full.h-6.w-6(class="sm:h-8 sm:w-8" alt=masterclass.instructor.name src=require(`images/speakers/${masterclass.instructor.img}`))
             span.font-mono.text-slate-500.text-lg(class="sm:text-2xl") #{masterclass.instructor.name}
-            time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg [&>br]:hidden" data-date-from=event.masterclasses.date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses.date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
+            time.font-mono.text-slate-500.ml-8.text-sm(class="sm:text-lg [&>br]:hidden" data-masterclass-title=masterclass.title data-masterclass-instructor=masterclass.instructor.name data-date-from=event.masterclasses.date + 'T' + masterclass.from + ':00Z' data-date-to=event.masterclasses.date + 'T' + masterclass.to + ':00Z') #{masterclass.from} - #{masterclass.to} GMT
     section.container.space-y-4.mt-40.pb-40#Tickets
       h1.text-6xl(class="md:text-8xl") Tickets
       h2.text-2xl(class="md:text-5xl") Number of tickets is limited.
