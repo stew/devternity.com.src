@@ -333,6 +333,7 @@ export const app = createApp({
             const discounts = {
                 '_UPSKILL': 5,
                 '_LEVELUP': 10,
+                'Jiang_Qian': 25,
                 '_SPONSORED': 100
             }
 
