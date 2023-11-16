@@ -170,6 +170,7 @@ masterclasses:
       title: "Coding Practices for Professional Developers"
       from: "09:00"
       to: "17:00"
+      sold_out: true
       brief_description: |
         # Coding Practices for Professional Developers
 
