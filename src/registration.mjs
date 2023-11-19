@@ -334,7 +334,8 @@ export const app = createApp({
                 '_UPSKILL': 5,
                 '_LEVELUP': 10,
                 'Jiang_Qian': 25,
-                '_SPONSORED': 100
+                '_SPONSORED': 100,
+                '_FRIENDS': 100
             }
 
             const matchingCode = Object.keys(discounts).find(code => this.promo.endsWith(code));
