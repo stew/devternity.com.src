@@ -146,14 +146,14 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
           if talk
             +modal(`keynote-${index}`, talk.description)
             .talk.flex.flex-col.gap-3.items-center.text-center
-              .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
+              time.font-mono.text-slate-500.text-xs(data-keynote-title=talk.title data-keynote-instructor=speaker class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
               a.font-mono.font-bold.text-xs(href="javascript:void(0)" data-modal=`#keynote-${index}` class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") #{talk.title}
               .speaker.inline-flex.gap-2.items-center.text-left
-                img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=talk.name src=require(`images/speakers/${talk.img}`))
+                img.rounded-full.h-4.w-4(class="lg:h-8 lg:w-8" alt=speaker src=require(`images/speakers/${talk.img}`))
                 span.font-mono.text-slate-500.text-xs(class="lg:text-xl") #{speaker}
           else
             .talk.flex.flex-col.gap-3.items-center.text-center
-              .time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
+              time.font-mono.text-slate-500.text-xs(class="lg:text-base [&>br]:block [&>br]:md:hidden" data-date-from=event.date + 'T' + timeslot.from + ':00Z' data-date-to=event.date + 'T' + timeslot.to + ':00Z') #{timeslot.from} - #{timeslot.to} GMT
               span.font-mono.font-bold.text-xs(class="lg:text-2xl before:content-['>'] before:mr-1 before:md:mr-2 before:text-lime-950") TBA
     section#Masterclasses.container.space-y-4.pb-40(class="mt-[25vh]")
       h1.text-6xl(class="md:text-8xl") Masterclasses
