@@ -57,32 +57,31 @@ masterclasses:
   date: "2024-05-24"
   items:
     - instructor:
-        name: Vlad Mihalcea
-        img: Vlad.jpg
-      title: High-Performance Java Persistence
-      from: "08:00"
+        name: Bartlomiej Slota
+        img: Bart.jpg
+      title: "Effective Coding Practices for Java Developers"
+      from: "09:00"
       to: "17:00"
       brief_description: |
-        # High-Performance Java Persistence
+        # Effective Coding Practices for Java Developers
 
-        Adding JPA and Hibernate annotations is fairly easy. But:
-        - Do you know how a relational database systems works behind the scenes?
-        - Do you know the performance implications of each JPA/Hibernate feature your application makes heavy use of?
-        - Do you know how the JDBC Driver executes statements and how you can configure it to boost application performance?
+        Many of us are familiar with the challenges posed by legacy applications. Some have the luxury of starting with a clean slate, but over time, even greenfield projects can morph into something reminiscent of the legacy apps we once struggled with. These shared issues often lead both legacy and greenfield applications to a state where implementing even a minor change becomes a painful endeavor.
 
-        This masterclasses is aimed to level up your data access, JDBC, and Hibernate skills.
+        How can we circumvent these challenges? What path should we tread? What are our goals? What defines an exemplary application? Let's collaboratively construct such an application during this masterclass!
 
-        We'll cover essential topics, including:
-        - Transactions, locking, and concurrency control
-        - Database, application and Hibernate caching
-        - Connection management and pooling
-        - Persistence context
-        - Fetching strategies, batching, statement caching
-        - Query optimization
+        Join us for this masterclass where you will delve into practices that every professional developer should not only comprehend but also implement while building a Java-based business application. Throughout the course, you will:
 
-        And much more!
+          * Engage extensively in Test-Driven Development (TDD)
+          * Craft tests using contemporary tools like Groovy and Spock
+          * Master patterns and practices for writing tests that don't break when you refactor code internals
+          * Construct robust business objects and rich domain models and understand the rationale behind it
+          * Write business code that is configurable and detached from external systems such as DB or HTTP services
+          * Develop a clear understanding of how to properly organize your code in packages and layers
+          * ...and much more!
 
-        At the end of the masterclasses, you'll have a much deeper understanding of database access, JDBC, and Hibernate, and will be able to troubleshoot and optimize data access performance in your own projects.
+        This masterclass is dedicated to developers able to code and complete exercises in Java.
+
+        Embark on this journey to refine your coding practices and emerge as a more adept professional developer!
 
     - instructor:
         name: Peter Gafert
@@ -177,31 +176,32 @@ masterclasses:
         And much more!
 
     - instructor:
-        name: Bartlomiej Slota
-        img: Bart.jpg
-      title: "Effective Coding Practices for Java Developers"
-      from: "09:00"
+        name: Vlad Mihalcea
+        img: Vlad.jpg
+      title: High-Performance Java Persistence
+      from: "08:00"
       to: "17:00"
       brief_description: |
-        # Effective Coding Practices for Java Developers
+        # High-Performance Java Persistence
 
-        Many of us are familiar with the challenges posed by legacy applications. Some have the luxury of starting with a clean slate, but over time, even greenfield projects can morph into something reminiscent of the legacy apps we once struggled with. These shared issues often lead both legacy and greenfield applications to a state where implementing even a minor change becomes a painful endeavor.
+        Adding JPA and Hibernate annotations is fairly easy. But:
+        - Do you know how a relational database systems works behind the scenes?
+        - Do you know the performance implications of each JPA/Hibernate feature your application makes heavy use of?
+        - Do you know how the JDBC Driver executes statements and how you can configure it to boost application performance?
 
-        How can we circumvent these challenges? What path should we tread? What are our goals? What defines an exemplary application? Let's collaboratively construct such an application during this masterclass!
+        This masterclasses is aimed to level up your data access, JDBC, and Hibernate skills.
 
-        Join us for this masterclass where you will delve into practices that every professional developer should not only comprehend but also implement while building a Java-based business application. Throughout the course, you will:
+        We'll cover essential topics, including:
+        - Transactions, locking, and concurrency control
+        - Database, application and Hibernate caching
+        - Connection management and pooling
+        - Persistence context
+        - Fetching strategies, batching, statement caching
+        - Query optimization
 
-          * Engage extensively in Test-Driven Development (TDD)
-          * Craft tests using contemporary tools like Groovy and Spock
-          * Master patterns and practices for writing tests that don't break when you refactor code internals
-          * Construct robust business objects and rich domain models and understand the rationale behind it
-          * Write business code that is configurable and detached from external systems such as DB or HTTP services
-          * Develop a clear understanding of how to properly organize your code in packages and layers
-          * ...and much more!
+        And much more!
 
-        This masterclass is dedicated to developers able to code and complete exercises in Java.
-
-        Embark on this journey to refine your coding practices and emerge as a more adept professional developer!
+        At the end of the masterclasses, you'll have a much deeper understanding of database access, JDBC, and Hibernate, and will be able to troubleshoot and optimize data access performance in your own projects.
 
     - instructor:
         name: Victor Rentea
