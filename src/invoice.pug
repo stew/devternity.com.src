@@ -98,7 +98,7 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
 
 
             .flex.gap-24.mt-12
-                .xxx
+                .issuedBy(class="basis-1/3")
                     h3.font-bold ISSUED BY
                     p.text-slate-500
                         | TechPlatforms LLC
@@ -108,13 +108,11 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                             br
                             | Tax registration number (TRN/VAT): 104149135600003
                         br
-                        | Address: Sharjah Media City, Sharjah,
-                        br
-                        | United Arab Emirates, P.O. Box 515000
+                        | Sharjah Media City, Sharjah, United Arab Emirates, P.O. Box 515000
                         br
                         a(href="https://techplatforms.ae" target="_blank") https://techplatforms.ae
                     br
-                .xxx
+                .transferDetails(class="basis-2/3")
                     h3.font-bold BANK TRANSFER DETAILS
                     table.text-slate-500(v-if="iban")
                         tr
@@ -130,6 +128,8 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                             td Description:
                             td
                                 b.font-bold {{invoice.no}}
+                        tr
+                            td(colspan="2 text-sm") You are responsible for any fees associated with internatioanl transfers. To minimize fees, we suggest using Wise (or paying by card).
                     p.text-slate-500(v-else) Only card payments are allowed in {{invoice.billing.currency}}.
 
 
