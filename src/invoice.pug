@@ -128,6 +128,8 @@ body#app.opacity-0.transition-all.duration-700.container.bg-gradient-to-b.from-s
                             td Description:
                             td
                                 b.font-bold {{invoice.no}}
+                        td Purpose of payment code:
+                            td ITS (Computer services)
                         tr
                             td(colspan="2 text-sm") You are responsible for any fees associated with international transfers. To avoid bank fees, we suggest using Wise (or paying by card).
                     p.text-slate-500(v-else) Only card payments are allowed in {{invoice.billing.currency}}.
