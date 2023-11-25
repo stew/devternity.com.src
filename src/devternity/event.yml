@@ -619,10 +619,6 @@ keynotes:
 
       Most have learned to communicate with compilers but not people, so they lack the skill to progress their ideas and solutions beyond the confines of a small team, code base, or the outside world. Code is going to continue to get easier to write, test, and deploy, and that's going to require the future of software development to change from spending most of your time in an IDE to in front of people. As the saying goes: "some people have ideas and some ideas have people", and it's going to require an additional set of skills to do that. Let'l talk about these skills.
 
-  - name: Anna Boyko
-    bio: Staff Engineer @ Coinbase, Core Contributor @ Ethereum
-    img: Anna.png
-
   - name: J.B. Rainsberger
     twitter: jbrains
     bio: Software Coach, Mentor, Consultant, TDD Trainer
