@@ -4,6 +4,3 @@
 
 Sources for https://devternity.com website.
 
-```
-  npm run serve
-```
