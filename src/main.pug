@@ -108,7 +108,7 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
         h2(class="text-center text-lg md:text-2xl lg:text-3xl ") #{event.slogan}.
         h3.text-slate-300(class="lg:text-2xl")
           span #{dayjs(event.date).format("D")}-#{dayjs(event.masterclasses.date).format("D MMMM YYYY")}. Online.
-        a.flex.text-xl.py-3.justify-center.uppercase.border.border-slate-300.font-bold.font-mono.text-neutral-200.rounded-lg.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600' href='#Tickets') Buy tickets
+        a.flex.text-xl.py-3.justify-center.uppercase.border.border-slate-300.font-bold.font-mono.text-neutral-200.rounded-lg.transition-all.duration-300(class='w-[350px] hover:text-white hover:border-red-600' href='#Tickets') Sold out
         - var monthsUntilConference = dayjs(event.date).diff(dayjs(), 'days')
         if monthsUntilConference <= 90
           h4#countdown.text-center.font-mono.text-slate-300(class="" data-nothing='The conference is happening now.' data-prefix='We start in ' data-date-iso=`${event.date}T09:00Z`)
@@ -201,8 +201,8 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
               span.mr-4=price
             span.line-through.text-slate-300=price+200
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[70%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+            .bg-red-600.rounded-full.h-full(class=`w-[100%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href="" class="hover:text-white" data-registration) SOLD OUT
         .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
           h1.text-2xl.font-mono(class="lg:text-4xl") Masterclass Only
           h3.text-6xl
@@ -213,8 +213,8 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
               span.mr-4=price
             span.line-through.text-slate-300=price+200
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+            .bg-red-600.rounded-full.h-full(class=`w-[100%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href="" class="hover:text-white" data-registration) SOLD OUT
         .flex.flex-col.gap-y-7.items-center.text-center(class=`2xl:w-11/12 [&>h1]:last:font-bold [&>h1]:last:before:content-['>'] [&>h1]:last:before:mr-2 [&>h1]:last:before:text-lime-950`)
           h1.text-2xl.font-mono(class="lg:text-4xl") Main Day + Masterclass
           h3.text-6xl
@@ -225,8 +225,8 @@ html.scroll-smooth(lang="en" class="bg-black bg-gradient-to-b from-black to-slat
               span.mr-4=price*2
             span.line-through.text-slate-300=price*2+400
           .rounded-full.bg-slate-500(class="h-2.5 w-3/4")
-            .bg-red-600.rounded-full.h-full(class=`w-[90%]`)
-          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href=registrationLink class="hover:text-white" data-registration) Register
+            .bg-red-600.rounded-full.h-full(class=`w-[100%]`)
+          a.inline-block.relative.text-3xl.w-fit.text-slate-500.duration-300(href="" class="hover:text-white" data-registration) SOLD OUT
     section.container.text-center(class="mt-[10vh] mb-[40vh]")
       if event.priceHint
         p.text-slate-600 * #{event.priceHint}
