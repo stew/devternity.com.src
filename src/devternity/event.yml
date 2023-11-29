@@ -367,7 +367,6 @@ schedule:
   - from: "14:20"
     to: "15:10"
     talks:
-      - David Heinemeier Hansson
       - Fred George
   - from: "15:30"
     to: "16:20"
@@ -403,16 +402,6 @@ keynotes:
 
       For each, he defines principles that can help you improve everything from your mindset to the quality of your code and describes approaches proven to promote success.
     img: Dave Farley.jpg
-
-  - name: David Heinemeier Hansson
-    twitter: dhh
-    bio: Creator of Ruby on Rails, Co-founder @ Basecamp, Hey
-    img: DHH.png
-    title: "A Fireside with David Heinemeier Hansson"
-    description: |
-      # A Fireside with David Heinemeier Hansson
-
-      Meet our special guest – David Heinemeier Hansson – the creator of Ruby on Rails, CTO and co-founder of Basecamp and Hey. In this fireside chat we'll be talking about the future of Rails, why and how Basecamp has moved from cloud to bare metal, what makes a good developer, hiring, self-development, and life.
 
   - name: Allen Holub
     twitter: allenholub
