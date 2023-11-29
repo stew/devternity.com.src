@@ -448,7 +448,6 @@ schedule:
     to: "12:10"
     talks:
       - Gregor Hohpe
-      - Sam Newman
       - Sven Peters
   - from: "13:10"
     to: "14:00"
@@ -516,20 +515,6 @@ keynotes:
 
       Lean has been applied as a toolkit to fine-tune development processes and organisational workflow, but what does it mean when we apply the practices to the detail of the code, the practices used to develop it and the people who develop it? What does Lean Code and its creation look like? There is a need to move beyond often separated worlds of software craft and agile development, to properly embrace code in its detail, but to also connect it more completely to the flow of business and the intelligence of people around it. To move beyond simple exhortations of clean code to something more human. This talk offers a fresh look at Lean principles and practices from the perspective of the code and the coder, rather than the usual scale of the organisation and the development process.
     img: Kevlin Henney.png
-
-  - name: Sam Newman
-    twitter: samnewman
-    bio: Author of Building Microservices and Monolith to Microservices
-    title: "Monolith Decomposition Patterns"
-    description: |
-      # Monolith Decomposition Patterns
-
-      Big Bang rebuilds of systems are so 20th century. With our users expecting new functionality to be shipped more frequently than ever before, we no longer have the luxury of a complete system rebuild. In fact, a big bang migration of a monolithic architecture into a microservice architecture can be especially problematic, as we’ll explore in this talk.
-
-      We want to ship features, but we also want to improve our architecture, and for many of us this means breaking down existing systems into microservices. But how do you do this while still regularly releasing new features?
-
-      In this talk, I’ll share with you some key principles and a number of patterns which you can use to incrementally decompose an existing system into microservices. I’ll also cover off patterns that can work to migrate functionality out of systems you can’t change, which are useful when working with very old systems or vendor products. We'll look at the use of strangler patterns, change data capture, database decomposition and more.
-    img: Sam Newman.png
 
   - name: Sandi Metz
     twitter: sandimetz
