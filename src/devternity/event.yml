@@ -55,35 +55,6 @@ masterclasses:
   date: "2023-12-08"
   items:
     - instructor:
-        name: Jimmy Bogard
-        img: Jimmy Bogard.png
-      title: "Domain-Driven Design: Theory and Practice"
-      from: "14:00"
-      to: "21:00"
-      sold_out: true
-      brief_description: |
-        # Domain-Driven Design in Theory and Practice
-
-        Understand the concepts of DDD but feeling overwhelmed to implement? Feeling overwhelmed by complex examples and can't connect how to implement DDD in your project? Looking for more concrete guidance on the concepts and principles of DDD and want to learn how to connect it to real-world code? If this sounds familiar, then this masterclass is for you.
-
-        We cover both the theory and patterns of DDD, and connect it to code with hands-on examples in .NET 6.
-
-        In this masterclass, you'll learn:
-        * What problems DDD addresses, when to use it, and when **not** to use it
-        * The fundamental DDD building blocks — entities, value objects, domain services, etc.
-        * How to integrate DDD into your software delivery
-        * How to find and enforce service boundaries
-        * How to define bounded contexts between microservices
-        * How to craft and enforce a ubiquitous language
-        * How to continuously refactor our model as our domain understanding evolves
-        * How to pragmatically apply DDD in ASP.NET Core 6 and EF Core 6
-        * ...and much more!
-
-        We spend some time on the theory and concepts of DDD and then applying it to a real-world, complex example with hands-on code exercises.
-
-        We will be using .NET as our development platform, but the learned concepts will be applicable to other languages and platforms.
-
-    - instructor:
         name: Marcin Moskala
         img: Marcin Moskala.jpg
       from: "09:00"
@@ -392,7 +363,6 @@ schedule:
     to: "14:00"
     talks:
       - Robert Martin
-      - Jimmy Bogard
       - Thiago Ghisi
   - from: "14:20"
     to: "15:10"
@@ -532,16 +502,6 @@ keynotes:
       # How to Interview Developers (and enjoy it)
 
       If you've been in the tech industry for any length of time, you've probably been asked to participate in interviewing. Lucky folks will receive some basic training from their employer, but most are expected to just figure it out. It can be time-consuming, nerve-wracking, and tedious. You probably don't enjoy doing it, and that can lead to bad hires and painful experiences. Kris has participated in more than 250 interviews at AWS - as both an interviewer and a hiring manager - and has finally come to embrace the process. She'll provide practical tips you can use to conduct more effective interviews, saving you time and making the whole process a lot more enjoyable.
-
-  - name: Jimmy Bogard
-    twitter: jbogard
-    bio: Chief Architect @ Headspring, Microsoft MVP, Creator of MediatR and AutoMapper
-    title: Vertical Slice Architecture
-    description: |
-      # Vertical Slice Architecture
-
-      Moving from a layered architecture to a vertical slice architecture can be a bit daunting. We remove abstractions, complex structures, and focus building on the axis of change, then what's next? What new structures, patterns, and policies will need to be introduced in this style of architecture? How will we deal with common business functionality, and where do concepts like CQRS and DDD fit in? In this session, we'll introduce the idea of vertical slice architectures, and dive into the patterns, tools, and techniques used with slices. We'll also cover how you can fit vertical slices into different kinds of systems, from desktop, SPA, and normal MVC applications. Finally, we'll look at some of the new challenges that come with slices and layers, and how a different approach provides a much more maintainable end result.
-    img: Jimmy Bogard.png
 
   - name: Carson Gross
     bio: Creator of Htmx, Principal @ Big Sky Software
