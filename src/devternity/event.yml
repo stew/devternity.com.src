@@ -458,7 +458,6 @@ schedule:
   - from: "14:20"
     to: "15:10"
     talks:
-      - Scott Wlaschin
       - David Heinemeier Hansson
       - Fred George
   - from: "15:30"
@@ -525,17 +524,6 @@ keynotes:
 
       In theory, object-oriented applications consist of small, interchangeable objects which know almost nothing about one another. In reality, many apps contain big classes full of long methods built of many conditionals. Our classes act more like procedures than objects; they know too much, they contain code we can't reuse, they're hard to change and they get worse every time we do so. This talk uses the principles of object-oriented design to break ugly procedures into pleasing objects which have just the right balance of knowledge and ignorance. It bridges the gap between theory and practice and reveals a few simple secrets of OOD that you can use to convert confusing, unmaintainable faux-OO code into understandable, reusable, easily testable objects.
     img: Sandi Metz.jpg
-
-  - name: Scott Wlaschin
-    bio: F# Trainer, Consultant, Author of Domain Modeling Made Functional
-    title: Pipeline Oriented Programming
-    description: |
-      # Pipeline Oriented Programming
-
-      Passing data through a pipeline of transformations is an alternative approach to classic OOP. The LINQ methods in .NET are designed around this, but the pipeline approach can be used for so much more than manipulating collections.
-
-      In this talk, I’ll look at pipeline-oriented programming and how it relates to functional programming, the open-closed principle, unit testing, the onion architecture, and more. I’ll finish up by showing how you can build a complete web app using only this approach.
-    img: Scott Wlaschin.jpg
 
   - name: Allen Holub
     twitter: allenholub
