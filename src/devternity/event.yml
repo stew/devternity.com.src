@@ -301,32 +301,6 @@ masterclasses:
         This masterclass covers fundamental concepts, relevant to all programming platforms and languages; developers and architects with different backgrounds can attend.
 
     - instructor:
-        name: Ian Cooper
-        img: Ian Cooper.png
-      title: Practical Messaging
-      from: "09:00"
-      to: "17:00"
-      sold_out: true
-      brief_description: |
-        # Practical Messaging
-
-        Increasingly developers are relying on distributed architectures to solve the problems of scaling their applications and their development teams. But that means they now have to consider the problem of getting the parts of their systems to talk to each other.
-
-        In this masterclass, we will look at distributed systems, such as microservices, and how we integrate them. We will understand why we would prefer messaging, the fundamentals and key concepts of messaging, and how to build an event-driven architecture.
-
-        Topics covered include:
-        * Why and when distribute?
-        * How messaging, distributed, and event-driven architectures work?
-        * Different integration styles
-        * Basic Messaging Patterns (work queues, publish-subscribe, dead letter channel...)
-        * Advanced Messaging Patterns (streams, ordering, guaranteed delivery...)
-        * Orchestration vs. Choreography
-        * CAP Theorem
-        * and much more!
-
-        We will use Rabbit MQ message broker. Hands-on exercises are offered in C#, JavaScript, Python and Go.
-
-    - instructor:
         name: Allen Holub
         img: Allen Holub.png
       title: Incremental Architecture
@@ -441,7 +415,6 @@ schedule:
     to: "11:00"
     talks:
       - Dave Farley
-      - Ian Cooper
       - Kristine Howard
   - from: "11:20"
     to: "12:10"
@@ -611,16 +584,6 @@ keynotes:
       # How to Interview Developers (and enjoy it)
 
       If you've been in the tech industry for any length of time, you've probably been asked to participate in interviewing. Lucky folks will receive some basic training from their employer, but most are expected to just figure it out. It can be time-consuming, nerve-wracking, and tedious. You probably don't enjoy doing it, and that can lead to bad hires and painful experiences. Kris has participated in more than 250 interviews at AWS - as both an interviewer and a hiring manager - and has finally come to embrace the process. She'll provide practical tips you can use to conduct more effective interviews, saving you time and making the whole process a lot more enjoyable.
-
-  - name: Ian Cooper
-    twitter: icooper
-    bio: Principal Engineer, Global Integration Architect @ Just Eat Takeaway
-    title: "TDD: Where Did It All Go Wrong (Revisited)"
-    description: |
-      # TDD Revisited: Where Did It All Go Wrong
-
-      Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. But many of them propagated misunderstandings of Kent's original rules so that TDD practice bears little resemblance to Kent's original ideas. Key misunderstandings around what do I test, what is a unit test, and what is the 'public interface' have led to test suites that are brittle, hard to read, and do not support easy refactoring. In this talk, we re-discover Kent's original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it. Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.
-    img: Ian Cooper.png
 
   - name: Jimmy Bogard
     twitter: jbogard
