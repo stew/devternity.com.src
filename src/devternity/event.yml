@@ -55,37 +55,6 @@ masterclasses:
   date: "2023-12-08"
   items:
     - instructor:
-        name: Kevlin Henney
-        img: Kevlin Henney.png
-      title: Agile Architecture
-      from: "09:00"
-      to: "17:00"
-      sold_out: true
-      brief_description: |
-        # Agile Architecture
-
-        Every system has an architecture, whether accidental or
-        intentional, and regardless of whether it was put in place by a nominated
-        architect or whether it emerged from the decisions and discussions of a team.
-
-        All too often the focus of what is often described as architecture is centred
-        around a specific set of platform technologies, which forms only one part
-        of the set of concerns an architecture should. And all too often architecture
-        is seen as a separate concern from development process, whereas the two are
-        intertwined — **what you build is influenced by how you build it, and vice versa.**
-
-        The course covers a wide range of topics through a number of practical exercises,
-        with plenty of time dedicated to group discussion:
-        * The relationship between development process and architecture
-        * The roles and failure modes of testing, modelling and technology platforms
-        * Different architectural styles and design patterns
-        * How to transform product vision into architecture
-        * Future-proofing your architecture, and accounting for uncertainty
-        * How to ground your architecture and avoid overdesign
-
-        And much more!
-
-    - instructor:
         name: Jimmy Bogard
         img: Jimmy Bogard.png
       title: "Domain-Driven Design: Theory and Practice"
@@ -409,7 +378,6 @@ schedule:
   - from: "09:00"
     to: "09:50"
     talks:
-      - Kevlin Henney
       - Adam Tornhill
   - from: "10:10"
     to: "11:00"
@@ -475,16 +443,6 @@ keynotes:
       # A Fireside with David Heinemeier Hansson
 
       Meet our special guest – David Heinemeier Hansson – the creator of Ruby on Rails, CTO and co-founder of Basecamp and Hey. In this fireside chat we'll be talking about the future of Rails, why and how Basecamp has moved from cloud to bare metal, what makes a good developer, hiring, self-development, and life.
-
-  - name: Kevlin Henney
-    twitter: kevlinhenney
-    bio: Author of Architecture and Programming Books, Consultant, Trainer
-    title: Lean Code
-    description: |
-      # Lean Code
-
-      Lean has been applied as a toolkit to fine-tune development processes and organisational workflow, but what does it mean when we apply the practices to the detail of the code, the practices used to develop it and the people who develop it? What does Lean Code and its creation look like? There is a need to move beyond often separated worlds of software craft and agile development, to properly embrace code in its detail, but to also connect it more completely to the flow of business and the intelligence of people around it. To move beyond simple exhortations of clean code to something more human. This talk offers a fresh look at Lean principles and practices from the perspective of the code and the coder, rather than the usual scale of the organisation and the development process.
-    img: Kevlin Henney.png
 
   - name: Sandi Metz
     twitter: sandimetz
