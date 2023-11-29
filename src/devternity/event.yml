@@ -437,7 +437,6 @@ schedule:
     talks:
       - Kevlin Henney
       - Adam Tornhill
-      - Daniel Terhorst-North
   - from: "10:10"
     to: "11:00"
     talks:
@@ -544,21 +543,6 @@ keynotes:
       Transformations are difficult, and often simply fail. After all, change is usually disruptive. Even an organization that wants to embrace change can see mediocre results. The underlying causes vary from ignorance on how to transform, to full and hostile resistance. In this talk, we will discuss the various causes and the strategies we can use to overcome (or at least mitigate) this resistance to change, and create meaningful transformations with our clients.
     img: Fred George.jpg
 
-  - name: Daniel Terhorst-North
-    twitter: tastapod
-    bio: Originator of BDD, Mentor, Principal Consultant @ Dan North & Associates
-    img: Dan North.png
-    title: The Most Dangerous Phrase
-    description: |
-      # The Most Dangerous Phrase
-
-      Some advice is timeless; it ages like a fine wine. Each time you revisit it you discover a nuance, a new connection to something else. As you grow, the advice is waiting there to reveal another layer you had never considered.
-
-      Some advice is a product of its time; it ages like milk. It starts fresh, then it begins to smell, and eventually it rots and can even become harmful! It made sense in the context and constraints of its day, but things have changed and it is no longer relevant.
-
-      As Admiral Grace Hopper famously said: "The most dangerous phrase you can use is 'But we've always done it this way!'" Daniel believes this is why so many people have an almost religious zeal for SOLID, Scrum, and other antiquities.
-
-      In this session, Daniel argues from first principles why ideas like SOLID and Scrum made sense in their day, over a quarter century ago, and why they have been superseded and should now be considered harmful. For contrast, he suggests Continuous Delivery and lean product development are ageing like fine wines. If there is time, he will show how methods like SAFe have never been relevant and never will be, but can be very appealing to a certain kind of manager.
   - name: John Romero
     twitter: romero
     bio: Game Designer, Programmer, Co-founder of id Software
